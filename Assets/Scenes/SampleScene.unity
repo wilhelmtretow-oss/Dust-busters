@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 114168862}
   - component: {fileID: 114168864}
   - component: {fileID: 114168863}
+  - component: {fileID: 114168865}
   m_Layer: 0
   m_Name: Walls
   m_TagString: Untagged
@@ -1188,6 +1189,28 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!64 &114168865
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 114168861}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
 --- !u!1 &258417565
 GameObject:
   m_ObjectHideFlags: 0
@@ -1293,7 +1316,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 9ad7cce642d99224d8142abcdb378441, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
