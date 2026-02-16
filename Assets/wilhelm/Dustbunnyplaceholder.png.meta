@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 12f4db32654837c498b880865a587550
+guid: 4f3a68c395759724f96e61ecd31d886f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -703487368496858793
-    second: Placeholdervacuumbodybak_0
+      213: -4254743782032390873
+    second: Dustbunnyplaceholder_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Placeholdervacuumbodybak_0
+      name: Dustbunnyplaceholder_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 5
-        width: 36
-        height: 37
+        x: 20
+        y: 24
+        width: 24
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75935c037f5bc36f0800000000000000
-      internalID: -703487368496858793
+      spriteID: 72548a5a21d14f4c0800000000000000
+      internalID: -4254743782032390873
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Placeholdervacuumbodybak_0: -703487368496858793
+      Dustbunnyplaceholder_0: -4254743782032390873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
