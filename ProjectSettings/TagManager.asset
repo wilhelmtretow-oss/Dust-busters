@@ -11,7 +11,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - walls
   - 
   - 
   - 
@@ -43,6 +43,9 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 2555042689
+    locked: 0
+  - name: backgraund
+    uniqueID: 2305818749
     locked: 0
   m_RenderingLayers:
   - Default
