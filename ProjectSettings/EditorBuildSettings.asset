@@ -6,6 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/MainMenu.unity
     guid: 4febcceb7685e6c4da9fa24bfc056452
   - enabled: 1
@@ -13,7 +14,16 @@ EditorBuildSettings:
     guid: c01de026d79ef3f4b91b02d56d7b3486
   - enabled: 1
     path: Assets/Scenes/House 1.unity
+=======
+    path: Assets/Scenes/StartMenu.unity
+>>>>>>> Stashed changes
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/ContractMenu.unity
+    guid: c01de026d79ef3f4b91b02d56d7b3486
+  - enabled: 1
+    path: Assets/Scenes/MainGame.unity
+    guid: 46f2954cb4639ff48b92c200c3745792
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
