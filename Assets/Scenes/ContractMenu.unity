@@ -625,7 +625,11 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           m_StringArgument: House 1
+=======
+          m_StringArgument: MainGame
+>>>>>>> Stashed changes
 =======
           m_StringArgument: MainGame
 >>>>>>> Stashed changes
@@ -1118,7 +1122,11 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           m_StringArgument: New Scene
+=======
+          m_StringArgument: StartMenu
+>>>>>>> Stashed changes
 =======
           m_StringArgument: StartMenu
 >>>>>>> Stashed changes
@@ -1825,7 +1833,11 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           m_StringArgument: House 1
+=======
+          m_StringArgument: MainGame
+>>>>>>> Stashed changes
 =======
           m_StringArgument: MainGame
 >>>>>>> Stashed changes
@@ -2037,7 +2049,11 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           m_StringArgument: House 1
+=======
+          m_StringArgument: MainGame
+>>>>>>> Stashed changes
 =======
           m_StringArgument: MainGame
 >>>>>>> Stashed changes
@@ -2877,7 +2893,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   m_Script: {fileID: 11500000, guid: 0d9d3174a61ec2a4eacac5f36daedfe7, type: 3}
+=======
+  m_Script: {fileID: 11500000, guid: e542d39c87fe0c048a8c1316b1725a8f, type: 3}
+>>>>>>> Stashed changes
 =======
   m_Script: {fileID: 11500000, guid: e542d39c87fe0c048a8c1316b1725a8f, type: 3}
 >>>>>>> Stashed changes

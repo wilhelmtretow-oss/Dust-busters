@@ -9,7 +9,10 @@ public class ContractManager : MonoBehaviour
     public string[] possibleTitles = { "Small Home", "Basic Apartment", "Large House" };
     public string[] possibleDiff = { "Easy", "Medium", "Hard" };
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,6 +21,10 @@ public class ContractManager : MonoBehaviour
         RandomizeContracts();
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -28,6 +35,10 @@ public class ContractManager : MonoBehaviour
             int randomTitleIndex = Random.Range(0, possibleTitles.Length);
             int randomDiffIndex = Random.Range(0, possibleDiff.Length);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 =======
 
 >>>>>>> Stashed changes
@@ -36,7 +47,12 @@ public class ContractManager : MonoBehaviour
         }
     }
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 }
+=======
+
+}
+>>>>>>> Stashed changes
 =======
 
 }
