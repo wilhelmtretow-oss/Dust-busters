@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3bd798ee9eec21841a229f2cc72c0a01
+guid: 59d6152339bbfa54ba09536fcaa4a6ec
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 173
+  spritePixelsToUnits: 174
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Kitchen tilemap_0
+      name: Living props room tilemap_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 867
-        width: 173
-        height: 173
+        y: 872
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +112,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 918d69542f3beaf468f946f65d5447d4
-      internalID: -1789292740
+      spriteID: e0a246b6f10c53745af62b9f556e853c
+      internalID: -684289883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_1
+      name: Living props room tilemap_1
       rect:
         serializedVersion: 2
-        x: 173
-        y: 867
-        width: 173
-        height: 173
+        x: 174
+        y: 872
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,20 +134,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2d3f8026fa09c54288ffa8dd88574ad
-      internalID: 1304058992
+      spriteID: df294f3f51acc984fbf54d1a5f482fa8
+      internalID: -500955278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_2
+      name: Living props room tilemap_2
       rect:
         serializedVersion: 2
-        x: 346
-        y: 867
-        width: 173
-        height: 173
+        x: 348
+        y: 872
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,20 +156,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4968f8596b4a48949bb66b1df7f64c44
-      internalID: -1103615640
+      spriteID: 3ebe46215618ccf419eb38adfe19a4b8
+      internalID: -1611256576
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_3
+      name: Living props room tilemap_3
       rect:
         serializedVersion: 2
-        x: 519
-        y: 867
-        width: 173
-        height: 173
+        x: 522
+        y: 872
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,20 +178,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b052e5f48e72b442a4f862f9bbf5834
-      internalID: 436579406
+      spriteID: 8d886ed83d601bf4cb216f2659cdecd1
+      internalID: 1290658274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_4
+      name: Living props room tilemap_4
       rect:
         serializedVersion: 2
-        x: 692
-        y: 867
-        width: 173
-        height: 173
+        x: 696
+        y: 872
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12d7d0f5e3f08eb4cbee4e51aef2f654
-      internalID: 246051621
+      spriteID: 893a140144308e94dbe7f5f332280de9
+      internalID: 424610334
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_5
+      name: Living props room tilemap_5
       rect:
         serializedVersion: 2
-        x: 865
-        y: 867
-        width: 173
-        height: 173
+        x: 870
+        y: 872
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,152 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f06c7c2a98c555e4aaa6cd1a1fc767b7
-      internalID: 331740985
+      spriteID: 66d2aa315eb17eb4bbb6c032844c9093
+      internalID: 1456601260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 694
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d748b589194f2c47a0b8cd7b30b9f37
-      internalID: -39656588
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_7
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 694
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1749545cd79166e4886d07bb2a8cd129
-      internalID: -675666550
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_8
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 694
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bd1fd8dbec593df4d88717f183dc3858
-      internalID: 678751208
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_9
-      rect:
-        serializedVersion: 2
-        x: 519
-        y: 694
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bb35123966347446a113e3c027784fc
-      internalID: 1795783962
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_10
-      rect:
-        serializedVersion: 2
-        x: 692
-        y: 694
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c394bce6b18a564c81234292067cc01
-      internalID: 1025593344
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_11
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 694
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 42db8d15af1768141a0268ef4786614d
-      internalID: -1651397761
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_12
+      name: Living props room tilemap_6
       rect:
         serializedVersion: 2
         x: 0
-        y: 521
-        width: 173
-        height: 173
+        y: 698
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba43ce4cecad5e548900195955a6e762
-      internalID: -225928668
+      spriteID: bb7a3248aacdd5d4aa7bdd62e62cc322
+      internalID: -1850679087
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_13
+      name: Living props room tilemap_7
       rect:
         serializedVersion: 2
-        x: 173
-        y: 521
-        width: 173
-        height: 173
+        x: 174
+        y: 698
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -398,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bbc54f51dc62c64b8525f3b91a11788
-      internalID: 1794793176
+      spriteID: fcba1e20d09f58649b403805276ef316
+      internalID: 1927981873
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_14
+      name: Living props room tilemap_8
       rect:
         serializedVersion: 2
-        x: 346
-        y: 521
-        width: 173
-        height: 173
+        x: 348
+        y: 698
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -420,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 703294d6a0aa9b04eb021a90f6d02f8c
-      internalID: -1725378904
+      spriteID: 6494b45122c35544199c9c6912d606e9
+      internalID: 498035432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_15
+      name: Living props room tilemap_9
       rect:
         serializedVersion: 2
-        x: 519
-        y: 521
-        width: 173
-        height: 173
+        x: 522
+        y: 698
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d89ea39353ed8a449a16ce2a967728b3
-      internalID: -964880024
+      spriteID: 9fc13960f960ff543b628aa5025df317
+      internalID: 745763949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_16
+      name: Living props room tilemap_10
       rect:
         serializedVersion: 2
-        x: 692
-        y: 521
-        width: 173
-        height: 173
+        x: 696
+        y: 698
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -464,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad9649600ee867d42bc231913a8f4be7
-      internalID: -779397061
+      spriteID: b6cd90875e1c163409e85a6c7fd0581f
+      internalID: 435336477
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_17
+      name: Living props room tilemap_11
       rect:
         serializedVersion: 2
-        x: 865
-        y: 521
-        width: 173
-        height: 173
+        x: 870
+        y: 698
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,152 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be3e07a26fc0ecf4896ded5319c3ba99
-      internalID: -1538775000
+      spriteID: 9f253e0a7457d2c428cebb2d679e93b0
+      internalID: -1541078162
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_18
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 348
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e126352dcf6bc1946a5b2ffa20e1cb60
-      internalID: 1354890630
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_19
-      rect:
-        serializedVersion: 2
-        x: 173
-        y: 348
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c790123ac8e8c24087902037d1287d8
-      internalID: -293677467
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_20
-      rect:
-        serializedVersion: 2
-        x: 346
-        y: 348
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: df2b7a831849a5140a1f5085deeb4ce7
-      internalID: -1315295339
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_21
-      rect:
-        serializedVersion: 2
-        x: 519
-        y: 348
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d174d8736712554488c5d1d7e96df39c
-      internalID: -1843099183
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_22
-      rect:
-        serializedVersion: 2
-        x: 692
-        y: 348
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c9200118afd7dcc4d842dea2199d8857
-      internalID: -882061722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_23
-      rect:
-        serializedVersion: 2
-        x: 865
-        y: 348
-        width: 173
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a54f3e249d88ecd4cb150beff11c2d28
-      internalID: 1030299592
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Kitchen tilemap_24
+      name: Living props room tilemap_12
       rect:
         serializedVersion: 2
         x: 0
-        y: 175
-        width: 173
-        height: 173
+        y: 524
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -640,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78a71b0a2e9fbf447bf5c1198a03b3ec
-      internalID: -898796926
+      spriteID: 597670be1f86fe74389be89cab709447
+      internalID: -52415555
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_25
+      name: Living props room tilemap_13
       rect:
         serializedVersion: 2
-        x: 173
-        y: 175
-        width: 173
-        height: 173
+        x: 174
+        y: 524
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -662,20 +398,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6c244a7870b5eb42af858eee5a9723e
-      internalID: 802661325
+      spriteID: 6e8c632d62ac48c4581322ae4d1db560
+      internalID: -1942120483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_26
+      name: Living props room tilemap_14
       rect:
         serializedVersion: 2
-        x: 346
-        y: 175
-        width: 173
-        height: 173
+        x: 348
+        y: 524
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -684,20 +420,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af3444eb41e433f45ba83fe8d34fab73
-      internalID: -283684190
+      spriteID: dadcb602fa5fc9d4d9c4c548f6be92ba
+      internalID: -1345209224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_27
+      name: Living props room tilemap_15
       rect:
         serializedVersion: 2
-        x: 519
-        y: 175
-        width: 173
-        height: 173
+        x: 522
+        y: 524
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -706,20 +442,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c0feb4ed4615084e9641a49123b2a3b
-      internalID: 1868000039
+      spriteID: 14bddde007879974181865e25c8d3109
+      internalID: -1036168067
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_28
+      name: Living props room tilemap_16
       rect:
         serializedVersion: 2
-        x: 692
-        y: 175
-        width: 173
-        height: 173
+        x: 696
+        y: 524
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -728,20 +464,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7de90ec6b7d4d784c8667a56dc562731
-      internalID: -624868511
+      spriteID: 52d03d236c0fa6449b6dadd637ae6cb9
+      internalID: -643550679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_29
+      name: Living props room tilemap_17
       rect:
         serializedVersion: 2
-        x: 865
-        y: 175
-        width: 173
-        height: 173
+        x: 870
+        y: 524
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -750,20 +486,284 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68422e5fd04a8404b845620152d8759c
-      internalID: 52308953
+      spriteID: 21d49b5f70d8e8e438a202992e9abbb2
+      internalID: 2080746592
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_30
+      name: Living props room tilemap_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 350
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871a325e364178a42ad370759de8c3f2
+      internalID: -630146528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_19
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 350
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22c9c7c4ac88d3847a258f211857e2be
+      internalID: 500017962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_20
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 350
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202239a2739329d488407687598cc341
+      internalID: 2136634712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_21
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 350
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a10935605fcec4f8791c214fdefbc0
+      internalID: 762724317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_22
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 350
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7227e9d77deef43aff1b25b025db64
+      internalID: -1359579259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_23
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 350
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9724f819af325854387e43875a128215
+      internalID: 610967861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 176
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41669110a800cf74bb66ddbea349f970
+      internalID: -1433750125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_25
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 176
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9e3bcee1f59c846b34bd3fd4837799
+      internalID: 1742706859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_26
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 176
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fa3f3d7ce0d9a4a851c2e101d46e08
+      internalID: 1842549485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_27
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 176
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe4e31d0e0dcd848a28330b80f87c87
+      internalID: -2072119898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_28
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 176
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eeb4670f9222d81458668a98a01ad645
+      internalID: 1263324596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_29
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 176
+        width: 174
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec33d511b3ee0847a84470dba6eea23
+      internalID: 227456088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Living props room tilemap_30
       rect:
         serializedVersion: 2
         x: 0
         y: 2
-        width: 173
-        height: 173
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -772,20 +772,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b7c443c13a2d1d4b8af012ab3420f55
-      internalID: 741494110
+      spriteID: 35c6437c33660e444b643102cbeb34dc
+      internalID: -768325956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_31
+      name: Living props room tilemap_31
       rect:
         serializedVersion: 2
-        x: 173
+        x: 174
         y: 2
-        width: 173
-        height: 173
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -794,20 +794,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc19636766b14ae40b06358e62b0ced3
-      internalID: 1398620017
+      spriteID: c130b35b5145344489d2341ddcf66d0c
+      internalID: 803462484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_32
+      name: Living props room tilemap_32
       rect:
         serializedVersion: 2
-        x: 346
+        x: 348
         y: 2
-        width: 173
-        height: 173
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -816,20 +816,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f22315c3cba9e3e40842c1e7f7c79b7f
-      internalID: -411031992
+      spriteID: a434ea6f7ac56664d817eb260022b1fc
+      internalID: 661758524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_33
+      name: Living props room tilemap_33
       rect:
         serializedVersion: 2
-        x: 519
+        x: 522
         y: 2
-        width: 173
-        height: 173
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -838,20 +838,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaf1a259641aec74e8f20f1cf080ea2e
-      internalID: -111631523
+      spriteID: 27b5d87068212af48a84614e69ac846f
+      internalID: 399453042
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_34
+      name: Living props room tilemap_34
       rect:
         serializedVersion: 2
-        x: 692
+        x: 696
         y: 2
-        width: 173
-        height: 173
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -860,20 +860,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 782eb985fb3a588489f177e70b238ecf
-      internalID: -49356244
+      spriteID: bc87c4490a6f633479c11c99f5e1bb0c
+      internalID: -141648517
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Kitchen tilemap_35
+      name: Living props room tilemap_35
       rect:
         serializedVersion: 2
-        x: 865
+        x: 870
         y: 2
-        width: 173
-        height: 173
+        width: 174
+        height: 174
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -882,8 +882,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f485bfd87b6fc5747832e5390feebace
-      internalID: 1445584823
+      spriteID: 0b287cfd808bb694cad5d09858de1c0c
+      internalID: -2024114655
       vertices: []
       indices: 
       edges: []
@@ -892,7 +892,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 8f358ae77075b6c4eaf1cc435d8c83d2
+    spriteID: 69605ae14e8fa034ba831bb73daaaa93
     internalID: 0
     vertices: []
     indices: 
@@ -902,44 +902,44 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":173.0,"y":173.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":174.0,"y":174.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Kitchen tilemap_0: -1789292740
-      Kitchen tilemap_1: 1304058992
-      Kitchen tilemap_10: 1025593344
-      Kitchen tilemap_11: -1651397761
-      Kitchen tilemap_12: -225928668
-      Kitchen tilemap_13: 1794793176
-      Kitchen tilemap_14: -1725378904
-      Kitchen tilemap_15: -964880024
-      Kitchen tilemap_16: -779397061
-      Kitchen tilemap_17: -1538775000
-      Kitchen tilemap_18: 1354890630
-      Kitchen tilemap_19: -293677467
-      Kitchen tilemap_2: -1103615640
-      Kitchen tilemap_20: -1315295339
-      Kitchen tilemap_21: -1843099183
-      Kitchen tilemap_22: -882061722
-      Kitchen tilemap_23: 1030299592
-      Kitchen tilemap_24: -898796926
-      Kitchen tilemap_25: 802661325
-      Kitchen tilemap_26: -283684190
-      Kitchen tilemap_27: 1868000039
-      Kitchen tilemap_28: -624868511
-      Kitchen tilemap_29: 52308953
-      Kitchen tilemap_3: 436579406
-      Kitchen tilemap_30: 741494110
-      Kitchen tilemap_31: 1398620017
-      Kitchen tilemap_32: -411031992
-      Kitchen tilemap_33: -111631523
-      Kitchen tilemap_34: -49356244
-      Kitchen tilemap_35: 1445584823
-      Kitchen tilemap_4: 246051621
-      Kitchen tilemap_5: 331740985
-      Kitchen tilemap_6: -39656588
-      Kitchen tilemap_7: -675666550
-      Kitchen tilemap_8: 678751208
-      Kitchen tilemap_9: 1795783962
+      Living props room tilemap_0: -684289883
+      Living props room tilemap_1: -500955278
+      Living props room tilemap_10: 435336477
+      Living props room tilemap_11: -1541078162
+      Living props room tilemap_12: -52415555
+      Living props room tilemap_13: -1942120483
+      Living props room tilemap_14: -1345209224
+      Living props room tilemap_15: -1036168067
+      Living props room tilemap_16: -643550679
+      Living props room tilemap_17: 2080746592
+      Living props room tilemap_18: -630146528
+      Living props room tilemap_19: 500017962
+      Living props room tilemap_2: -1611256576
+      Living props room tilemap_20: 2136634712
+      Living props room tilemap_21: 762724317
+      Living props room tilemap_22: -1359579259
+      Living props room tilemap_23: 610967861
+      Living props room tilemap_24: -1433750125
+      Living props room tilemap_25: 1742706859
+      Living props room tilemap_26: 1842549485
+      Living props room tilemap_27: -2072119898
+      Living props room tilemap_28: 1263324596
+      Living props room tilemap_29: 227456088
+      Living props room tilemap_3: 1290658274
+      Living props room tilemap_30: -768325956
+      Living props room tilemap_31: 803462484
+      Living props room tilemap_32: 661758524
+      Living props room tilemap_33: 399453042
+      Living props room tilemap_34: -141648517
+      Living props room tilemap_35: -2024114655
+      Living props room tilemap_4: 424610334
+      Living props room tilemap_5: 1456601260
+      Living props room tilemap_6: -1850679087
+      Living props room tilemap_7: 1927981873
+      Living props room tilemap_8: 498035432
+      Living props room tilemap_9: 745763949
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
