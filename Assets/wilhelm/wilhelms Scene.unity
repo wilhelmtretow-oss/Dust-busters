@@ -11152,7 +11152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 4
-  footSteps: {fileID: 0}
+  footSteps: {fileID: 357915020}
   lastDir: {x: 0, y: 0}
 --- !u!50 &1276989990
 Rigidbody2D:
