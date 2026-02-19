@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 6162261592627759606}
   - component: {fileID: 3913560531201121330}
   - component: {fileID: 490386794974944999}
+  - component: {fileID: 4850712332692876484}
   m_Layer: 0
-  m_Name: Static Sprite
+  m_Name: Small_Stain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,3 +139,17 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4850712332692876484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4097968195725268821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8215ea41334303b49a4b2b7d13e5e1f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FadeOnPlayerTrigger
+  collidingTag: Player
+  fadeDuration: 3
