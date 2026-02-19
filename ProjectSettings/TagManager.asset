@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 3
   tags:
   - New tag
+  - Dirt
+  - Bullet
   layers:
   - Default
   - TransparentFX
