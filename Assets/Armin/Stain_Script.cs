@@ -13,4 +13,12 @@ public class Stain_Script : MonoBehaviour
     {
         
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            Object.Destroy(gameObject);
+        }
+    }
 }
