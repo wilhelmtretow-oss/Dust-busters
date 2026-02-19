@@ -29,6 +29,8 @@ public class FadeOnPlayerTrigger : MonoBehaviour
             if (fadeTimer >= fadeDuration)
             {
                 Destroy(gameObject);
+                FindObjectOfType<CleaningManager>().AddCleanProgress();
+
             }
         }
     }
