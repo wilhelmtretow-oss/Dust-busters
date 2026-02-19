@@ -1,23 +1,41 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class CleaningManager : MonoBehaviour
 {
-    public Slider progressBar;
-    public int totalObjectsToClean = 5;
+    public Slider progressBar;        // Progressbaren
+    public Text progressText;         // Text ovanför baren
 
-    private int cleanedObjects = 0;
+    public int totalObjectsToClean = 10;  // Totalt antal objekt i scenen
+    private int cleanedObjects = 0;       // Räknar hur många som städats
 
-    public void AddCleanProgress()
+    void Start()
+    {
+        progressBar.minValue = 0;
+        progressBar.maxValue = 100;
+        progressBar.value = 0;
+
+        if (progressText != null)
+            progressText.text = "0% städat";
+    }
+
+    public void AddCleanedObject()
     {
         cleanedObjects++;
 
-        float progress = (float)cleanedObjects / totalObjectsToClean;
-        progressBar.value = progress * 100f;
+        if (cleanedObjects > totalObjectsToClean)
+            cleanedObjects = totalObjectsToClean;
+
+        // Beräkna procent
+        float progressPercent = ((float)cleanedObjects / totalObjectsToClean) * 100f;
+        progressBar.value = progressPercent;
+
+        if (progressText != null)
+            progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
 
         if (cleanedObjects >= totalObjectsToClean)
         {
-            Debug.Log("Allt �r st�dat!");
+            Debug.Log("Allt är städat! 🎉");
         }
     }
 }
