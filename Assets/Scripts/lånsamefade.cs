@@ -1,54 +1,43 @@
-using System.Collections;
 using UnityEngine;
 
-public class FadeOnPlayerTrigger : MonoBehaviour
+public class CleanableObject : MonoBehaviour
 {
-    public string collidingTag = "Player";
-    public float fadeDuration = 10f;
+    public string playerTag = "Player";
+    public float fadeDuration = 2f; // Hur lång tid objektet fadear bort
 
     private SpriteRenderer sr;
-    private float fadeTimer = 0f;
-    private bool isPlayerOnTop = false;
-    private Color originalColor;
+    private bool isFading = false;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        originalColor = sr.color;
     }
 
-    void Update()
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (isPlayerOnTop)
+        if (collision.CompareTag(playerTag) && !isFading)
         {
-            fadeTimer += Time.deltaTime;
+            isFading = true;
+            // Lägg till progress
+            FindObjectOfType<CleaningManager>().AddCleanedObject();
+            // Starta fade
+            StartCoroutine(FadeAndDestroy());
+        }
+    }
 
-            float alpha = Mathf.Lerp(1f, 0f, fadeTimer / fadeDuration);
+    private System.Collections.IEnumerator FadeAndDestroy()
+    {
+        float timer = 0f;
+        Color originalColor = sr.color;
+
+        while (timer < fadeDuration)
+        {
+            timer += Time.deltaTime;
+            float alpha = Mathf.Lerp(1f, 0f, timer / fadeDuration);
             sr.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
-
-            if (fadeTimer >= fadeDuration)
-            {
-                Destroy(gameObject);
-                FindObjectOfType<CleaningManager>().AddCleanedObject();
-
-
-            }
+            yield return null;
         }
-    }
 
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.CompareTag(collidingTag))
-        {
-            isPlayerOnTop = true;
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag(collidingTag))
-        {
-            isPlayerOnTop = false;
-        }
+        Destroy(gameObject);
     }
 }
