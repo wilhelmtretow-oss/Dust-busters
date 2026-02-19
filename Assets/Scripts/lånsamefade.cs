@@ -3,7 +3,7 @@ using UnityEngine;
 public class CleanableObject : MonoBehaviour
 {
     public string playerTag = "Player";
-    public float fadeDuration = 2f; // Hur lång tid objektet fadear bort
+    public float fadeDuration = 2f; // Tid för fade
 
     private SpriteRenderer sr;
     private bool isFading = false;
@@ -18,8 +18,6 @@ public class CleanableObject : MonoBehaviour
         if (collision.CompareTag(playerTag) && !isFading)
         {
             isFading = true;
-            // Lägg till progress
-            FindObjectOfType<CleaningManager>().AddCleanedObject();
             // Starta fade
             StartCoroutine(FadeAndDestroy());
         }
@@ -38,6 +36,8 @@ public class CleanableObject : MonoBehaviour
             yield return null;
         }
 
+        // När fade är klart, uppdatera progress och förstör objekt
+        FindObjectOfType<CleaningManager>().AddCleanedObject();
         Destroy(gameObject);
     }
 }
