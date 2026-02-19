@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public Vector2 lastDir;
     private Rigidbody2D rb;
     private Health health;
-    private Animator animator;
     private SpriteRenderer spriteRenderer;
 
     void Awake()
@@ -23,7 +22,6 @@ public class PlayerController : MonoBehaviour
         // Get components
         rb = GetComponent<Rigidbody2D>();
         health = GetComponent<Health>();
-        animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         lastDir = Vector2.down; // Set to players starting direction
     }
@@ -49,16 +47,10 @@ public class PlayerController : MonoBehaviour
         if (moveDir.sqrMagnitude > 0.01f)
         {
             lastDir = moveDir;
-            animator.SetFloat("xMove", moveDir.x);
-            animator.SetFloat("yMove", moveDir.y);
-            spriteRenderer.flipX = moveDir.x > 0f ? true : false; // Remove if right faced animations is present
-            if (footSteps != null) footSteps.UnPause();
         }
         else
-        {
-            footSteps.Pause();
+        { 
         }
-        animator.SetBool("moving", moveDir.sqrMagnitude > 0.01f ? true : false);
     }
 
     void FixedUpdate()
