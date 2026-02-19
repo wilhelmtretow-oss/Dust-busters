@@ -72,12 +72,12 @@ public class PlayerController : MonoBehaviour
         // Move with mouse position
         //rb.MovePosition(Vector2.MoveTowards(rb.position, movePos, speed * Time.fixedDeltaTime));
 
-        /*
+        
         // Set rotation based on moving vector
         float angle = Mathf.Atan2(moveDir.y, moveDir.x) * Mathf.Rad2Deg;
         if(moveDir.magnitude > 0f)
             rb.rotation = angle;
-        */
+        
 
         /*
         // Set rotation based on mouse position
