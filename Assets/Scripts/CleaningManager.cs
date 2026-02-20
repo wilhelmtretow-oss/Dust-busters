@@ -55,5 +55,6 @@ public class CleaningManager : MonoBehaviour
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("ContractSelection");
+        Debug.Log("butonworks");
     }
 }
