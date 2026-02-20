@@ -316,4 +316,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 4
+  footSteps: {fileID: 0}
   lastDir: {x: 0, y: 0}
