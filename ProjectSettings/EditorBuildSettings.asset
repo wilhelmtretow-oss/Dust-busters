@@ -15,8 +15,8 @@ EditorBuildSettings:
     path: Assets/Sakarias/ContractSelection.unity
     guid: 5ded7b355b14eea4facd6efefd453bb0
   - enabled: 1
-    path: Assets/wilhelm/wilhelms Scene.unity
-    guid: 193069b32f0eb094ebdff31d41d634d9
+    path: Assets/Armin/House 1.unity
+    guid: 32a24eb3bd5c5714dbac06fab51ae23d
   - enabled: 1
     path: Assets/Armin/House 2.unity
     guid: ad033e80e66d5424e8e3bd11dd0ea3f8
