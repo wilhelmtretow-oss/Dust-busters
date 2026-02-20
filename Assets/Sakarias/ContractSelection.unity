@@ -300,9 +300,9 @@ MonoBehaviour:
   - Medium
   - Hard
   sceneNames:
-  - TestScene1
-  - TestScene2
-  - TestScene3
+  - House 1
+  - House 2
+  - House 3
 --- !u!114 &504083487
 MonoBehaviour:
   m_ObjectHideFlags: 0
