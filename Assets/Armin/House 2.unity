@@ -14357,6 +14357,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6236992383882638486, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 6236992383882638486, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6691162706678924572, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 32
@@ -14364,6 +14372,18 @@ PrefabInstance:
     - target: {fileID: 6691162706678924572, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 487
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261981882954539305, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 8261981882954539305, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8261981882954539305, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -131,6 +131,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: WinMenu
       objectReference: {fileID: 0}
+    - target: {fileID: 1023205652216032528, guid: ba531d1738c088f4f8df87c30417b9b3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 1023205652216032528, guid: ba531d1738c088f4f8df87c30417b9b3, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2885344107240703374, guid: ba531d1738c088f4f8df87c30417b9b3, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -193,11 +201,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2885344107240703374, guid: ba531d1738c088f4f8df87c30417b9b3, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -966.9754
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2885344107240703374, guid: ba531d1738c088f4f8df87c30417b9b3, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -534.4012
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 2885344107240703374, guid: ba531d1738c088f4f8df87c30417b9b3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -218,6 +226,14 @@ PrefabInstance:
     - target: {fileID: 2974458820824722484, guid: ba531d1738c088f4f8df87c30417b9b3, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: GoToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 3055131724210383909, guid: ba531d1738c088f4f8df87c30417b9b3, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 3055131724210383909, guid: ba531d1738c088f4f8df87c30417b9b3, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
