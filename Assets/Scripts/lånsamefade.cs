@@ -3,41 +3,55 @@ using UnityEngine;
 public class CleanableObject : MonoBehaviour
 {
     public string playerTag = "Player";
-    public float fadeDuration = 2f; // Tid för fade
+    public float fadeDuration = 2f;
 
     private SpriteRenderer sr;
-    private bool isFading = false;
+    private bool playerOnObject = false;
+    private float fadeTimer = 0f;
+    private Color originalColor;
+    private bool isDestroyed = false;
 
     void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        originalColor = sr.color;
+    }
+
+    void Update()
+    {
+        if (playerOnObject && !isDestroyed)
+        {
+            fadeTimer += Time.deltaTime;
+
+            float alpha = Mathf.Lerp(1f, 0f, fadeTimer / fadeDuration);
+            sr.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
+
+            if (fadeTimer >= fadeDuration)
+            {
+                isDestroyed = true;
+
+                // Uppdatera progress FÖRST
+                FindObjectOfType<CleaningManager>().AddCleanedObject();
+
+                // Förstör objektet
+                Destroy(gameObject);
+            }
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(playerTag) && !isFading)
+        if (collision.CompareTag(playerTag))
         {
-            isFading = true;
-            // Starta fade
-            StartCoroutine(FadeAndDestroy());
+            playerOnObject = true;
         }
     }
 
-    private System.Collections.IEnumerator FadeAndDestroy()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        float timer = 0f;
-        Color originalColor = sr.color;
-
-        while (timer < fadeDuration)
+        if (collision.CompareTag(playerTag))
         {
-            timer += Time.deltaTime;
-            float alpha = Mathf.Lerp(1f, 0f, timer / fadeDuration);
-            sr.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
-            yield return null;
+            playerOnObject = false;
         }
-
-        // När fade är klart, uppdatera progress och förstör objekt
-        FindObjectOfType<CleaningManager>().AddCleanedObject();
-        Destroy(gameObject);
     }
 }
