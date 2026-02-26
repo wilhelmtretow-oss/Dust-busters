@@ -1,21 +1,25 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class CleaningManager : MonoBehaviour
 {
     [Header("UI")]
     public Slider progressBar;
-    public Text progressText;
+    public TMP_Text progressText;
     public GameObject winMenu;
 
-    private CleanableObject[] allObjects;  // Alla städbara objekt i scenen
     private int cleanedObjects = 0;
+    private int totalCleanables = 0;
 
     void Start()
     {
-        // Hämta alla CleanableObject i scenen
-        allObjects = FindObjectsOfType<CleanableObject>();
+        // Hämta alla CleanableObject och EnemyHealth i scenen
+        CleanableObject[] cleanables = FindObjectsOfType<CleanableObject>();
+        EnemyHealth[] enemies = FindObjectsOfType<EnemyHealth>();
+
+        totalCleanables = cleanables.Length + enemies.Length; // total antal objekt + fiender
 
         progressBar.minValue = 0;
         progressBar.maxValue = 100;
@@ -28,19 +32,13 @@ public class CleaningManager : MonoBehaviour
             winMenu.SetActive(false);
     }
 
-    // Kallas av CleanableObject efter fade
+    // Kallas när ett objekt eller fiende blir städat/död
     public void AddCleanedObject()
     {
         cleanedObjects++;
 
-        float totalObjects = allObjects.Length;
-
-        float progressPercent = ((float)cleanedObjects / totalObjects) * 100f;
-
-        Debug.Log($"Cleaned {cleanedObjects}/{allObjects.Length}, progress: {progressPercent}%");
-
-        if (progressPercent > 100f)
-            progressPercent = 100f;
+        float progressPercent = ((float)cleanedObjects / totalCleanables) * 100f;
+        if (progressPercent > 100f) progressPercent = 100f;
 
         if (progressBar != null)
             progressBar.value = progressPercent;
@@ -48,13 +46,12 @@ public class CleaningManager : MonoBehaviour
         if (progressText != null)
             progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
 
-        if (cleanedObjects >= totalObjects && winMenu != null)
+        if (cleanedObjects >= totalCleanables && winMenu != null)
             winMenu.SetActive(true);
     }
 
     public void GoToMainMenu()
     {
         SceneManager.LoadScene("ContractSelection");
-        Debug.Log("butonworks");
     }
 }

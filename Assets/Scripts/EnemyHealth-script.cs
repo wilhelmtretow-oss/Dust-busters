@@ -21,7 +21,10 @@ public class EnemyHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
-            FindObjectOfType<CleaningManager>().AddCleanedObject();
+            // Lägg till progress
+            CleaningManager manager = FindObjectOfType<CleaningManager>();
+            if (manager != null)
+                manager.AddCleanedObject();
         }
     }
 
