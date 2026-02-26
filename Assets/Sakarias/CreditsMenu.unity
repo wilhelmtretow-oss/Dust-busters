@@ -774,7 +774,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -4.507}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -166, y: 29}
+  m_AnchoredPosition: {x: -165.99997, y: 29}
   m_SizeDelta: {x: -1487.72, y: -980.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &287275778
@@ -1187,7 +1187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -8.848}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -508, y: -200}
+  m_AnchoredPosition: {x: -507.99997, y: -200}
   m_SizeDelta: {x: -1487.72, y: -980.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1092893435
@@ -2820,7 +2820,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 1, b: 0.8253169, a: 1}
+  m_Color: {r: 0.267683, g: 0.2600142, b: 0.5320754, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
