@@ -1,74 +1,59 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.AI;
-using UnityEngine.Events;
-
-[RequireComponent(typeof(AudioSource))]
 
 public class Health : MonoBehaviour
 {
-    public int health = 100;
+    [Header("Health Settings")]
     public int maxHealth = 100;
-    [HideInInspector] public bool isDead = false;
-    public GameObject deathEffect;
-    public AudioClip hurtSound;
-    public AudioClip deathSound;
-    public UnityEvent onTakeDamage;
-    public UnityEvent onDeath;
-    private AudioSource audioSource;
-    private Animator animator;
-    private NavMeshAgent nav;
 
+    public int CurrentHealth { get; private set; }
+    public bool isDead { get; private set; }
 
-    void Awake()
+    void Start()
     {
-        // Get component references
-        audioSource = GetComponent<AudioSource>();
-        animator = GetComponent<Animator>();
-        nav = GetComponentInParent<NavMeshAgent>();
-
-        // Events
-        if (onTakeDamage == null)
-            onTakeDamage = new UnityEvent();
-        if (onDeath == null)
-            onDeath = new UnityEvent();
+        CurrentHealth = maxHealth;
+        isDead = false;
     }
 
     public void TakeDamage(int amount)
     {
-        // Don't do anything if dead
-        if (isDead)
-            return;
+        if (isDead) return;
 
-        // Reduce health by amount of damage
-        health -= amount;
+        CurrentHealth -= amount;
 
-        // Is dead?
-        if (health <= 0)
+        if (CurrentHealth < 0)
+            CurrentHealth = 0;
+
+        Debug.Log("Player health: " + CurrentHealth);
+
+        if (CurrentHealth == 0)
         {
-            isDead = true;
-
-            // Stop updating navmesh for objects with pathfinding
-            if (nav) nav.isStopped = true;
-
-            onDeath.Invoke();
-        }
-        // Got hit
-        else
-        {
-            onTakeDamage.Invoke();
+            Die();
         }
     }
 
-    // Call this on pick up event
-    public void AddHealth(int hp)
+    void Die()
     {
-        health = (int)Mathf.Clamp(health += hp, 0, maxHealth);
+        if (isDead) return;
+
+        isDead = true;
+        Debug.Log("Player died!");
+
+        // Stäng av rörelse om du vill
+        // GetComponent<PlayerMovement>().enabled = false;
+
+        // Här kan du aktivera Game Over UI
+        // FindObjectOfType<GameManager>().GameOver();
     }
 
-    // Call this on last frame of death animation
-    public void DestroyObject()
+    public void Heal(int amount)
     {
-        Destroy(gameObject);
+        if (isDead) return;
+
+        CurrentHealth += amount;
+
+        if (CurrentHealth > maxHealth)
+            CurrentHealth = maxHealth;
+
+        Debug.Log("Player healed: " + CurrentHealth);
     }
 }

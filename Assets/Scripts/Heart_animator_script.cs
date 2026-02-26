@@ -14,7 +14,7 @@ public class HeartsAnimator : MonoBehaviour
 
     void Update()
     {
-        float frame = (float)healthScript.health / (float)healthScript.maxHealth;
+        float frame = (float)healthScript.CurrentHealth / (float)healthScript.maxHealth;
         DisplayHearts(Mathf.RoundToInt(frame * nrOfHearts));
     }
 
