@@ -294,7 +294,7 @@ MonoBehaviour:
   obstacleLayerMasks:
     serializedVersion: 2
     m_Bits: 64
-  viewDistance: 5
+  viewDistance: 10
   attackRange: 1
   damage: 10
   attackCooldown: 1
