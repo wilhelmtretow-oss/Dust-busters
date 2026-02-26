@@ -5,7 +5,13 @@ public class GameManager : MonoBehaviour
 {
     public void RestartGame()
     {
-        Time.timeScale = 1f; // Starta tiden igen
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void GoToContracts()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("ContractSelection");
     }
 }
