@@ -26,8 +26,8 @@ public class HelpAdvance : MonoBehaviour
         }
         else
         {
-            helpText.text = ""; 
-            currentLine = 0;    
+            helpText.text = dialogueLines[0];
+            currentLine = 0;
         }
     }
 }
