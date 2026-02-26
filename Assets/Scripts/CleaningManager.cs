@@ -9,6 +9,7 @@ public class CleaningManager : MonoBehaviour
     public Slider progressBar;
     public TMP_Text progressText;
     public GameObject winMenu;
+    public GameObject minimapContainer;
 
     private int cleanedObjects = 0;
     private int totalCleanables = 0;
@@ -47,7 +48,14 @@ public class CleaningManager : MonoBehaviour
             progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
 
         if (cleanedObjects >= totalCleanables && winMenu != null)
+        {
             winMenu.SetActive(true);
+
+            if (minimapContainer != null)
+                minimapContainer.SetActive(false);
+
+            Time.timeScale = 0f; // Pausar spelet 
+        }
     }
 
     public void GoToMainMenu()

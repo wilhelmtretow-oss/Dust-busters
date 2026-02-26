@@ -8,6 +8,8 @@ public class Health : MonoBehaviour
     [Header("Game Over UI")]
     public GameObject gameOverPanel;
 
+    public GameObject minimapContainer;
+
     public int CurrentHealth { get; private set; }
     public bool isDead { get; private set; }
 
@@ -57,6 +59,7 @@ public class Health : MonoBehaviour
         // Show Game Over
         if (gameOverPanel != null)
             gameOverPanel.SetActive(true);
+            minimapContainer.SetActive(false);
 
         // Stop the game
         Time.timeScale = 0f;
