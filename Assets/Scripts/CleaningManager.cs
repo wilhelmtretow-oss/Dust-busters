@@ -16,6 +16,12 @@ public class CleaningManager : MonoBehaviour
 
     void Start()
     {
+        if (totalCleanables == 0)
+        {
+            Debug.LogWarning("No cleanable objects or enemies found!");
+            totalCleanables = 1;
+        }
+
         // Hämta alla CleanableObject och EnemyHealth i scenen
         CleanableObject[] cleanables = FindObjectsOfType<CleanableObject>();
         EnemyHealth[] enemies = FindObjectsOfType<EnemyHealth>();
