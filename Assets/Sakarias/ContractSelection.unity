@@ -295,14 +295,17 @@ MonoBehaviour:
   - Small Home
   - Basic House
   - Big Mansion
+  - Massive School
   possibleDiff:
   - Easy
   - Medium
   - Hard
+  - Nightmare
   sceneNames:
-  - House 3
+  - Brendale apparment
   - House 1
-  - House 2
+  - Mourout Large house
+  - Ridgeton School
 --- !u!114 &504083487
 MonoBehaviour:
   m_ObjectHideFlags: 0
