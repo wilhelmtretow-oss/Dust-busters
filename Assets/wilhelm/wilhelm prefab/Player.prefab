@@ -144,7 +144,6 @@ GameObject:
   - component: {fileID: 4030310460692759941}
   - component: {fileID: 1418941809906354760}
   - component: {fileID: 3104726019743421719}
-  - component: {fileID: 1176034367002864654}
   - component: {fileID: 4235964287028466160}
   m_Layer: 0
   m_Name: Player
@@ -375,18 +374,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8c42a89f5efe064dbe31296e490f15e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
-  health: 100
   maxHealth: 100
-  isDead: 0
-  deathEffect: {fileID: 0}
-  hurtSound: {fileID: 0}
-  deathSound: {fileID: 0}
-  onTakeDamage:
-    m_PersistentCalls:
-      m_Calls: []
-  onDeath:
-    m_PersistentCalls:
-      m_Calls: []
+  gameOverPanel: {fileID: 0}
 --- !u!50 &3104726019743421719
 Rigidbody2D:
   serializedVersion: 5
@@ -414,42 +403,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!58 &1176034367002864654
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7064011635636087370}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.2890625
 --- !u!114 &4235964287028466160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -462,12 +415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08bda488702b07c4298c0a80010d8682, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  playerController: {fileID: 0}
   bulletPrefab: {fileID: 7289107324045477140, guid: 88107d840accf50478d19744054949ea, type: 3}
   bulletSpawnPoint: {fileID: 8757955512688087539}
-  shootSound: {fileID: 0}
-  clickSound: {fileID: 0}
-  reloadSound: {fileID: 0}
   ammo: 100
   autoFire: 1
   shootingRate: 0.2

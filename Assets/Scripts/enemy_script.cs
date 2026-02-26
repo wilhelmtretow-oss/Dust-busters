@@ -17,8 +17,11 @@ public class Enemy : MonoBehaviour
 
     private void Awake()
     {
-        nav = GetComponentInParent<NavMeshAgent>();
-        if (!nav) Debug.LogWarning("No NavMeshAgent found on parent.");
+        nav = GetComponent<NavMeshAgent>();
+        if (!nav) Debug.LogWarning("No NavMeshAgent found on this GameObject.");
+
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        if (rb) rb.isKinematic = true; // säkerställ 2D-fysik inte stör agent
     }
 
     void Start()
@@ -31,11 +34,8 @@ public class Enemy : MonoBehaviour
         if (player != null)
         {
             playerHealth = player.GetComponent<Health>();
-        }
-
-        if (!playerHealth)
-        {
-            Debug.LogWarning("Player does not have a Health component!");
+            if (!playerHealth)
+                Debug.LogWarning("Player does not have a Health component!");
         }
     }
 
@@ -47,32 +47,35 @@ public class Enemy : MonoBehaviour
         float distance = Vector2.Distance(transform.position, player.transform.position);
 
         // Line of sight check
-        RaycastHit2D hit = Physics2D.Linecast(
-            transform.position,
-            player.transform.position,
-            obstacleLayerMasks
-        );
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position, obstacleLayerMasks);
 
-        if (!hit) // nothing blocking view
+        if (hit) // hinder blockerar sikt
         {
-            // If within attack range → attack
-            if (distance <= attackRange)
-            {
-                nav.isStopped = true;
+            nav.isStopped = true;
+        }
+        else if (distance <= attackRange) // attackera
+        {
+            nav.isStopped = true;
+            TryAttack();
+        }
+        else if (distance <= viewDistance) // jaga
+        {
+            nav.isStopped = false;
+            nav.destination = player.transform.position;
+        }
+        else
+        {
+            nav.isStopped = true; // utanför viewDistance
+        }
+    }
 
-                if (Time.time >= lastAttackTime + attackCooldown)
-                {
-                    playerHealth.TakeDamage(damage);
-                    lastAttackTime = Time.time;
-                    Debug.Log("Enemy dealt damage!");
-                }
-            }
-            // If within view distance → chase
-            else if (distance <= viewDistance)
-            {
-                nav.isStopped = false;
-                nav.destination = player.transform.position;
-            }
+    private void TryAttack()
+    {
+        if (Time.time >= lastAttackTime + attackCooldown)
+        {
+            playerHealth.TakeDamage(damage);
+            lastAttackTime = Time.time;
+            Debug.Log("Enemy dealt damage!");
         }
     }
 }
