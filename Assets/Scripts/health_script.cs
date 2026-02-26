@@ -5,6 +5,9 @@ public class Health : MonoBehaviour
     [Header("Health Settings")]
     public int maxHealth = 100;
 
+    [Header("Game Over UI")]
+    public GameObject gameOverPanel;
+
     public int CurrentHealth { get; private set; }
     public bool isDead { get; private set; }
 
@@ -12,6 +15,9 @@ public class Health : MonoBehaviour
     {
         CurrentHealth = maxHealth;
         isDead = false;
+
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
     }
 
     public void TakeDamage(int amount)
@@ -20,15 +26,13 @@ public class Health : MonoBehaviour
 
         CurrentHealth -= amount;
 
-        if (CurrentHealth < 0)
-            CurrentHealth = 0;
-
-        Debug.Log("Player health: " + CurrentHealth);
-
-        if (CurrentHealth == 0)
+        if (CurrentHealth <= 0)
         {
+            CurrentHealth = 0;
             Die();
         }
+
+        Debug.Log("Player health: " + CurrentHealth);
     }
 
     void Die()
@@ -36,24 +40,25 @@ public class Health : MonoBehaviour
         if (isDead) return;
 
         isDead = true;
+
         Debug.Log("Player died!");
 
-        // Stäng av rörelse om du vill
-        // GetComponent<PlayerMovement>().enabled = false;
+        // Stop the player movement if the component exists
+        var movement = GetComponent("PlayerMovement");
+        if (movement != null)
+        {
+            var movementBehaviour = movement as Behaviour;
+            if (movementBehaviour != null)
+            {
+                movementBehaviour.enabled = false;
+            }
+        }
 
-        // Här kan du aktivera Game Over UI
-        // FindObjectOfType<GameManager>().GameOver();
-    }
+        // Show Game Over
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(true);
 
-    public void Heal(int amount)
-    {
-        if (isDead) return;
-
-        CurrentHealth += amount;
-
-        if (CurrentHealth > maxHealth)
-            CurrentHealth = maxHealth;
-
-        Debug.Log("Player healed: " + CurrentHealth);
+        // Stop the game
+        Time.timeScale = 0f;
     }
 }
