@@ -1,100 +1,78 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
     private NavMeshAgent nav;
-    private Animator animator;
     private GameObject player;
-    private bool isAttacking = false;
+    private Health playerHealth;
 
     public LayerMask obstacleLayerMasks;
     public float viewDistance = 5f;
     public float attackRange = 2f;
     public int damage = 10;
+    public float attackCooldown = 1f;
 
+    private float lastAttackTime;
 
     private void Awake()
     {
-        // Get component references
         nav = GetComponentInParent<NavMeshAgent>();
-        if (!nav) Debug.Log("No NavMeshAgent component found in Enemy parent object");
-        animator = GetComponent<Animator>();
-        if (!animator) Debug.Log("No Animator component was found on Enemy");
+        if (!nav) Debug.LogWarning("No NavMeshAgent found on parent.");
     }
-
 
     void Start()
     {
-        // Uncomment if you don't need to manualy overwrite rotation
         nav.updateRotation = false;
         nav.updateUpAxis = false;
 
-        // Get player
-        player = GameObject.Find("Player");
-        if (!player) Debug.Log("No gameObject tagged 'Player' was found for Enemy.");
-    }
+        player = GameObject.FindGameObjectWithTag("Player");
 
+        if (player != null)
+        {
+            playerHealth = player.GetComponent<Health>();
+        }
+
+        if (!playerHealth)
+        {
+            Debug.LogWarning("Player does not have a Health component!");
+        }
+    }
 
     void Update()
     {
-        // Send data to Animator
-        if (animator) animator.SetFloat("move", nav.velocity.magnitude);
+        if (!player || playerHealth == null || playerHealth.isDead)
+            return;
 
-        // Stop updating if Player is missing or dead
-        if (!player || player.GetComponent<Health>().isDead) return;
+        float distance = Vector2.Distance(transform.position, player.transform.position);
 
-        // Create a Linecast between this enemy and player
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position, obstacleLayerMasks);
+        // Line of sight check
+        RaycastHit2D hit = Physics2D.Linecast(
+            transform.position,
+            player.transform.position,
+            obstacleLayerMasks
+        );
 
-        // Linecast to target was succesful (did not hit anything on obstacleLayerMasks)
-        if (!hit)
+        if (!hit) // nothing blocking view
         {
-            // Play Attack animation if within attack range
-            if (Vector2.Distance(transform.position, player.transform.position) < attackRange)
+            // If within attack range → attack
+            if (distance <= attackRange)
             {
-                // Is not already attacking
-                if (!isAttacking)
+                nav.isStopped = true;
+
+                if (Time.time >= lastAttackTime + attackCooldown)
                 {
-                    // Set attack animation
-                    if (animator) animator.SetTrigger("attack");
-                    isAttacking = true;
+                    playerHealth.TakeDamage(damage);
+                    lastAttackTime = Time.time;
+                    Debug.Log("Enemy dealt damage!");
                 }
-                // Draw a debug line from enemy to player 
-                Debug.DrawLine(transform.position, player.transform.position, Color.red);
             }
-            // Move to target position if within view distance
-            else if (Vector2.Distance(transform.position, player.transform.position) < viewDistance)
+            // If within view distance → chase
+            else if (distance <= viewDistance)
             {
+                nav.isStopped = false;
                 nav.destination = player.transform.position;
-                Debug.DrawLine(transform.position, player.transform.position);
             }
         }
-        // Obstacle in the way
-        else
-        {
-            // Draw a debug line from enemy to obstacle
-            Debug.DrawLine(transform.position, hit.point);
-        }
-    }
-
-
-    // todo: Call this method on a suitable frame in attack animation
-    public void Attack()
-    {
-        if (!player) return;
-
-        // Still within attack range and player is still alive?
-        if (Vector2.Distance(transform.position, player.transform.position) < attackRange
-            && !player.GetComponent<Health>().isDead)
-        {
-            // Player takes damage
-            player.GetComponent<Health>().TakeDamage(damage);
-        }
-
-        // is not longer attacking
-        isAttacking = false;
     }
 }
