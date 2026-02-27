@@ -306,6 +306,11 @@ MonoBehaviour:
   - House 1
   - Mourout Large house
   - Ridgeton School
+  baseMoneyPerMap: 01000000020000000300000004000000
+  difficultyMultipliers:
+  - 1
+  - 1.5
+  - 2
 --- !u!114 &504083487
 MonoBehaviour:
   m_ObjectHideFlags: 0
