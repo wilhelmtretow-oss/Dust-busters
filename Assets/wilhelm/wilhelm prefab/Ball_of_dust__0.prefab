@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3246786557122927073}
   - component: {fileID: 4222012831874177625}
   - component: {fileID: -4607132332182545329}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Ball_of_dust__0
   m_TagString: Bullet
   m_Icon: {fileID: 0}
