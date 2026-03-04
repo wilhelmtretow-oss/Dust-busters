@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3102233701260218124, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5727393696348906740, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
       propertyPath: m_Name
       value: Big_Stain (2)
@@ -223,6 +227,10 @@ PrefabInstance:
     - target: {fileID: 2882003535689842281, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102233701260218124, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5727393696348906740, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
       propertyPath: m_Name
@@ -1429,6 +1437,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (3)
@@ -1497,6 +1509,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (8)
@@ -1576,6 +1592,10 @@ PrefabInstance:
     - target: {fileID: 1450330560542177408, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_Name
       value: Medium_Stain (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2960,6 +2980,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_Stain (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
       value: -9.638408
@@ -3013,6 +3037,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (6)
@@ -3070,6 +3098,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (4)
@@ -3127,6 +3159,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (7)
@@ -3188,6 +3224,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_Stain (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
       value: -18.54
@@ -3233,11 +3273,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
---- !u!4 &1064727489 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3776656270517173856, guid: c94850b660b5419498958460c7d3191c, type: 3}
-  m_PrefabInstance: {fileID: 1601252713}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1193644579
 GameObject:
   m_ObjectHideFlags: 0
@@ -4781,7 +4816,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96bd1373a520d1c4eb6f111ecbfc6aca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Camera_top_down_follow
-  player: {fileID: 1064727489}
+  player: {fileID: 1601252714}
   smoothing: 5
 --- !u!1 &1227802880
 GameObject:
@@ -11353,6 +11388,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_Stain (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.780094
@@ -11409,6 +11448,10 @@ PrefabInstance:
     - target: {fileID: 1450330560542177408, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_Name
       value: Medium_Stain (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
@@ -13925,6 +13968,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (2)
@@ -13982,6 +14029,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (5)
@@ -14087,6 +14138,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5608001244192180382, guid: c94850b660b5419498958460c7d3191c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 5608001244192180382, guid: c94850b660b5419498958460c7d3191c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.49
+      objectReference: {fileID: 0}
     - target: {fileID: 7064011635636087370, guid: c94850b660b5419498958460c7d3191c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -14096,6 +14155,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c94850b660b5419498958460c7d3191c, type: 3}
+--- !u!4 &1601252714 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5608001244192180382, guid: c94850b660b5419498958460c7d3191c, type: 3}
+  m_PrefabInstance: {fileID: 1601252713}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1709316650
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14107,6 +14171,10 @@ PrefabInstance:
     - target: {fileID: 1450330560542177408, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_Name
       value: Medium_Stain (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14378,6 +14446,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (1)
@@ -14504,6 +14576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_Stain (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.06
@@ -14560,6 +14636,10 @@ PrefabInstance:
     - target: {fileID: 1450330560542177408, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_Name
       value: Medium_Stain (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalScale.x
@@ -14622,6 +14702,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (9)
@@ -14683,6 +14767,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_Stain (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.112452
@@ -14739,6 +14827,10 @@ PrefabInstance:
     - target: {fileID: 1450330560542177408, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_Name
       value: Medium_Stain (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14833,6 +14925,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3102233701260218124, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5727393696348906740, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
       propertyPath: m_Name
       value: Big_Stain (1)
@@ -14850,6 +14946,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
       value: Small_Stain (10)
@@ -14915,6 +15015,10 @@ PrefabInstance:
     - target: {fileID: 1450330560542177408, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_Name
       value: Medium_Stain
+      objectReference: {fileID: 0}
+    - target: {fileID: 4987591545093802571, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7734095723294669416, guid: c4e56393ab9e3794db6748d2be790824, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14988,6 +15092,10 @@ PrefabInstance:
     - target: {fileID: 490386794974944999, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913560531201121330, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4097968195725268821, guid: b5007ac60104b7b40ae8be3bb6891d66, type: 3}
       propertyPath: m_Name
@@ -15092,6 +15200,10 @@ PrefabInstance:
     - target: {fileID: 2882003535689842281, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3102233701260218124, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5727393696348906740, guid: 7881de06f612310438eb8a58d22dd0f5, type: 3}
       propertyPath: m_Name
