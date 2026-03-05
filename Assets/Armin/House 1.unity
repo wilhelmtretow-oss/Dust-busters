@@ -4875,6 +4875,11 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &1486447124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3751104845345026819, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+  m_PrefabInstance: {fileID: 1223280977}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1504296833 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3601338212337623237, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
@@ -10098,6 +10103,10 @@ PrefabInstance:
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1400901247}
+    - target: {fileID: 6690817134080825906, guid: c94850b660b5419498958460c7d3191c, type: 3}
+      propertyPath: minimapContainer
+      value: 
+      objectReference: {fileID: 840432783315205211}
     - target: {fileID: 7064011635636087370, guid: c94850b660b5419498958460c7d3191c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -11237,7 +11246,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CleaningManager
   progressBar: {fileID: 2141550593}
   progressText: {fileID: 2141550592}
-  winMenu: {fileID: 0}
+  winMenu: {fileID: 1486447124}
   minimapContainer: {fileID: 840432783315205211}
 --- !u!4 &3668304724948693602
 Transform:
