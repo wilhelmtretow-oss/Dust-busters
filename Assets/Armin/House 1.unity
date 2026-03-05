@@ -11704,6 +11704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 288972359713032268}
   - component: {fileID: 3739250728634321864}
+  - component: {fileID: 7553071626636176265}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -11711,6 +11712,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7553071626636176265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7553071626636176264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be93cac457d6704490475ee771c1a03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EscGameOver
+  gameOverCanvas: {fileID: 1400901247}
 --- !u!222 &7816245613865815837
 CanvasRenderer:
   m_ObjectHideFlags: 0
