@@ -12298,7 +12298,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4465449997372822864, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -118.7
+      value: -118.70001
       objectReference: {fileID: 0}
     - target: {fileID: 4465449997372822864, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -16985,6 +16985,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7500595559572473448, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
   m_PrefabInstance: {fileID: 1803890736}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1459471397 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2504237440898021786, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
+  m_PrefabInstance: {fileID: 1337206822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1477305088 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 614608710229115547, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
@@ -18661,6 +18666,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8679995213274313145}
   - component: {fileID: 5734023254319493693}
+  - component: {fileID: 8679995213274313146}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -18888,6 +18894,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8679995213274313146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488103074041909885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be93cac457d6704490475ee771c1a03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EscGameOver
+  gameOverCanvas: {fileID: 1198833099}
+  minimapCanvas: {fileID: 1459471397}
 --- !u!4 &9221347241215760065
 Transform:
   m_ObjectHideFlags: 0
