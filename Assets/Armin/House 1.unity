@@ -2721,6 +2721,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 812968812}
     m_Modifications:
+    - target: {fileID: 1279901516506715103, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_text
+      value: Tillbaka till kontrakt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994230922657559711, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3739250728634321864}
+    - target: {fileID: 1994230922657559711, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToContracts
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994230922657559711, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3751104845345026819, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_Name
       value: WinMenu 1 (1)
@@ -2728,6 +2744,14 @@ PrefabInstance:
     - target: {fileID: 3751104845345026819, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186245326535333695, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3739250728634321864}
+    - target: {fileID: 4186245326535333695, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 7500595559572473448, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_Pivot.x
@@ -2990,6 +3014,22 @@ PrefabInstance:
     - target: {fileID: 2429043762592862474, guid: e60ca582f57596d4790836f50c283e14, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -312
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449999342080407449, guid: e60ca582f57596d4790836f50c283e14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3739250728634321864}
+    - target: {fileID: 2449999342080407449, guid: e60ca582f57596d4790836f50c283e14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToContracts
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524250599208024093, guid: e60ca582f57596d4790836f50c283e14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3739250728634321864}
+    - target: {fileID: 2524250599208024093, guid: e60ca582f57596d4790836f50c283e14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 2607224478605309065, guid: e60ca582f57596d4790836f50c283e14, type: 3}
       propertyPath: m_Name
@@ -10766,7 +10806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5884678581343976325, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 22.9
+      value: 31.3
       objectReference: {fileID: 0}
     - target: {fileID: 6064647400403851542, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
       propertyPath: m_AnchorMax.y
