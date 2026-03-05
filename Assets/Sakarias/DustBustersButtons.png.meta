@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6c5b9336b6b4cfd48a63fce9f34f9c40
+guid: f547c354dc0297d4e9d17c86c1fd7d08
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: buttons_0
+      name: DustBustersButtons_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +112,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 056e4de0cde5567468418ec1a980a404
-      internalID: 616365704
+      spriteID: 87fa98d9a4cf94f4c8dae0e13a0c7d94
+      internalID: -1457484083
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_1
+      name: DustBustersButtons_1
       rect:
         serializedVersion: 2
         x: 96
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 53a237b40e6950a499d236ef1161c15c
-      internalID: -16788059
+      spriteID: c6a10ca5db318044ab657993e46567c5
+      internalID: 1474021445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_2
+      name: DustBustersButtons_2
       rect:
         serializedVersion: 2
         x: 0
@@ -156,14 +156,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc2cd35fdebe8e64fb13bb43af41dfde
-      internalID: 336243232
+      spriteID: d8408d62775370a499388b908ef87e96
+      internalID: 1756893755
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: buttons_3
+      name: DustBustersButtons_3
       rect:
         serializedVersion: 2
         x: 96
@@ -178,8 +178,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86fcf5cce0bca864b9e969da374c85b8
-      internalID: 892778978
+      spriteID: 62a4a76e0100a994e8115dea5ee99d0d
+      internalID: -1594848339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DustBustersButtons_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a0b5e0f5096e2478430e1e58d91316
+      internalID: 1618437808
       vertices: []
       indices: 
       edges: []
@@ -188,7 +210,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 791ede4e48c4f8842985d7e74800c96e
+    spriteID: 150e16d20bb4de846abebf71e1976904
     internalID: 0
     vertices: []
     indices: 
@@ -200,10 +222,11 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      buttons_0: 616365704
-      buttons_1: -16788059
-      buttons_2: 336243232
-      buttons_3: 892778978
+      DustBustersButtons_0: -1457484083
+      DustBustersButtons_1: 1474021445
+      DustBustersButtons_2: 1756893755
+      DustBustersButtons_3: -1594848339
+      DustBustersButtons_4: 1618437808
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
