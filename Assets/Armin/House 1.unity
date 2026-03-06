@@ -629,6 +629,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 529427526324539234, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 776346424473869941, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -2717,6 +2721,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 812968812}
     m_Modifications:
+    - target: {fileID: 1279901516506715103, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_text
+      value: Tillbaka till kontrakt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994230922657559711, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3739250728634321864}
+    - target: {fileID: 1994230922657559711, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToContracts
+      objectReference: {fileID: 0}
+    - target: {fileID: 1994230922657559711, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: GameManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3751104845345026819, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_Name
       value: WinMenu 1 (1)
@@ -2724,6 +2744,14 @@ PrefabInstance:
     - target: {fileID: 3751104845345026819, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4186245326535333695, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3739250728634321864}
+    - target: {fileID: 4186245326535333695, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 7500595559572473448, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_Pivot.x
@@ -2986,6 +3014,22 @@ PrefabInstance:
     - target: {fileID: 2429043762592862474, guid: e60ca582f57596d4790836f50c283e14, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -312
+      objectReference: {fileID: 0}
+    - target: {fileID: 2449999342080407449, guid: e60ca582f57596d4790836f50c283e14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3739250728634321864}
+    - target: {fileID: 2449999342080407449, guid: e60ca582f57596d4790836f50c283e14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToContracts
+      objectReference: {fileID: 0}
+    - target: {fileID: 2524250599208024093, guid: e60ca582f57596d4790836f50c283e14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3739250728634321864}
+    - target: {fileID: 2524250599208024093, guid: e60ca582f57596d4790836f50c283e14, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
       objectReference: {fileID: 0}
     - target: {fileID: 2607224478605309065, guid: e60ca582f57596d4790836f50c283e14, type: 3}
       propertyPath: m_Name
@@ -4871,6 +4915,11 @@ MonoBehaviour:
   m_Area: 1
   m_IgnoreFromBuild: 0
   m_AffectedAgents: ffffffff
+--- !u!1 &1486447124 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3751104845345026819, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+  m_PrefabInstance: {fileID: 1223280977}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1504296833 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3601338212337623237, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
@@ -10094,6 +10143,10 @@ PrefabInstance:
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 1400901247}
+    - target: {fileID: 6690817134080825906, guid: c94850b660b5419498958460c7d3191c, type: 3}
+      propertyPath: minimapContainer
+      value: 
+      objectReference: {fileID: 840432783315205211}
     - target: {fileID: 7064011635636087370, guid: c94850b660b5419498958460c7d3191c, type: 3}
       propertyPath: m_Name
       value: Player
@@ -10753,7 +10806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5884678581343976325, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 22.9
+      value: 31.3
       objectReference: {fileID: 0}
     - target: {fileID: 6064647400403851542, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
       propertyPath: m_AnchorMax.y
@@ -10833,10 +10886,10 @@ RectTransform:
   - {fileID: 4430990501481039418}
   m_Father: {fileID: 6367021932930434425}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -50, y: 50}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &574678932669389427
 MonoBehaviour:
@@ -11233,7 +11286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CleaningManager
   progressBar: {fileID: 2141550593}
   progressText: {fileID: 2141550592}
-  winMenu: {fileID: 0}
+  winMenu: {fileID: 1486447124}
   minimapContainer: {fileID: 840432783315205211}
 --- !u!4 &3668304724948693602
 Transform:
@@ -11306,7 +11359,7 @@ RectTransform:
   m_GameObject: {fileID: 2504237441861187153}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90.78994}
-  m_LocalScale: {x: 1.0403225, y: 1.0403225, z: 0.00033063098}
+  m_LocalScale: {x: 0.9606338, y: 0.9606338, z: 0.00030530465}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8878374032820914361}
@@ -11314,7 +11367,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3, y: 2}
+  m_AnchoredPosition: {x: -73, y: 34}
   m_SizeDelta: {x: -248, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4488385436701887010
@@ -11555,16 +11608,16 @@ RectTransform:
   m_GameObject: {fileID: 6383408007181609204}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 90.78994}
-  m_LocalScale: {x: 1, y: 1, z: 0.00031781584}
+  m_LocalScale: {x: 2.8444, y: 2.8444, z: 0.00090399536}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 300405955438895211}
   m_Father: {fileID: 8230993111047471762}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -52, y: 52}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 814, y: -397}
+  m_SizeDelta: {x: -1820, y: -980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6383408007181609204
 GameObject:
@@ -11651,6 +11704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 288972359713032268}
   - component: {fileID: 3739250728634321864}
+  - component: {fileID: 7553071626636176265}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -11658,6 +11712,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7553071626636176265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7553071626636176264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be93cac457d6704490475ee771c1a03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EscGameOver
+  gameOverCanvas: {fileID: 1400901247}
 --- !u!222 &7816245613865815837
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11695,10 +11762,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -11763,16 +11830,16 @@ RectTransform:
   m_GameObject: {fileID: 8312300355750404848}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9079804, y: 0.9079804, z: 0.9079804}
+  m_LocalScale: {x: 2.6949766, y: 2.6949766, z: 2.6949766}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2708888523823176461}
   m_Father: {fileID: 4465449998536333979}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 306, y: -154}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 779, y: -383}
+  m_SizeDelta: {x: -1572, y: -1060}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8926806439235862333
 Canvas:
