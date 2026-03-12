@@ -10862,15 +10862,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6064647400403851542, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 10
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6064647400403851542, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.32083452
       objectReference: {fileID: 0}
     - target: {fileID: 6064647400403851542, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -144.79999
+      value: -6.8
       objectReference: {fileID: 0}
     - target: {fileID: 6064647400403851542, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -4.799988
+      value: -5.2
       objectReference: {fileID: 0}
     - target: {fileID: 8032502207903577723, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
       propertyPath: m_TargetGraphic
@@ -11483,7 +11487,7 @@ MonoBehaviour:
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
   m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: 0
+  m_TextStyleHashCode: -1183493901
   m_overrideHtmlColors: 0
   m_faceColor:
     serializedVersion: 2
@@ -11777,7 +11781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EscGameOver
   gameOverCanvas: {fileID: 1400901247}
-  minimapCanvas: {fileID: 0}
+  minimapCanvas: {fileID: 840432783315205211}
 --- !u!222 &7816245613865815837
 CanvasRenderer:
   m_ObjectHideFlags: 0
