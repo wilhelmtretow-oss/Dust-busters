@@ -215,3 +215,4 @@ MonoBehaviour:
   damage: 15
   attackCooldown: 2
   rotation: 0
+  fixedRotation: -90

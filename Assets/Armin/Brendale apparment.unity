@@ -568,6 +568,10 @@ PrefabInstance:
       propertyPath: rotation
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 971637482374973762, guid: 87b7629ae0a1ef246bfae03b5383b8b6, type: 3}
+      propertyPath: fixedRotation
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 2359237776321135543, guid: 87b7629ae0a1ef246bfae03b5383b8b6, type: 3}
       propertyPath: maxHealth
       value: 150
