@@ -26,5 +26,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Armin/Ridgeton School.unity
     guid: efbec5bac78c45b47ad30d74d96f9c5e
+  - enabled: 1
+    path: Assets/Sakarias/ShopScene.unity
+    guid: 52f019861df75384ab5df83d7c1fdfc1
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
