@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UIElements;
 
 public class Enemy : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Enemy : MonoBehaviour
     public float attackRange = 2f;
     public int damage = 10;
     public float attackCooldown = 1f;
+    public bool rotation = false;
 
     private float lastAttackTime;
 
@@ -62,6 +64,12 @@ public class Enemy : MonoBehaviour
         {
             nav.isStopped = false;
             nav.destination = player.transform.position;
+            if (rotation)
+            {
+                Vector2 direction = player.transform.position - transform.position;
+                float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.Euler(0, 0, angle);
+            }
         }
         else
         {
