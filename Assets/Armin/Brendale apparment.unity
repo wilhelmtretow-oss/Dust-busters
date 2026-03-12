@@ -11924,6 +11924,63 @@ RectTransform:
   m_AnchoredPosition: {x: -0.0000014328, y: 10}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &2776699879647932105
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5620296
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.2986102
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4433741513142849461, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7239776059592391779, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+      propertyPath: m_Name
+      value: Stink Bug
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
 --- !u!1001 &2819513865046745244
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14624,3 +14681,4 @@ SceneRoots:
   - {fileID: 8363611543484456124}
   - {fileID: 1683849343}
   - {fileID: 677369813}
+  - {fileID: 2776699879647932105}
