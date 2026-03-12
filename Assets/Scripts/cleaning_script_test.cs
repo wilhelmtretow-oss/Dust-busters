@@ -6,9 +6,11 @@ public class DirtCleanable : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
     [Header("Cleaning Settings")]
-    public int radius = 4;             // hur stor yta som rensas per punkt
-    public int samples = 7;            // punkter över bilens bredd
-    public float cleanThreshold = 0.1f; // när objektet räknas som städat
+    public float cleaningWidth = 1.0f;     // bredd på dammsugaren
+    public int samples = 7;                // punkter över bilens bredd
+    public int radius = 4;                  // pixel-radius per punkt
+    public float cleanThreshold = 0.1f;    // när objektet räknas som städat
+    public float backOffset = 0.05f;       // hur långt bakom maskinen städningen börjar
 
     private Texture2D dirtTexture;
     private bool isDestroyed = false;
@@ -19,6 +21,7 @@ public class DirtCleanable : MonoBehaviour
     {
         cleaningManager = FindObjectOfType<CleaningManager>();
 
+        // Skapa en instans av texturen som kan ändras
         dirtTexture = Instantiate(spriteRenderer.sprite.texture);
         width = dirtTexture.width;
         height = dirtTexture.height;
@@ -47,16 +50,15 @@ public class DirtCleanable : MonoBehaviour
                     Vector3 worldPoint = Vector3.Lerp(bottomLeft, bottomRight, t);
 
                     // Liten offset bakåt för borstar
-                    worldPoint -= collision.transform.up * 0.05f;
+                    worldPoint -= collision.transform.up * backOffset;
 
-                    // Rensa en mjuk cirkel runt punkten
-                    CleanSmooth(worldPoint);
+                    Clean(worldPoint);
                 }
             }
         }
     }
 
-    void CleanSmooth(Vector2 worldPos)
+    void Clean(Vector2 worldPos)
     {
         Vector2 localPos = transform.InverseTransformPoint(worldPos);
         int centerX = Mathf.RoundToInt((localPos.x + 0.5f) * width);
