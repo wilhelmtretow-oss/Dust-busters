@@ -65,7 +65,7 @@ public class Enemy : MonoBehaviour
         {
             nav.isStopped = false;
             nav.destination = player.transform.position;
-            if (rotation)
+            if (rotation) // roterar fiender som behöver det
             {
                 Vector2 direction = player.transform.position - transform.position;
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;

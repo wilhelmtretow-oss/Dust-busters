@@ -6,6 +6,8 @@ public class EnemyHealth : MonoBehaviour
 {
     public int maxHealth = 50;      // max HP
     private int currentHealth;
+    public bool deathDrop = false;
+    [SerializeField] private GameObject stinkCloudPrefab;
 
     void Start()
     {
@@ -25,6 +27,10 @@ public class EnemyHealth : MonoBehaviour
             CleaningManager manager = FindObjectOfType<CleaningManager>();
             if (manager != null)
                 manager.AddCleanedObject();
+            if (deathDrop && stinkCloudPrefab != null)
+            {
+                GameObject Stink_cloud = Instantiate(stinkCloudPrefab, transform.position, Quaternion.identity);
+            }
         }
     }
 
