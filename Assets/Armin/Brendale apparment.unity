@@ -6790,7 +6790,7 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 64
       m_TileSpriteIndex: 64
-      m_TileMatrixIndex: 3
+      m_TileMatrixIndex: 2
       m_TileColorIndex: 2
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
@@ -8255,7 +8255,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 3
+  - m_RefCount: 4
     m_Data:
       e00: -1
       e01: 0
@@ -8273,7 +8273,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 18
+  - m_RefCount: 17
     m_Data:
       e00: 0
       e01: -1
@@ -14144,7 +14144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EscGameOver
   gameOverCanvas: {fileID: 4953036137664862015}
-  minimapCanvas: {fileID: 0}
+  minimapCanvas: {fileID: 840432781790521518}
 --- !u!224 &8878374033242463308
 RectTransform:
   m_ObjectHideFlags: 0
