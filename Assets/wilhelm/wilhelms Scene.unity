@@ -18386,6 +18386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7852417303337089523}
   - component: {fileID: 6566175154572704375}
+  - component: {fileID: 7852417303337089524}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -19686,6 +19687,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7852417303337089524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 11865491931437623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be93cac457d6704490475ee771c1a03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EscGameOver
+  gameOverCanvas: {fileID: 1179331800}
+  minimapCanvas: {fileID: 596003908573604770}
 --- !u!114 &7858353839831412556
 MonoBehaviour:
   m_ObjectHideFlags: 0
