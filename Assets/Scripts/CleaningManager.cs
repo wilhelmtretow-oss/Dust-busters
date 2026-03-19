@@ -16,17 +16,22 @@ public class CleaningManager : MonoBehaviour
 
     void Start()
     {
-        if (totalCleanables == 0)
+        cleanedObjects = 0;
+
+        // 🔥 RÄKNA ALLA OBJEKT DIREKT (fixar din bug)
+        totalCleanables =
+            FindObjectsOfType<DirtCleanable>().Length +
+            FindObjectsOfType<CleanableObject>().Length +
+            FindObjectsOfType<EnemyHealth>().Length;
+
+        // Safety så det aldrig blir 0
+        if (totalCleanables <= 0)
         {
-            Debug.LogWarning("No cleanable objects or enemies found!");
+            Debug.LogWarning("No cleanable objects found!");
             totalCleanables = 1;
         }
 
-        // Hämta alla CleanableObject och EnemyHealth i scenen
-        CleanableObject[] cleanables = FindObjectsOfType<CleanableObject>();
-        EnemyHealth[] enemies = FindObjectsOfType<EnemyHealth>();
-
-        totalCleanables = cleanables.Length + enemies.Length; // total antal objekt + fiender
+        Debug.Log("Total cleanables: " + totalCleanables);
 
         progressBar.minValue = 0;
         progressBar.maxValue = 100;
@@ -39,13 +44,14 @@ public class CleaningManager : MonoBehaviour
             winMenu.SetActive(false);
     }
 
-    // Kallas när ett objekt eller fiende blir städat/död
     public void AddCleanedObject()
     {
         cleanedObjects++;
 
+        Debug.Log("Cleaned: " + cleanedObjects + " / " + totalCleanables);
+
         float progressPercent = ((float)cleanedObjects / totalCleanables) * 100f;
-        if (progressPercent > 100f) progressPercent = 100f;
+        progressPercent = Mathf.Clamp(progressPercent, 0f, 100f);
 
         if (progressBar != null)
             progressBar.value = progressPercent;
@@ -53,14 +59,16 @@ public class CleaningManager : MonoBehaviour
         if (progressText != null)
             progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
 
-        if (cleanedObjects >= totalCleanables && winMenu != null)
+        // 🔥 EXTRA SÄKER CHECK
+        if (totalCleanables > 0 && cleanedObjects >= totalCleanables)
         {
-            winMenu.SetActive(true);
+            if (winMenu != null)
+                winMenu.SetActive(true);
 
             if (minimapContainer != null)
                 minimapContainer.SetActive(false);
 
-            Time.timeScale = 0f; // Pausar spelet 
+            Time.timeScale = 0f;
         }
     }
 
