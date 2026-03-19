@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
 public class DirtCleanable : MonoBehaviour
 {
@@ -6,11 +6,11 @@ public class DirtCleanable : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
     [Header("Cleaning Settings")]
-    public float cleaningWidth = 1.0f;     // bredd på dammsugaren
-    public int samples = 7;                // punkter över bilens bredd
-    public int radius = 4;                  // pixel-radius per punkt
-    public float cleanThreshold = 0.1f;    // när objektet räknas som städat
-    public float backOffset = 0.05f;       // hur långt bakom maskinen städningen börjar
+    public float cleaningWidth = 1.0f;
+    public int samples = 7;
+    public int radius = 4;
+    public float cleanThreshold = 0.1f;
+    public float backOffset = 0.05f;
 
     private Texture2D dirtTexture;
     private bool isDestroyed = false;
@@ -21,7 +21,11 @@ public class DirtCleanable : MonoBehaviour
     {
         cleaningManager = FindObjectOfType<CleaningManager>();
 
-        // Skapa en instans av texturen som kan ändras
+        // ðŸ”¥ REGISTRERA DIG SJÃ„LV
+        if (cleaningManager != null)
+            cleaningManager.RegisterCleanable();
+
+        // Skapa en instans av texturen som kan Ã¤ndras
         dirtTexture = Instantiate(spriteRenderer.sprite.texture);
         width = dirtTexture.width;
         height = dirtTexture.height;
@@ -49,7 +53,7 @@ public class DirtCleanable : MonoBehaviour
                     float t = (float)i / (samples - 1);
                     Vector3 worldPoint = Vector3.Lerp(bottomLeft, bottomRight, t);
 
-                    // Liten offset bakåt för borstar
+                    // Liten offset bakÃ¥t fÃ¶r borstar
                     worldPoint -= collision.transform.up * backOffset;
 
                     Clean(worldPoint);
@@ -96,16 +100,22 @@ public class DirtCleanable : MonoBehaviour
 
         Color[] pixels = dirtTexture.GetPixels();
         int dirtyPixels = 0;
+
         foreach (Color c in pixels)
+        {
             if (c.a > 0.1f)
                 dirtyPixels++;
+        }
 
         float dirtyPercent = (float)dirtyPixels / pixels.Length;
 
         if (dirtyPercent < cleanThreshold)
         {
             isDestroyed = true;
-            cleaningManager?.AddCleanedObject();
+
+            if (cleaningManager != null)
+                cleaningManager.AddCleanedObject();
+
             Destroy(gameObject);
         }
     }

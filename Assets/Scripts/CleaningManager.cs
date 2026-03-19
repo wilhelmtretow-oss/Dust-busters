@@ -16,17 +16,8 @@ public class CleaningManager : MonoBehaviour
 
     void Start()
     {
-        if (totalCleanables == 0)
-        {
-            Debug.LogWarning("No cleanable objects or enemies found!");
-            totalCleanables = 1;
-        }
-
-        // Hämta alla CleanableObject och EnemyHealth i scenen
-        CleanableObject[] cleanables = FindObjectsOfType<CleanableObject>();
-        EnemyHealth[] enemies = FindObjectsOfType<EnemyHealth>();
-
-        totalCleanables = cleanables.Length + enemies.Length; // total antal objekt + fiender
+        cleanedObjects = 0;
+        totalCleanables = 0; // 🔥 vi börjar på 0 istället
 
         progressBar.minValue = 0;
         progressBar.maxValue = 100;
@@ -37,6 +28,12 @@ public class CleaningManager : MonoBehaviour
 
         if (winMenu != null)
             winMenu.SetActive(false);
+    }
+
+    // 🔥 NY – registrera objekt
+    public void RegisterCleanable()
+    {
+        totalCleanables++;
     }
 
     // Kallas när ett objekt eller fiende blir städat/död
