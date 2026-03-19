@@ -1,23 +1,29 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 
-public class EscGameOver : MonoBehaviour
+public class EscToLose : MonoBehaviour
 {
-    public GameObject gameOverCanvas;
-    public GameObject minimapCanvas;
+    public GameObject loseCanvas;
+
+    void Start()
+    {
+        Time.timeScale = 1f;
+    }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            // Om minimapen är aktiv gör inget
-            if (minimapCanvas.activeSelf)
-            {
-                return;
-            }
+            Debug.Log("ESC tryckt!");
 
-            // Annars visa game over
-            gameOverCanvas.SetActive(true);
-            Time.timeScale = 0f;
+            if (loseCanvas != null)
+            {
+                loseCanvas.SetActive(true);
+                Time.timeScale = 0f;
+            }
+            else
+            {
+                Debug.LogError("LoseCanvas Ã¤r inte kopplad!");
+            }
         }
     }
 }
