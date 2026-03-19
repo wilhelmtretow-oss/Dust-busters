@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 1550477301087976199}
   - component: {fileID: 8875191940649939906}
   - component: {fileID: -7463757545816518141}
-  - component: {fileID: 1979926081854694576}
+  - component: {fileID: -8879046390308352255}
+  - component: {fileID: -4084469279957470239}
   m_Layer: 0
   m_Name: Stink cloud
   m_TagString: Untagged
@@ -129,7 +130,7 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.29
---- !u!114 &1979926081854694576
+--- !u!114 &-8879046390308352255
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -138,8 +139,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 5884573944105438797}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8215ea41334303b49a4b2b7d13e5e1f1, type: 3}
+  m_Script: {fileID: 11500000, guid: a1e6a8732ffecf349b55f4e6735e1aa9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CleanableObject
-  playerTag: Player
-  fadeDuration: 2
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 30
+  deathDrop: 0
+  stinkCloudPrefab: {fileID: 0}
+--- !u!114 &-4084469279957470239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5884573944105438797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b02d214af50b4c749bd210bcb946c13f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  obstacleLayerMasks:
+    serializedVersion: 2
+    m_Bits: 0
+  viewDistance: 5
+  attackRange: 1
+  damage: 10
+  attackCooldown: 0.5
+  rotation: 0
+  fixedRotation: 0
