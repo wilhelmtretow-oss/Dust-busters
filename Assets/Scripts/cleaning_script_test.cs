@@ -23,7 +23,6 @@ public class DirtCleanable : MonoBehaviour
 
         // 🔥 REGISTRERA DIG SJÄLV
         if (cleaningManager != null)
-            cleaningManager.RegisterCleanable();
 
         // Skapa en instans av texturen som kan ändras
         dirtTexture = Instantiate(spriteRenderer.sprite.texture);
