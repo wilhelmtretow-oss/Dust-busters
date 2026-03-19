@@ -10,10 +10,10 @@ public class CleanableObject : MonoBehaviour
     private float fadeTimer = 0f;
     private Color originalColor;
     private bool isDestroyed = false;
-    public bool gas = false;
 
     void Start()
     {
+        GetComponent<CleaningManager>();
         sr = GetComponent<SpriteRenderer>();
         originalColor = sr.color;
     }
@@ -36,13 +36,6 @@ public class CleanableObject : MonoBehaviour
 
                 // Förstör objektet
                 Destroy(gameObject);
-            }
-            else if (gas)
-            {
-                fadeTimer += Time.deltaTime;
-
-                Mathf.Lerp(1f, 0f, fadeTimer / fadeDuration);
-                sr.color = new Color(originalColor.r, originalColor.g, originalColor.b, alpha);
             }
         }
     }
