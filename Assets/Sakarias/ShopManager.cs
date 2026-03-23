@@ -105,6 +105,7 @@ public class ShopManager : MonoBehaviour
             ShopData.currentStock[slotIndex]--;
             stockTexts[slotIndex].text = ShopData.currentStock[slotIndex].ToString();
             purchaseCounts[index]++;
+            UpgradeManager.Instance.AddUpgrade(index);
             ShowPurchaseText(index);
             if (ShopData.currentStock[slotIndex] <= 0)
             {
