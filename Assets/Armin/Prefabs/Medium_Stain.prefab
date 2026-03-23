@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7734095723294669416}
   - component: {fileID: 4987591545093802571}
-  - component: {fileID: 2460771430638521367}
   - component: {fileID: -9116088894718724745}
+  - component: {fileID: -2027590142636730873}
   m_Layer: 7
   m_Name: Medium_Stain
   m_TagString: Untagged
@@ -93,20 +93,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &2460771430638521367
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450330560542177408}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8215ea41334303b49a4b2b7d13e5e1f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FadeOnPlayerTrigger
-  playerTag: Player
-  fadeDuration: 5
 --- !u!61 &-9116088894718724745
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -153,3 +139,22 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.46, y: 0.5}
   m_EdgeRadius: 0
+--- !u!114 &-2027590142636730873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1450330560542177408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b0e1c19258c27447ac00ace12938429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DirtCleanable
+  playerTag: Player
+  spriteRenderer: {fileID: 0}
+  cleaningWidth: 2
+  samples: 10
+  radius: 4
+  cleanThreshold: 0.1
+  backOffset: 0

@@ -19699,8 +19699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0be93cac457d6704490475ee771c1a03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EscGameOver
-  gameOverCanvas: {fileID: 1179331800}
-  minimapCanvas: {fileID: 596003908573604770}
+  loseCanvas: {fileID: 1179331800}
 --- !u!114 &7858353839831412556
 MonoBehaviour:
   m_ObjectHideFlags: 0
