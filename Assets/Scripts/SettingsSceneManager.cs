@@ -10,7 +10,7 @@ public class SettingsSceneManager : MonoBehaviour
 
     void Start()
     {
-        // Load saved settings
+        
         volumeSlider.value = PlayerPrefs.GetFloat("volume", 1f);
         enemyToggle.isOn = PlayerPrefs.GetInt("enemies", 1) == 1;
         fullscreenToggle.isOn = Screen.fullScreen;

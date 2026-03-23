@@ -18,13 +18,13 @@ public class CleaningManager : MonoBehaviour
     {
         cleanedObjects = 0;
 
-        // 🔥 RÄKNA ALLA OBJEKT DIREKT (fixar din bug)
+      
         totalCleanables =
             FindObjectsOfType<DirtCleanable>().Length +
             FindObjectsOfType<CleanableObject>().Length +
             FindObjectsOfType<EnemyHealth>().Length;
 
-        // Safety så det aldrig blir 0
+       
         if (totalCleanables <= 0)
         {
             Debug.LogWarning("No cleanable objects found!");
@@ -59,7 +59,7 @@ public class CleaningManager : MonoBehaviour
         if (progressText != null)
             progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
 
-        // 🔥 EXTRA SÄKER CHECK
+        /
         if (totalCleanables > 0 && cleanedObjects >= totalCleanables)
         {
             if (winMenu != null)

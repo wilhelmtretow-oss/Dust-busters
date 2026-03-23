@@ -21,7 +21,7 @@ public class DirtCleanable : MonoBehaviour
     {
         cleaningManager = FindObjectOfType<CleaningManager>();
 
-        // 🔥 skapa skrivbar texture (fixar Unsupported GraphicsFormat)
+     
         Texture2D source = spriteRenderer.sprite.texture;
 
         dirtTexture = new Texture2D(
