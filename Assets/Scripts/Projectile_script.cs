@@ -46,10 +46,8 @@ public class Projectile_script : MonoBehaviour
 
         if (enemyHealth != null)
         {
-            
             enemyHealth.TakeDamage(damage);
 
-            
             if (knockBack > 0f)
             {
                 Rigidbody2D enemyRb = collision.gameObject.GetComponent<Rigidbody2D>();
@@ -58,7 +56,6 @@ public class Projectile_script : MonoBehaviour
             }
         }
 
-       
         Destroy(gameObject);
     }
 }

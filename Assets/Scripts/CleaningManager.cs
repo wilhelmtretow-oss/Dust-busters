@@ -59,7 +59,7 @@ public class CleaningManager : MonoBehaviour
         if (progressText != null)
             progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
 
-        /
+        
         if (totalCleanables > 0 && cleanedObjects >= totalCleanables)
         {
             if (winMenu != null)
