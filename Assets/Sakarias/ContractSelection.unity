@@ -719,6 +719,7 @@ MonoBehaviour:
     you better be careful...
   - Don't get scared once you open the door. I'll only let you go once you cleaned
     around 70% but you wont get all the money for it.
+  - Once the timer goes below one minute, BUST FASTER!!
   currentText: {fileID: 1461691797}
 --- !u!1 &629199084
 GameObject:
