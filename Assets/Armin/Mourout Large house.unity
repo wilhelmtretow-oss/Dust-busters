@@ -1730,6 +1730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dust Mess
       objectReference: {fileID: 0}
+    - target: {fileID: 3925146582453317813, guid: 9a7553a2200027744b24fe0aabf877dc, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3113,6 +3117,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shadow Dust (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5349868613862393771, guid: af2da99ea190be1448a30ecb15b76c9c, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3230,6 +3238,10 @@ PrefabInstance:
     - target: {fileID: 5349868613862393771, guid: af2da99ea190be1448a30ecb15b76c9c, type: 3}
       propertyPath: m_Name
       value: Shadow Dust (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5349868613862393771, guid: af2da99ea190be1448a30ecb15b76c9c, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -16217,6 +16229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dust Mess (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3925146582453317813, guid: 9a7553a2200027744b24fe0aabf877dc, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16378,6 +16394,10 @@ PrefabInstance:
     - target: {fileID: 3925146582453317813, guid: 9a7553a2200027744b24fe0aabf877dc, type: 3}
       propertyPath: m_Name
       value: Dust Mess (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3925146582453317813, guid: 9a7553a2200027744b24fe0aabf877dc, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17054,6 +17074,10 @@ PrefabInstance:
     - target: {fileID: 5349868613862393771, guid: af2da99ea190be1448a30ecb15b76c9c, type: 3}
       propertyPath: m_Name
       value: Shadow Dust
+      objectReference: {fileID: 0}
+    - target: {fileID: 5349868613862393771, guid: af2da99ea190be1448a30ecb15b76c9c, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

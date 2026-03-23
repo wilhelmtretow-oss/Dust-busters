@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DirtCleanable
   playerTag: Player
-  spriteRenderer: {fileID: 0}
+  spriteRenderer: {fileID: 3102233701260218124}
   cleaningWidth: 2
   samples: 10
   radius: 4
