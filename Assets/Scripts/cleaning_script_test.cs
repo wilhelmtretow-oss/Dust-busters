@@ -21,11 +21,19 @@ public class DirtCleanable : MonoBehaviour
     {
         cleaningManager = FindObjectOfType<CleaningManager>();
 
-        // 🔥 REGISTRERA DIG SJÄLV
-        if (cleaningManager != null)
+        // 🔥 skapa skrivbar texture (fixar Unsupported GraphicsFormat)
+        Texture2D source = spriteRenderer.sprite.texture;
 
-        // Skapa en instans av texturen som kan ändras
-        dirtTexture = Instantiate(spriteRenderer.sprite.texture);
+        dirtTexture = new Texture2D(
+            source.width,
+            source.height,
+            TextureFormat.RGBA32,
+            false
+        );
+
+        dirtTexture.SetPixels(source.GetPixels());
+        dirtTexture.Apply();
+
         width = dirtTexture.width;
         height = dirtTexture.height;
 
@@ -47,22 +55,32 @@ public class DirtCleanable : MonoBehaviour
                 Vector3 bottomLeft = box.bounds.min;
                 Vector3 bottomRight = new Vector3(box.bounds.max.x, box.bounds.min.y, box.bounds.min.z);
 
+                bool cleanedThisFrame = false;
+
                 for (int i = 0; i < samples; i++)
                 {
                     float t = (float)i / (samples - 1);
                     Vector3 worldPoint = Vector3.Lerp(bottomLeft, bottomRight, t);
 
-                    // Liten offset bakåt för borstar
                     worldPoint -= collision.transform.up * backOffset;
 
-                    Clean(worldPoint);
+                    if (Clean(worldPoint))
+                        cleanedThisFrame = true;
+                }
+
+                if (cleanedThisFrame)
+                {
+                    dirtTexture.Apply();
+                    CheckIfCleaned();
                 }
             }
         }
     }
 
-    void Clean(Vector2 worldPos)
+    bool Clean(Vector2 worldPos)
     {
+        bool changed = false;
+
         Vector2 localPos = transform.InverseTransformPoint(worldPos);
         int centerX = Mathf.RoundToInt((localPos.x + 0.5f) * width);
         int centerY = Mathf.RoundToInt((localPos.y + 0.5f) * height);
@@ -80,17 +98,21 @@ public class DirtCleanable : MonoBehaviour
             {
                 int dx = x - centerX;
                 int dy = y - centerY;
+
                 if (dx * dx + dy * dy <= rSquared)
                 {
                     Color c = dirtTexture.GetPixel(x, y);
+
                     if (c.a > 0)
+                    {
                         dirtTexture.SetPixel(x, y, Color.clear);
+                        changed = true;
+                    }
                 }
             }
         }
 
-        dirtTexture.Apply();
-        CheckIfCleaned();
+        return changed;
     }
 
     void CheckIfCleaned()
