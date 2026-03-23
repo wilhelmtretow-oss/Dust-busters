@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class DirtBall : MonoBehaviour
+public class Projectile_script : MonoBehaviour
 {
     public float bulletSpeed = 10f;      // hastighet på projektilen
     public int damage = 20;              // skada
@@ -14,15 +14,15 @@ public class DirtBall : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        //rb = GetComponent<Rigidbody2D>();
 
         // Räkna ut riktning mot musen
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0f; // viktigt, annars kan riktningen bli konstig
-        Vector2 direction = (mousePos - transform.position).normalized;
+        //Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //mousePos.z = 0f; // viktigt, annars kan riktningen bli konstig
+        //Vector2 direction = (mousePos - transform.position).normalized;
 
         // Skjut projektilen
-        rb.AddForce(direction * bulletSpeed, ForceMode2D.Impulse);
+        //rb.AddForce(direction * bulletSpeed, ForceMode2D.Impulse);
 
         // Förstöra projektilen efter lifeTime
         Destroy(gameObject, lifeTime);
@@ -30,6 +30,7 @@ public class DirtBall : MonoBehaviour
 
     void Update()
     {
+
         // Snurra projektilen för "damm-effekt"
         transform.Rotate(0, 0, 360 * Time.deltaTime);
     }
@@ -39,16 +40,16 @@ public class DirtBall : MonoBehaviour
         // Ignore Player
         if (collision.gameObject.CompareTag("Player"))
             return;
+        Debug.Log(collision.gameObject.name);
 
-        // Hämta EnemyHealth-komponent
         EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
 
         if (enemyHealth != null)
         {
-            // Ge skada
+            
             enemyHealth.TakeDamage(damage);
 
-            // Knockback
+            
             if (knockBack > 0f)
             {
                 Rigidbody2D enemyRb = collision.gameObject.GetComponent<Rigidbody2D>();
@@ -57,7 +58,7 @@ public class DirtBall : MonoBehaviour
             }
         }
 
-        // Förstöra projektilen vid kollision
+       
         Destroy(gameObject);
     }
 }

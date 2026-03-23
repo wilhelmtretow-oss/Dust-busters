@@ -6,7 +6,6 @@ public class Gun : MonoBehaviour
 {
     public GameObject bulletPrefab;
     public Transform bulletSpawnPoint;
-
     public int ammo = 100;
     public bool autoFire = true;
     public float shootingRate = 0.2f;
@@ -15,6 +14,10 @@ public class Gun : MonoBehaviour
     void Update()
     {
         shootingTimer -= Time.deltaTime;
+
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.z = 0f;
+      
 
         if (Input.GetButtonDown("Fire1"))
         {
@@ -34,29 +37,25 @@ public class Gun : MonoBehaviour
         if (ammo <= 0)
             return;
 
-        // 🔒 Säkerhetskontroller
         if (bulletPrefab == null || bulletSpawnPoint == null)
         {
             Debug.LogError("Bullet prefab or spawn point not assigned!");
             return;
         }
-
         if (Camera.main == null)
         {
             Debug.LogError("No camera tagged as MainCamera!");
             return;
         }
 
-        // Hämta musposition i världens koordinater
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0f; // viktigt i 2D
+        mousePos.z = 0f;
 
         Vector2 direction = (mousePos - bulletSpawnPoint.position).normalized;
-
-        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
-
-        Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.Euler(0, 0, angle));
-
+        //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
+        //GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.Euler(0, 0, angle));
+        GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
+        bullet.GetComponent<Rigidbody2D>().AddForce(direction * 5f, ForceMode2D.Impulse);
         ammo--;
         shootingTimer = shootingRate;
     }
