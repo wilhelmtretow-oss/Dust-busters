@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6162261592627759606}
   - component: {fileID: 3913560531201121330}
   - component: {fileID: 490386794974944999}
-  - component: {fileID: 4850712332692876484}
+  - component: {fileID: -8536008279114616269}
   m_Layer: 7
   m_Name: Small_Stain
   m_TagString: Untagged
@@ -139,7 +139,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &4850712332692876484
+--- !u!114 &-8536008279114616269
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -148,8 +148,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 4097968195725268821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8215ea41334303b49a4b2b7d13e5e1f1, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b0e1c19258c27447ac00ace12938429, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FadeOnPlayerTrigger
+  m_EditorClassIdentifier: Assembly-CSharp::DirtCleanable
   playerTag: Player
-  fadeDuration: 3
+  spriteRenderer: {fileID: 0}
+  cleaningWidth: 2
+  samples: 10
+  radius: 4
+  cleanThreshold: 0.1
+  backOffset: 0
