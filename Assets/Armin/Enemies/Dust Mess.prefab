@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8671765159335093280}
   m_Layer: 0
   m_Name: Dust Mess
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,6 +172,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 300
+  deathDrop: 0
+  stinkCloudPrefab: {fileID: 0}
 --- !u!195 &5742748158061968544
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -213,3 +215,5 @@ MonoBehaviour:
   attackRange: 1
   damage: 20
   attackCooldown: 2
+  rotation: 0
+  fixedRotation: 0
