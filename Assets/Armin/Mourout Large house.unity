@@ -11415,6 +11415,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Minimap Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 840432782352298896, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2504237440898021786, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -13817,10 +13821,10 @@ Tilemap:
   - first: {x: -13, y: -2, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 17
-      m_TileSpriteIndex: 18
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
+      m_TileIndex: 83
+      m_TileSpriteIndex: 83
+      m_TileMatrixIndex: 3
+      m_TileColorIndex: 1
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
@@ -15620,7 +15624,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: b5232d22ae49cc84189767cb1cdce3b0, type: 2}
   - m_RefCount: 6
     m_Data: {fileID: 11400000, guid: c4028ef97db571245bd54d93f9a1fd52, type: 2}
-  - m_RefCount: 6
+  - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: b49e1584f24e6fe4dbbae45f0939a45c, type: 2}
   - m_RefCount: 7
     m_Data: {fileID: 11400000, guid: 7dcd4d98a7a6a0c478587b566df3525f, type: 2}
@@ -15752,7 +15756,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 0e95b71b5801c8e46a0f016a7338cf03, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: dde6e098397e77b45953abce4b104844, type: 2}
-  - m_RefCount: 32
+  - m_RefCount: 33
     m_Data: {fileID: 11400000, guid: cf279c60564a43e40a61750ae77c9ef5, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 13
@@ -15791,7 +15795,7 @@ Tilemap:
     m_Data: {fileID: -2130443400, guid: c1e4d155c5f627543b2aa812341eac08, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: -745292305, guid: c1e4d155c5f627543b2aa812341eac08, type: 3}
-  - m_RefCount: 6
+  - m_RefCount: 5
     m_Data: {fileID: -194046363, guid: c1e4d155c5f627543b2aa812341eac08, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 1433195262, guid: c1e4d155c5f627543b2aa812341eac08, type: 3}
@@ -15921,10 +15925,10 @@ Tilemap:
     m_Data: {fileID: -40598179, guid: dff7c1f4c9468ad499340a5201701fb0, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1843747998, guid: dff7c1f4c9468ad499340a5201701fb0, type: 3}
-  - m_RefCount: 32
+  - m_RefCount: 33
     m_Data: {fileID: -927845041, guid: 163b7ea1cb4ebdc428f042c3b869843c, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 238
+  - m_RefCount: 237
     m_Data:
       e00: 1
       e01: 0
@@ -15978,7 +15982,7 @@ Tilemap:
       e31: 0
       e32: 0
       e33: 1
-  - m_RefCount: 29
+  - m_RefCount: 30
     m_Data:
       e00: -1
       e01: 0
@@ -15997,9 +16001,9 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 323
+  - m_RefCount: 322
     m_Data: {r: 1, g: 1, b: 1, a: 1}
-  - m_RefCount: 32
+  - m_RefCount: 33
     m_Data: {r: 0.93710685, g: 0.37425327, b: 0.4125801, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
@@ -16606,6 +16610,10 @@ PrefabInstance:
     - target: {fileID: 3616358276320058275, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
       propertyPath: m_Name
       value: Canvas 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3616358276320058275, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4602375962927864651, guid: 86481e1574be67b4c8d7013e39353938, type: 3}
       propertyPath: m_AnchorMax.x
