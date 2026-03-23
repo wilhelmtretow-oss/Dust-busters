@@ -401,7 +401,7 @@ GameObject:
   - component: {fileID: 56100102}
   - component: {fileID: 56100101}
   m_Layer: 5
-  m_Name: Image
+  m_Name: CoinImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1164,8 +1164,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.2
-  m_fontSizeBase: 56.2
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1438,8 +1438,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.2
-  m_fontSizeBase: 56.2
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3866,11 +3866,15 @@ MonoBehaviour:
   PurchaseText: {fileID: 785607887}
   purchaseCanvasGroup: {fileID: 785607890}
   itemNames:
-  - Attack Booster
+  - Attack Up
+  - Speed Up
   - Defence Up
-  - New Machine
-  itemPrices: fa0000005e010000bc020000
-  itemStocks: 030000000300000001000000
+  - Attack Speed Up
+  - 'Crit Chance Up '
+  - 'Crit Damage Up '
+  - Health Regeneration
+  itemPrices: fa0000005e0100005e010000900100005e0100005e010000f4010000
+  itemStocks: 03000000030000000300000003000000030000000300000002000000
 --- !u!114 &1809102313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4126,8 +4130,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.2
-  m_fontSizeBase: 56.2
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -4213,10 +4217,10 @@ RectTransform:
   - {fileID: 1659631384}
   m_Father: {fileID: 777864308}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 632.1562, y: -360.93747}
-  m_SizeDelta: {x: 424.25, y: 185.75}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 632.15625, y: -360.9375}
+  m_SizeDelta: {x: -1555.75, y: -928.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1975410963
 MonoBehaviour:
