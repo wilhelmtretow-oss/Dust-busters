@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/wilhelm/SettingsScene.unity
     guid: a5832f50ab0f4de4092cc7c843122249
+  - enabled: 1
+    path: Assets/Sakarias/EquipScene.unity
+    guid: 9510663e5b9f271418c0abe44d7c8218
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 164bc82c4cbf8ca49aa825eac6f9a5cb, type: 3}
   m_UseUCBPForAssetBundles: 0
