@@ -571,11 +571,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 274060439921756248, guid: d86dedb66f6e5e64f98bbf8b1bd3c942, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.7
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 274060439921756248, guid: d86dedb66f6e5e64f98bbf8b1bd3c942, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.2
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 1982295130397081651, guid: d86dedb66f6e5e64f98bbf8b1bd3c942, type: 3}
       propertyPath: m_Name
@@ -583,11 +583,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4947728488460379969, guid: d86dedb66f6e5e64f98bbf8b1bd3c942, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42
+      value: 0.18
       objectReference: {fileID: 0}
     - target: {fileID: 4947728488460379969, guid: d86dedb66f6e5e64f98bbf8b1bd3c942, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.8
+      value: -0.29
       objectReference: {fileID: 0}
     - target: {fileID: 7869054493684010606, guid: d86dedb66f6e5e64f98bbf8b1bd3c942, type: 3}
       propertyPath: m_LocalPosition.x
@@ -769,6 +769,63 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1001 &2115849555727832427
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3328823907958667241, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_Name
+      value: Racoon
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 27.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7787796344778663783, guid: 89272271151f02e4cb78f53473794c46, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 89272271151f02e4cb78f53473794c46, type: 3}
 --- !u!82 &2384606356426645016
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2013,3 +2070,4 @@ SceneRoots:
   - {fileID: 3119129045665495350}
   - {fileID: 3964379236874826493}
   - {fileID: 7781093695567155964}
+  - {fileID: 2115849555727832427}
