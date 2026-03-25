@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1874939095117477106}
   - component: {fileID: 8937166437910383654}
   - component: {fileID: 2089541255912649338}
+  - component: {fileID: 3168018175928117003}
   m_Layer: 7
   m_Name: Small_StainV2 test
   m_TagString: Untagged
@@ -81,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 20
   m_MaskInteraction: 0
   m_Sprite: {fileID: 655013960, guid: a0986a56ce411284aa572d1395bae9a0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -158,3 +159,20 @@ MonoBehaviour:
   radius: 4
   cleanThreshold: 0.1
   backOffset: 0
+--- !u!114 &3168018175928117003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4057155583580867586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bfbd2dd9fe7d041a1b9980c7bd4ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dust_creator
+  enemies:
+  - {fileID: 3925146582453317813, guid: 9a7553a2200027744b24fe0aabf877dc, type: 3}
+  - {fileID: 8704036575804039506, guid: 87b7629ae0a1ef246bfae03b5383b8b6, type: 3}
+  - {fileID: 5349868613862393771, guid: af2da99ea190be1448a30ecb15b76c9c, type: 3}
+  - {fileID: 7239776059592391779, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
