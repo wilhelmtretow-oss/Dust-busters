@@ -12,25 +12,30 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
         instance = this;
         DontDestroyOnLoad(gameObject);
-
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        // applicera volym
+        // Applicera volym
         AudioListener.volume = PlayerPrefs.GetFloat("volume", 1f);
 
-        // slå på/av enemies baserat på spelarens val
+        // Slå på/av enemies baserat på spelarens val
         bool enemiesOn = PlayerPrefs.GetInt("enemies", 1) == 1;
 
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
             enemy.SetActive(enemiesOn);
+        }
+
+        // Slå på/av Dust_creator skript
+        Dust_creator[] dustCreators = FindObjectsOfType<Dust_creator>(true);
+        foreach (Dust_creator dustCreator in dustCreators)
+        {
+            dustCreator.enabled = enemiesOn;
         }
     }
 
