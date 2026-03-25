@@ -17,7 +17,6 @@ public class CleaningManager : MonoBehaviour
     void Start()
     {
         cleanedObjects = 0;
-
         totalCleanables =
             FindObjectsOfType<DirtCleanable>().Length +
             FindObjectsOfType<CleanableObject>().Length +
@@ -30,7 +29,6 @@ public class CleaningManager : MonoBehaviour
         }
 
         Debug.Log("Total cleanables: " + totalCleanables);
-
         progressBar.minValue = 0;
         progressBar.maxValue = 100;
         progressBar.value = 0;
@@ -58,6 +56,7 @@ public class CleaningManager : MonoBehaviour
 
         if (totalCleanables > 0 && cleanedObjects >= totalCleanables)
         {
+            ContractManager.CompleteContract(); // räkna upp klarade banor
             if (winMenu != null)
                 winMenu.SetActive(true);
             if (minimapContainer != null)
@@ -68,7 +67,7 @@ public class CleaningManager : MonoBehaviour
 
     public void GoToMainMenu()
     {
-        Time.timeScale = 1f; // fixad - återställer tid innan scenbytet
+        Time.timeScale = 1f;
         SceneManager.LoadScene("ContractSelection");
     }
 }
