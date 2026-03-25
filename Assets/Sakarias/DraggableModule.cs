@@ -27,14 +27,16 @@ public class DraggableModule : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         previousParent = transform.parent;
         wasDropped = false;
 
-        // Clear from equipped slot
+        // Use this to check if we are pulling OUT of an equipment slot
         if (currentSlot != null)
         {
+            // Tell the data manager this slot is now empty IMMEDIATELY
+            ModuleInventoryManager.Instance.EquipModule(currentSlot.slotIndex, -1);
             currentSlot.ClearSlot();
             currentSlot = null;
         }
 
-        // Clear from inventory slot
+        // Also clear from inventory slot references
         InventorySlot inv = previousParent.GetComponent<InventorySlot>();
         if (inv != null)
         {
@@ -42,6 +44,8 @@ public class DraggableModule : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         }
 
         canvasGroup.blocksRaycasts = false;
+        // Move to the root canvas so it stays on top of everything while dragging
+        transform.SetParent(canvas.transform);
     }
 
     public void OnDrag(PointerEventData eventData)
@@ -57,6 +61,16 @@ public class DraggableModule : MonoBehaviour, IBeginDragHandler, IDragHandler, I
         {
             rectTransform.SetParent(previousParent);
             rectTransform.anchoredPosition = Vector2.zero;
+        }
+        else
+        {
+            // Destroy THIS specific dragged object because the RefreshUI 
+            // scripts are about to spawn a fresh version of it from the data.
+            Destroy(gameObject);
+
+            // Trigger the global UI rebuild
+            Object.FindFirstObjectByType<InventoryUIManager>()?.LoadInventory();
+            Object.FindFirstObjectByType<EquipmentUIManager>()?.RefreshEquippedUI();
         }
     }
 }

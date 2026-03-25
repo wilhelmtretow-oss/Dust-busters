@@ -171,7 +171,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -228,7 +229,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -285,7 +287,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -342,7 +345,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (34)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -399,7 +403,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -456,7 +461,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -513,7 +519,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -570,7 +577,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -627,7 +635,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -684,7 +693,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -741,7 +751,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -798,7 +809,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -855,7 +867,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -912,7 +925,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -980,7 +994,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1037,7 +1052,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (35)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1094,7 +1110,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1162,7 +1179,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (37)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1219,7 +1237,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1287,7 +1306,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1344,7 +1364,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1401,7 +1422,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1458,7 +1480,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (18)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1515,7 +1538,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1572,7 +1596,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (28)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1629,7 +1654,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1815,7 +1841,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1872,7 +1899,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1929,7 +1957,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (9)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1986,7 +2015,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (26)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2043,7 +2073,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (32)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2111,7 +2142,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2168,7 +2200,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (39)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2225,7 +2258,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (21)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2282,7 +2316,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (38)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2339,7 +2374,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2396,7 +2432,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (24)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2453,7 +2490,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2510,7 +2548,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (23)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2567,7 +2606,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2685,7 +2725,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2838,7 +2879,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (40)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2895,7 +2937,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -2952,7 +2995,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3009,7 +3053,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3066,7 +3111,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3123,7 +3169,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3180,7 +3227,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3237,7 +3285,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3294,7 +3343,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3351,7 +3401,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (23)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3408,7 +3459,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3465,7 +3517,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3527,7 +3580,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (36)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3600,7 +3654,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -3657,7 +3712,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (15)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11103,7 +11159,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11165,7 +11222,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11298,6 +11356,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7586424869036333535, guid: 622d0880f3ec9754597a257de8b0ca64, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7586424869036333535, guid: 622d0880f3ec9754597a257de8b0ca64, type: 3}
+      propertyPath: m_ReferenceResolution.y
+      value: 1080
+      objectReference: {fileID: 0}
     - target: {fileID: 8028658790287833258, guid: 622d0880f3ec9754597a257de8b0ca64, type: 3}
       propertyPath: m_Camera
       value: 
@@ -11394,7 +11460,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11451,7 +11518,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11508,7 +11576,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11565,7 +11634,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11622,7 +11692,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11684,7 +11755,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (41)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11741,7 +11813,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11890,7 +11963,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (29)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -11947,7 +12021,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12143,7 +12218,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3.253324
+      value: 2.9279916
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.y
@@ -12283,7 +12358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8878374033804756850, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -119
+      value: -118.999985
       objectReference: {fileID: 0}
     - target: {fileID: 8926806440488300790, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_Camera
@@ -12358,7 +12433,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12415,7 +12491,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12472,7 +12549,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12529,7 +12607,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (33)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12586,7 +12665,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12643,7 +12723,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12936,7 +13017,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -12993,7 +13075,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (19)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13061,7 +13144,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13118,7 +13202,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (13)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13175,7 +13260,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13232,7 +13318,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (27)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13289,7 +13376,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (10)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13346,7 +13434,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13403,7 +13492,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13470,7 +13560,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (24)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13527,7 +13618,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (21)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13584,7 +13676,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (8)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13641,7 +13734,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13759,7 +13853,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13816,7 +13911,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (20)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -13873,7 +13969,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14087,7 +14184,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14144,7 +14242,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (25)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14201,7 +14300,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (17)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14258,7 +14358,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (11)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14315,7 +14416,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (30)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14372,7 +14474,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14429,7 +14532,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14486,7 +14590,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14543,7 +14648,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14616,7 +14722,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (14)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14673,7 +14780,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14730,7 +14838,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (16)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14787,7 +14896,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (31)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -14844,7 +14954,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (22)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15076,7 +15187,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (25)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15133,7 +15245,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15190,7 +15303,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (22)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15364,7 +15478,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15421,7 +15536,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15478,7 +15594,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Big_StainV2 test (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4294386146770415434, guid: 6d6e56f04c61db74bae6828c512fe6ea, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15535,7 +15652,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (12)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15592,7 +15710,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (7)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15649,7 +15768,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15706,7 +15826,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Medium_StainV2 test (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -5034921479711450839, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -15820,7 +15941,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3642542956346385368, guid: e59fea197793d2e44b0950b47ef1caaa, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
