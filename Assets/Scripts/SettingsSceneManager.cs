@@ -10,8 +10,7 @@ public class SettingsSceneManager : MonoBehaviour
 
     void Start()
     {
-        // Ladda sparade inställningar, standardvärden om inget är sparat
-        volumeSlider.value = PlayerPrefs.GetFloat("volume", 1f); // 1f = 100%
+        volumeSlider.value = PlayerPrefs.GetFloat("volume", 1f);
         enemyToggle.isOn = PlayerPrefs.GetInt("enemies", 1) == 1;
         fullscreenToggle.isOn = PlayerPrefs.GetInt("fullscreen", Screen.fullScreen ? 1 : 0) == 1;
 
@@ -31,6 +30,13 @@ public class SettingsSceneManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("enemies", enabled ? 1 : 0);
         PlayerPrefs.Save();
+
+        // Aktivera/inaktivera alla fiender i nuvarande scen
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        foreach (GameObject enemy in enemies)
+        {
+            enemy.SetActive(enabled);
+        }
     }
 
     public void ToggleFullscreen(bool enabled)
@@ -42,7 +48,6 @@ public class SettingsSceneManager : MonoBehaviour
 
     void OnApplicationQuit()
     {
-        // Spara alla inställningar när spelet stängs
         PlayerPrefs.Save();
     }
 
