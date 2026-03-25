@@ -7706,6 +7706,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Camera_top_down_follow
   player: {fileID: 5608001242969211526}
   smoothing: 5
+--- !u!1001 &2020566950
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.4536915
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -28.707706
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2943368834460418051, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751590093397327292, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
+      propertyPath: m_Name
+      value: wilhelm_enemy (Missing Prefab with guid_ 043332a209a2c0547beac74cbd5a9f7b)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bf9eea069a2164746a12ad69ceca35d7, type: 3}
 --- !u!95 &314551216569070175
 Animator:
   serializedVersion: 7
@@ -426084,3 +426141,4 @@ SceneRoots:
   - {fileID: 5608001242969211526}
   - {fileID: 8321148881757638363}
   - {fileID: 1234046213}
+  - {fileID: 2020566950}
