@@ -156,9 +156,9 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1874939095117477106}
   cleaningWidth: 4
   samples: 10
-  radius: 4
+  radius: 7
   cleanThreshold: 0.2
-  backOffset: 0
+  backOffset: -0.3
 --- !u!114 &-3642542956346385368
 MonoBehaviour:
   m_ObjectHideFlags: 0
