@@ -5,7 +5,7 @@ public class InventoryUIManager : MonoBehaviour
     public InventorySlot[] inventorySlots;
     public GameObject modulePrefab;
 
-    void Start()
+    void OnEnable()
     {
         if (ModuleInventoryManager.Instance != null)
         {

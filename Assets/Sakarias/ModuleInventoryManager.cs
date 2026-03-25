@@ -1,18 +1,24 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System.Linq; // Added for easy list checking
 
 public class ModuleInventoryManager : MonoBehaviour
 {
     public static ModuleInventoryManager Instance;
 
-    public int maxModules = 3;
+    [Header("Settings")]
+    public int maxInventorySlots = 50;
+    public int equipSlotCount = 3;
 
+    [Header("Current Data")]
+    // The list of every module ID the player has bought
     public List<int> ownedModules = new List<int>();
-    public int[] equippedModules; // size = number of equip slots
+
+    // The IDs of modules currently in the 3 active slots (-1 = empty)
+    public int[] equippedModules;
 
     void Awake()
     {
-        Debug.Log("ModuleInventoryManger awake");
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -22,28 +28,44 @@ public class ModuleInventoryManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject);
 
-        equippedModules = new int[3]; // adjust to your slot count
-
+        // Initialize equipment slots as empty
+        equippedModules = new int[equipSlotCount];
         for (int i = 0; i < equippedModules.Length; i++)
         {
-            equippedModules[i] = -1; // empty
+            equippedModules[i] = -1;
         }
     }
 
-    public bool CanBuyModule()
-    {
-        return ownedModules.Count < maxModules;
-    }
+    // --- SHOP ACTIONS ---
+    public bool CanBuyModule() => ownedModules.Count < maxInventorySlots;
 
     public void AddModule(int moduleIndex)
     {
-        if (!CanBuyModule())
+        if (CanBuyModule())
         {
-            Debug.Log("Max modules reached!");
+            ownedModules.Add(moduleIndex);
+            Debug.Log($"Module {moduleIndex} added to Inventory.");
+        }
+    }
+
+    // --- GAMEPLAY / UI ACTIONS ---
+    public void EquipModule(int slotIndex, int moduleIndex)
+    {
+        if (moduleIndex == -1) // Unequipping
+        {
+            equippedModules[slotIndex] = -1;
             return;
         }
 
-        ownedModules.Add(moduleIndex);
-        Debug.Log("Module added to data: " + moduleIndex);
+        // The Fix: Check the actual owned list
+        if (ownedModules.Contains(moduleIndex))
+        {
+            equippedModules[slotIndex] = moduleIndex;
+            Debug.Log($"Equipped {moduleIndex} to slot {slotIndex}");
+        }
+        else
+        {
+            Debug.LogError("System Error: Attempted to equip unowned module!");
+        }
     }
 }
