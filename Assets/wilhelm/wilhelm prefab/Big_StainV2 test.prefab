@@ -157,7 +157,7 @@ MonoBehaviour:
   cleaningWidth: 2
   samples: 10
   radius: 4
-  cleanThreshold: 0.1
+  cleanThreshold: 0.25
   backOffset: 0
 --- !u!114 &-3784345179518655920
 MonoBehaviour:
