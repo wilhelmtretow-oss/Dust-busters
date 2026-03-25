@@ -26,7 +26,7 @@ public class ModuleSlot : MonoBehaviour, IDropHandler
         }
 
         SetModule(dragged);
-        ModuleManager.Instance.EquipModule(slotIndex, dragged.moduleIndex);
+        ModuleInventoryManager.Instance.EquipModule(slotIndex, dragged.moduleIndex);
     }
 
     public void SetModule(DraggableModule module)

@@ -34,10 +34,9 @@ public class InventorySlot : MonoBehaviour, IDropHandler
         DraggableModule dragged = eventData.pointerDrag.GetComponent<DraggableModule>();
         if (dragged == null) return;
 
-        if (currentModule != null)
+        if (dragged.currentSlot != null)
         {
-            Debug.Log("Inventory full!");
-            return;
+            ModuleInventoryManager.Instance.EquipModule(dragged.currentSlot.slotIndex, -1);
         }
 
         SetModule(dragged);
