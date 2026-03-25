@@ -18,13 +18,11 @@ public class CleaningManager : MonoBehaviour
     {
         cleanedObjects = 0;
 
-      
         totalCleanables =
             FindObjectsOfType<DirtCleanable>().Length +
             FindObjectsOfType<CleanableObject>().Length +
             FindObjectsOfType<EnemyHealth>().Length;
 
-       
         if (totalCleanables <= 0)
         {
             Debug.LogWarning("No cleanable objects found!");
@@ -47,7 +45,6 @@ public class CleaningManager : MonoBehaviour
     public void AddCleanedObject()
     {
         cleanedObjects++;
-
         Debug.Log("Cleaned: " + cleanedObjects + " / " + totalCleanables);
 
         float progressPercent = ((float)cleanedObjects / totalCleanables) * 100f;
@@ -59,21 +56,19 @@ public class CleaningManager : MonoBehaviour
         if (progressText != null)
             progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
 
-        
         if (totalCleanables > 0 && cleanedObjects >= totalCleanables)
         {
             if (winMenu != null)
                 winMenu.SetActive(true);
-
             if (minimapContainer != null)
                 minimapContainer.SetActive(false);
-
             Time.timeScale = 0f;
         }
     }
 
     public void GoToMainMenu()
     {
+        Time.timeScale = 1f; // fixad - återställer tid innan scenbytet
         SceneManager.LoadScene("ContractSelection");
     }
 }
