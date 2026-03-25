@@ -171,4 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11bfbd2dd9fe7d041a1b9980c7bd4ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Colony_creator
-  Colony: {fileID: 0}
+  Colony: {fileID: 1897968073324324556, guid: 625d521f1fe9558438beee509ce0729d, type: 3}
