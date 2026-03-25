@@ -5,26 +5,44 @@ public class ModuleSlot : MonoBehaviour, IDropHandler
 {
     public int slotIndex;
 
+    private DraggableModule currentModule;
+
+    public bool HasModule()
+    {
+        return currentModule != null;
+    }
+
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag == null) return;
 
-        DraggableModule draggable = eventData.pointerDrag.GetComponent<DraggableModule>();
+        DraggableModule dragged = eventData.pointerDrag.GetComponent<DraggableModule>();
+        if (dragged == null) return;
 
-        if (draggable != null)
+        if (currentModule != null)
         {
-            int moduleIndex = draggable.moduleIndex;
-
-            Debug.Log("Dropped module " + moduleIndex + " into slot " + slotIndex);
-
-            ModuleManager.Instance.EquipModule(slotIndex, moduleIndex);
-
-            RectTransform draggedRect = draggable.GetComponent<RectTransform>();
-            RectTransform slotRect = GetComponent<RectTransform>();
-
-            draggedRect.SetParent(slotRect);
-            draggedRect.anchoredPosition = Vector2.zero;
-            
+            Debug.Log("Slot occupied!");
+            return;
         }
+
+        SetModule(dragged);
+        ModuleManager.Instance.EquipModule(slotIndex, dragged.moduleIndex);
+    }
+
+    public void SetModule(DraggableModule module)
+    {
+        currentModule = module;
+
+        module.currentSlot = this;
+        module.wasDropped = true;
+
+        RectTransform rect = module.GetComponent<RectTransform>();
+        rect.SetParent(transform);
+        rect.anchoredPosition = Vector2.zero;
+    }
+
+    public void ClearSlot()
+    {
+        currentModule = null;
     }
 }

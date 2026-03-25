@@ -113,8 +113,14 @@ public class ShopManager : MonoBehaviour
             else
             {
                 int moduleIndex = index - 7;
-                ModuleManager.Instance.BuyModule(moduleIndex);
-                Debug.Log("Bought module index: " + moduleIndex);
+
+                if (!ModuleInventoryManager.Instance.CanBuyModule())
+                {
+                    Debug.Log("Cannot buy more modules!");
+                    return;
+                }
+
+                ModuleInventoryManager.Instance.AddModule(moduleIndex);
             }
 
             ShopData.currentStock[slotIndex]--;
