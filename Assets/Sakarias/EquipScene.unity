@@ -799,6 +799,7 @@ GameObject:
   - component: {fileID: 742553977}
   - component: {fileID: 742553979}
   - component: {fileID: 742553978}
+  - component: {fileID: 742553980}
   m_Layer: 5
   m_Name: ModuleSlotPanel
   m_TagString: Untagged
@@ -865,6 +866,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742553976}
   m_CullTransparentMesh: 1
+--- !u!114 &742553980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742553976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec614a5d7e081d4194d87fa83a2dc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EquipmentUIManager
+  equipSlots:
+  - {fileID: 1166718249}
+  - {fileID: 313589566}
+  modulePrefab: {fileID: 462191243414735422, guid: 48bb600c486b68c4cba5e43eba3734b8, type: 3}
 --- !u!1 &792283069
 GameObject:
   m_ObjectHideFlags: 0

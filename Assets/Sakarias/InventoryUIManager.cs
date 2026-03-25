@@ -35,29 +35,36 @@ public class InventoryUIManager : MonoBehaviour
             slot.ClearSlot();
         }
 
+        int slotUIIndex = 0;
+
         // Spawn modules into slots
         for (int i = 0; i < data.ownedModules.Count; i++)
         {
-            if (i >= inventorySlots.Length) break;
-
             int moduleIndex = data.ownedModules[i];
 
-            GameObject obj = Instantiate(modulePrefab, inventorySlots[i].transform);
+            bool isEquiped = false;
+            for (int e = 0; e < data.equippedModules.Length; e++)
+            {
+                if (data.equippedModules[e] == moduleIndex)
+                {
+                    isEquiped = true;
+                    break;
+                }
+            }
+            if (isEquiped) continue;
 
+            if (slotUIIndex >= inventorySlots.Length) break;
+
+            GameObject obj = Instantiate(modulePrefab, inventorySlots[slotUIIndex].transform);
             DraggableModule draggable = obj.GetComponent<DraggableModule>();
 
-            if (draggable == null)
+            if (draggable != null)
             {
-                Debug.LogError("Prefab missing DraggableModule!");
-                return;
+                draggable.moduleIndex = moduleIndex;
+                inventorySlots[slotUIIndex].SetModule(draggable);
             }
+            slotUIIndex++;
 
-            draggable.moduleIndex = moduleIndex;
-
-            RectTransform rect = obj.GetComponent<RectTransform>();
-            rect.anchoredPosition = Vector2.zero;
-
-            inventorySlots[i].SetModule(draggable);
         }
     }
 }
