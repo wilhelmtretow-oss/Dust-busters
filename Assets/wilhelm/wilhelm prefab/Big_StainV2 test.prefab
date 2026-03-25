@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::cleaning_script_test
   playerTag: Player
   spriteRenderer: {fileID: 3199728924429456393}
-  cleaningWidth: 2
+  cleaningWidth: 4
   samples: 10
   radius: 4
   cleanThreshold: 0.1
