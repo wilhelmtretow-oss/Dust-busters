@@ -10,6 +10,7 @@ public class ShopManager : MonoBehaviour
     public TextMeshProUGUI[] priceTexts;
     public TextMeshProUGUI[] stockTexts;
     public Button[] buyButtons;
+
     public TextMeshProUGUI PurchaseText;
     public CanvasGroup purchaseCanvasGroup;
 
@@ -19,6 +20,7 @@ public class ShopManager : MonoBehaviour
 
     private int shopSize;
     private int[] purchaseCounts;
+
     private Coroutine fadeCoroutine;
 
     void Start()
@@ -102,11 +104,25 @@ public class ShopManager : MonoBehaviour
         if (MoneyManager.Instance.TotalMoney >= price)
         {
             MoneyManager.Instance.TotalMoney -= price;
+            
+            if (index<=6)
+            {
+                UpgradeManager.Instance.AddUpgrade(index);
+                Debug.Log("Bought upgrade index: " + index);
+            }
+            else
+            {
+                int moduleIndex = index - 7;
+                ModuleManager.Instance.BuyModule(moduleIndex);
+                Debug.Log("Bought module index: " + moduleIndex);
+            }
+
             ShopData.currentStock[slotIndex]--;
             stockTexts[slotIndex].text = ShopData.currentStock[slotIndex].ToString();
+
             purchaseCounts[index]++;
-            UpgradeManager.Instance.AddUpgrade(index);
             ShowPurchaseText(index);
+            
             if (ShopData.currentStock[slotIndex] <= 0)
             {
                 buyButtons[slotIndex].interactable = false;
