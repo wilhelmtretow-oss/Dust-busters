@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3199728924429456393}
   - component: {fileID: 6889453500499775353}
   - component: {fileID: 6948573164373902114}
+  - component: {fileID: 4294386146770415434}
   m_Layer: 7
   m_Name: Big_StainV2 test
   m_TagString: Untagged
@@ -158,3 +159,16 @@ MonoBehaviour:
   radius: 4
   cleanThreshold: 0.25
   backOffset: 0
+--- !u!114 &4294386146770415434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7444143843340301616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11bfbd2dd9fe7d041a1b9980c7bd4ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Colony_creator
+  Colony: {fileID: 0}

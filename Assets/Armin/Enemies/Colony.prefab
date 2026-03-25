@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7701289594229275896
+--- !u!1 &1897968073324324556
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 344153309249558474}
-  - component: {fileID: 7764668990461395378}
-  - component: {fileID: 9217390406894621069}
-  - component: {fileID: 6449481183183572644}
-  - component: {fileID: -5034921479711450839}
-  m_Layer: 7
-  m_Name: Medium_StainV2 test
-  m_TagString: Untagged
+  - component: {fileID: 4948832488893065017}
+  - component: {fileID: 1506091588878140164}
+  - component: {fileID: 2344484248150014151}
+  - component: {fileID: 2958754715906407610}
+  - component: {fileID: 1652064478968953718}
+  m_Layer: 0
+  m_Name: Colony
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &344153309249558474
+--- !u!4 &4948832488893065017
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701289594229275896}
+  m_GameObject: {fileID: 1897968073324324556}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.8766543, y: 2.669048, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalPosition: {x: 4.34, y: -2.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &7764668990461395378
+--- !u!212 &1506091588878140164
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701289594229275896}
+  m_GameObject: {fileID: 1897968073324324556}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -84,91 +84,68 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 20
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1639787423, guid: e91e430f7c206a44fa194e8c1ba83385, type: 3}
+  m_Sprite: {fileID: -791439816, guid: 63216093d763e364d977e7b03020e8e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.921875, y: 2.1720679}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!61 &9217390406894621069
-BoxCollider2D:
+--- !u!95 &2344484248150014151
+Animator:
+  serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701289594229275896}
+  m_GameObject: {fileID: 1897968073324324556}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.46, y: 0.5}
-  m_EdgeRadius: 0
---- !u!114 &6449481183183572644
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 50abbfae2a9acc34caecd3ec522fe947, type: 2}
+  m_CullingMode: 2
+  m_UpdateMode: 1
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2958754715906407610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701289594229275896}
+  m_GameObject: {fileID: 1897968073324324556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b0e1c19258c27447ac00ace12938429, type: 3}
+  m_Script: {fileID: 11500000, guid: a1e6a8732ffecf349b55f4e6735e1aa9, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DirtCleanable
-  playerTag: Player
-  spriteRenderer: {fileID: 7764668990461395378}
-  cleaningWidth: 2
-  samples: 10
-  radius: 4
-  cleanThreshold: 0.25
-  backOffset: 0
---- !u!114 &-5034921479711450839
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 50
+  deathDrop: 0
+  stinkCloudPrefab: {fileID: 0}
+--- !u!114 &1652064478968953718
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7701289594229275896}
+  m_GameObject: {fileID: 1897968073324324556}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11bfbd2dd9fe7d041a1b9980c7bd4ee4, type: 3}
+  m_Script: {fileID: 11500000, guid: 15d574190b72e69409deb76fcdb4e003, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Colony_creator
-  Colony: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::Dust_creator
+  enemies:
+  - {fileID: 1319405985601067811, guid: 9f10fc8ee9f6102418e0f25b28069082, type: 3}
+  - {fileID: 4800976683195369329, guid: cdf933528f832e74aa5ed27531ed9f5f, type: 3}
+  - {fileID: 7239776059592391779, guid: 26e43d2c05c766743b0f201b440ec1f0, type: 3}
+  - {fileID: 5349868613862393771, guid: af2da99ea190be1448a30ecb15b76c9c, type: 3}
+  - {fileID: 4242213596788510680, guid: c406c88af46597b4fa3b21f2fd793cc3, type: 3}
