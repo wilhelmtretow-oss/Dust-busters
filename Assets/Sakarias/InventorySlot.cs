@@ -1,22 +1,45 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.Rendering;
 
 public class InventorySlot : MonoBehaviour, IDropHandler
 {
+    private DraggableModule currentModule;
+
+    public bool HasModule()
+    {
+        return currentModule != null;
+    }
+
+    public void SetModule(DraggableModule module)
+    {
+        currentModule = module;
+
+        module.wasDropped = true;
+        module.currentSlot = null;
+
+        RectTransform rect = module.GetComponent<RectTransform>();
+        rect.SetParent(transform);
+        rect.anchoredPosition = Vector2.zero;
+    }
+
+    public void ClearSlot()
+    {
+        currentModule = null;
+    }
+
     public void OnDrop(PointerEventData eventData)
     {
-        DraggableModule draggable = eventData.pointerDrag.GetComponent<DraggableModule>();
+        if (eventData.pointerDrag == null) return;
 
-        if (draggable != null)
+        DraggableModule dragged = eventData.pointerDrag.GetComponent<DraggableModule>();
+        if (dragged == null) return;
+
+        if (currentModule != null)
         {
-            RectTransform draggedRect = draggable.GetComponent<RectTransform>();
-            RectTransform slotRect = GetComponent<RectTransform>();
-
-            draggedRect.SetParent(slotRect);
-            draggedRect.anchoredPosition = Vector2.zero;
-
-            Debug.Log("Module returned to inventory");
+            Debug.Log("Inventory full!");
+            return;
         }
+
+        SetModule(dragged);
     }
 }

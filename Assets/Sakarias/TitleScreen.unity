@@ -1037,6 +1037,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e48f2b1166ba4c4489f18311f136316a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ModuleManager
+  ownedModules: 
   equippedModules: 
 --- !u!4 &595866421
 Transform:
