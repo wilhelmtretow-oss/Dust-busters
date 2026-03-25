@@ -12,31 +12,31 @@ public class EquipmentUIManager : MonoBehaviour
     public void RefreshEquippedUI()
     {
         var data = ModuleInventoryManager.Instance;
-        if (data == null )
-        {
-            return;
-        }
+        if (data == null) return;
 
-        foreach (var slot in equipSlots)
+        for (int i = 0; i < data.equippedModules.Length; i++)
         {
-            foreach (Transform child in slot.transform)
+            // 1. Safety check: make sure we have a UI slot for this data index
+            if (i >= equipSlots.Length) break;
+
+            // 2. Clear the physical slot completely before spawning
+            // This prevents the "Double Spawn" if OnEnable runs twice
+            foreach (Transform child in equipSlots[i].transform)
             {
                 Destroy(child.gameObject);
             }
-            slot.ClearSlot();
-        }
-        for (int i = 0; i < data.equippedModules.Length; i++)
-        {
-            if (i < equipSlots.Length)
+            equipSlots[i].ClearSlot();
+
+            // 3. Get the saved ID
+            int savedModuleID = data.equippedModules[i];
+
+            // 4. If the ID isn't -1, spawn the icon
+            if (savedModuleID != -1)
             {
-                int savedModuleID = data.equippedModules[i];
-                if (savedModuleID != -1)
-                {
-                    {
-                        equipSlots[i].LoadModuleToSlot(savedModuleID, modulePrefab);
-                    }
-                }
+                // Use the method we added to ModuleSlot earlier
+                equipSlots[i].CreateModuleInSlot(savedModuleID, modulePrefab);
             }
         }
     }
 }
+

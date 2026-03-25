@@ -15,16 +15,17 @@ public class ModuleSlot : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag == null) return;
-
         DraggableModule dragged = eventData.pointerDrag.GetComponent<DraggableModule>();
-        if (dragged == null) return;
 
-        if (currentModule != null)
+        if (dragged == null || currentModule != null) return;
+
+        // IF the item was already in an equipment slot, clear that OLD data index
+        if (dragged.currentSlot != null)
         {
-            Debug.Log("Slot occupied!");
-            return;
+            ModuleInventoryManager.Instance.EquipModule(dragged.currentSlot.slotIndex, -1);
         }
 
+        // Now set the NEW data index
         SetModule(dragged);
         ModuleInventoryManager.Instance.EquipModule(slotIndex, dragged.moduleIndex);
     }

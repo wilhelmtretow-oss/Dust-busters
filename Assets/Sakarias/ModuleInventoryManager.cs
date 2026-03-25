@@ -51,21 +51,23 @@ public class ModuleInventoryManager : MonoBehaviour
     // --- GAMEPLAY / UI ACTIONS ---
     public void EquipModule(int slotIndex, int moduleIndex)
     {
-        if (moduleIndex == -1) // Unequipping
+        if (moduleIndex == -1)
         {
             equippedModules[slotIndex] = -1;
             return;
         }
 
-        // The Fix: Check the actual owned list
-        if (ownedModules.Contains(moduleIndex))
+        // 1. CLEAN UP: If this module is already in any other slot, clear it!
+        for (int i = 0; i < equippedModules.Length; i++)
         {
-            equippedModules[slotIndex] = moduleIndex;
-            Debug.Log($"Equipped {moduleIndex} to slot {slotIndex}");
+            if (equippedModules[i] == moduleIndex)
+            {
+                equippedModules[i] = -1;
+            }
         }
-        else
-        {
-            Debug.LogError("System Error: Attempted to equip unowned module!");
-        }
+
+        // 2. SET: Now put it in the new slot safely
+        equippedModules[slotIndex] = moduleIndex;
+        Debug.Log($"Module {moduleIndex} moved to slot {slotIndex}");
     }
 }

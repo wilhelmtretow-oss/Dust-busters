@@ -13,7 +13,7 @@ public class InventoryUIManager : MonoBehaviour
         }
     }
 
-    void LoadInventory()
+    public void LoadInventory()
     {
         var data = ModuleInventoryManager.Instance;
 

@@ -30,15 +30,16 @@ public class InventorySlot : MonoBehaviour, IDropHandler
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag == null) return;
-
         DraggableModule dragged = eventData.pointerDrag.GetComponent<DraggableModule>();
-        if (dragged == null) return;
 
-        if (dragged.currentSlot != null)
-        {
-            ModuleInventoryManager.Instance.EquipModule(dragged.currentSlot.slotIndex, -1);
-        }
+        if (dragged == null || currentModule != null) return;
 
-        SetModule(dragged);
+        // The data for the equipment slot was already cleared in OnBeginDrag,
+        // so we just need to "Accept" the drop here.
+        dragged.wasDropped = true;
+
+        // We don't even need to call SetModule(dragged) here because 
+        // LoadInventory() is going to wipe the UI and rebuild it anyway!
+        Debug.Log("Inventory accepted drop, rebuilding UI...");
     }
 }
