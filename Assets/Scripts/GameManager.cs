@@ -7,6 +7,8 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
+        Time.timeScale = 1f; // återställ alltid timeScale vid start
+
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
@@ -19,12 +21,13 @@ public class GameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Time.timeScale = 1f; // återställ timeScale vid varje scenbyte
+
         // Applicera volym
         AudioListener.volume = PlayerPrefs.GetFloat("volume", 1f);
 
         // Slå på/av enemies baserat på spelarens val
         bool enemiesOn = PlayerPrefs.GetInt("enemies", 1) == 1;
-
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
