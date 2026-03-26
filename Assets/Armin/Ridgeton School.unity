@@ -126688,6 +126688,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1280157177}
     - target: {fileID: 3601193004606858068, guid: 8c9ecb48ee8a15c44a7502af7d499408, type: 3}
+      propertyPath: winRewardText
+      value: 
+      objectReference: {fileID: 1758288391}
+    - target: {fileID: 3601193004606858068, guid: 8c9ecb48ee8a15c44a7502af7d499408, type: 3}
       propertyPath: minimapContainer
       value: 
       objectReference: {fileID: 755633663}
@@ -126744,6 +126748,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 633151536}
     m_Modifications:
+    - target: {fileID: 313390429788271849, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 4.3167
+      objectReference: {fileID: 0}
+    - target: {fileID: 313390429788271849, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.4417
+      objectReference: {fileID: 0}
+    - target: {fileID: 313390429788271849, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2.9995
+      objectReference: {fileID: 0}
+    - target: {fileID: 313390429788271849, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -19
+      objectReference: {fileID: 0}
     - target: {fileID: 1279901516506715103, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_text
       value: Tillbaka till kontrakt
@@ -126787,6 +126807,26 @@ PrefabInstance:
     - target: {fileID: 4186245326535333695, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: RestartGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187923595537005759, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5764706
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187923595537005759, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187923595537005759, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4187923595537005759, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5437820991745498494, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_Name
+      value: Money_texs
       objectReference: {fileID: 0}
     - target: {fileID: 6553075914269116614, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_hasFontAssetChanged
@@ -126884,6 +126924,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7657889848054273443, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 7657889848054273443, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657889848054273443, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_fontColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657889848054273443, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.2009592
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657889848054273443, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 7657889848054273443, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7657889848054273443, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7853982196438363539, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_LocalScale.x
       value: 4
@@ -126901,6 +126969,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+--- !u!114 &1758288391 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7657889848054273443, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+  m_PrefabInstance: {fileID: 1758288390}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &1763996012 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3751104845345026819, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}

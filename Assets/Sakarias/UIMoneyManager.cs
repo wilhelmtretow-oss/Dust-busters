@@ -1,4 +1,4 @@
-using UnityEngine;
+/*using UnityEngine;
 
 public class MoneyManager : MonoBehaviour
 {
@@ -25,4 +25,4 @@ public class MoneyManager : MonoBehaviour
         TotalMoney += amount;
         Debug.Log("Total Money: " + TotalMoney);
     }
-}
+}*/

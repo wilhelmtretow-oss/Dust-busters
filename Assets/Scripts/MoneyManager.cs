@@ -1,11 +1,11 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class MoneyManager : MonoBehaviour
 {
     public static MoneyManager Instance;
-
-    private int currentMoney = 0;
+    public int TotalMoney = 0;
     public TMP_Text moneyText;
 
     void Awake()
@@ -14,8 +14,6 @@ public class MoneyManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-
-            // LADDA PENGARNA NÄR SPELET STARTAR
             LoadMoney();
         }
         else
@@ -24,44 +22,60 @@ public class MoneyManager : MonoBehaviour
         }
     }
 
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (moneyText == null)
+        {
+            GameObject foundObj = GameObject.Find("MoneyTextAmount");
+            if (foundObj != null)
+            {
+                moneyText = foundObj.GetComponent<TMP_Text>();
+                UpdateMoneyUI();
+            }
+        }
+    }
+
     public void AddMoney(int amount)
     {
-        currentMoney += amount;
-
-        // SPARA PENGARNA DIREKT NÄR DE ÄNDRAS
+        TotalMoney += amount;
         SaveMoney();
-
         UpdateMoneyUI();
-        Debug.Log("Pengar sparade! Totalt: " + currentMoney);
+        Debug.Log("Pengar sparade! Totalt: " + TotalMoney);
     }
 
-    // Sparar till hårddisken
     void SaveMoney()
     {
-        PlayerPrefs.SetInt("SavedMoney", currentMoney);
-        PlayerPrefs.Save(); // Tvingar Unity att skriva ner det till filen direkt
+        PlayerPrefs.SetInt("SavedMoney", TotalMoney);
+        PlayerPrefs.Save();
     }
 
-    // Laddar från hårddisken
     void LoadMoney()
     {
-        // Om "SavedMoney" inte finns (första gången man spelar), sätts det till 0
-        currentMoney = PlayerPrefs.GetInt("SavedMoney", 0);
+        TotalMoney = PlayerPrefs.GetInt("SavedMoney", 0);
         UpdateMoneyUI();
     }
 
-    void UpdateMoneyUI()
+    public void UpdateMoneyUI()
     {
         if (moneyText != null)
-            moneyText.text = "Pengar: " + currentMoney + " kr";
+            moneyText.text = "Pengar: " + TotalMoney + " kr";
     }
 
-    // En fuskkod för dig om du vill nollställa pengarna under testning
     [ContextMenu("Reset Money")]
     public void ResetMoney()
     {
         PlayerPrefs.DeleteKey("SavedMoney");
-        currentMoney = 0;
+        TotalMoney = 0;
         UpdateMoneyUI();
     }
 }
