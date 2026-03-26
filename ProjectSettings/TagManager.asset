@@ -8,6 +8,7 @@ TagManager:
   - Dirt
   - Bullet
   - Enemy
+  - Boss
   layers:
   - Default
   - TransparentFX

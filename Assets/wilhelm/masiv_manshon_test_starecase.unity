@@ -12174,23 +12174,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4465449997372822864, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0766238
+      value: 1.0225351
       objectReference: {fileID: 0}
     - target: {fileID: 4465449997372822864, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.0766238
+      value: 1.4952532
       objectReference: {fileID: 0}
     - target: {fileID: 4465449997372822864, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.00034216812
+      value: 0.00047521523
       objectReference: {fileID: 0}
     - target: {fileID: 4465449997372822864, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 9
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 4465449997372822864, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -57.083
+      value: -115
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchorMax.x
@@ -12218,23 +12218,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.47216123
+      value: 0.32470527
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.66011417
+      value: 0.4539605
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.66011417
+      value: 0.4539605
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 600
+      value: 713
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -363
+      value: -405
       objectReference: {fileID: 0}
     - target: {fileID: 8036395575218435742, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_UiScaleMode
@@ -12366,11 +12366,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8878374033804756850, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 596
+      value: 859
       objectReference: {fileID: 0}
     - target: {fileID: 8878374033804756850, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -352
+      value: -355
       objectReference: {fileID: 0}
     - target: {fileID: 8926806440488300790, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_Camera
@@ -12756,9 +12756,9 @@ GameObject:
   - component: {fileID: 1234046216}
   - component: {fileID: 1234046215}
   - component: {fileID: 1234046214}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Dust busters enemies_6
-  m_TagString: Enemy
+  m_TagString: Boss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
