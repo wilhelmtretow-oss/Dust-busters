@@ -788,7 +788,7 @@ MonoBehaviour:
   - Mourout Large house
   - Ridgeton School
   - Hotel
-  baseMoneyPerMap: 01000000020000000300000004000000
+  baseMoneyPerMap: 0100000002000000030000000400000005000000
   difficultyMultipliers:
   - 1
   - 1.5
