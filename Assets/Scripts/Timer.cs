@@ -56,7 +56,7 @@ public class Timer : MonoBehaviour
         }
 
         // Text coming when 40 seconds is remaining
-        if (time <= 40 && time > 0)
+        if (time <= 50 && time > 0)
         {
             bustFaster.gameObject.SetActive(true);
 
