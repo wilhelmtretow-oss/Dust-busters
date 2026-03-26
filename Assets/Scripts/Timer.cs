@@ -18,7 +18,7 @@ public class Timer : MonoBehaviour
     
     
     
-
+    // Text unactive at start
     void Start()
     {
         bustFaster.gameObject.SetActive(false);
@@ -28,8 +28,10 @@ public class Timer : MonoBehaviour
     
     void Update()
     {
+
         timer.text = time.ToString("0");
 
+        // Time decreasing overtime
         if (time > 0)
         {
             time -= Time.deltaTime;
@@ -37,7 +39,7 @@ public class Timer : MonoBehaviour
         }
 
         
-
+        // Game Over
         else if (!hasEnded)
         {
             time = 0;
@@ -53,12 +55,14 @@ public class Timer : MonoBehaviour
 
         }
 
+        // Text coming when 40 seconds is remaining
         if (time <= 40 && time > 0)
         {
             bustFaster.gameObject.SetActive(true);
 
         }
 
+        // Over 40 seconds remaining
         else
         {
             bustFaster.gameObject.SetActive(false);
