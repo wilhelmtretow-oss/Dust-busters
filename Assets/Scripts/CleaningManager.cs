@@ -40,6 +40,13 @@ public class CleaningManager : MonoBehaviour
             winMenu.SetActive(false);
     }
 
+    public void RegisterSpawnedEnemy()
+    {
+        totalCleanables++;
+
+        Debug.Log("Enemy spawned. Total cleanables: " + totalCleanables);
+    }
+
     public void AddCleanedObject()
     {
         cleanedObjects++;
