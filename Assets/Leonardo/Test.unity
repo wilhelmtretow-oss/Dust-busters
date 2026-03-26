@@ -200,17 +200,9 @@ PrefabInstance:
       propertyPath: m_text
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 713966681562876018, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 990863292742294884, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: m_Name
       value: TimeCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 1772918314699785823, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2366323829957619700, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -255,10 +247,6 @@ PrefabInstance:
     - target: {fileID: 3047721059370497863, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: m_text
       value: ' BUST FASTER'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3047721059370497863, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
-      propertyPath: m_hasFontAssetChanged
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3233091110684361872, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: m_IsActive
