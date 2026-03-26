@@ -3,6 +3,8 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public PlayerController stopPlayer;
+    public Health health;
+
     public AudioSource panic;
 
     public TextMeshProUGUI timer;
@@ -12,7 +14,7 @@ public class Timer : MonoBehaviour
     
 
     public float time = 90f;
-
+    bool hasEnded = false;
     
     
     
@@ -23,7 +25,7 @@ public class Timer : MonoBehaviour
 
     }
 
-
+    
     void Update()
     {
         timer.text = time.ToString("0");
@@ -34,13 +36,24 @@ public class Timer : MonoBehaviour
 
         }
 
-        else
+        
+
+        else if (!hasEnded)
         {
             time = 0;
             timer.text = "0";
+
+            hasEnded = true;
+
+            bustFaster.gameObject.SetActive(false);
+            timer.gameObject.SetActive(false);
+
+            Invoke(nameof(TimesUp), 0.2f);
+            
+
         }
 
-        if (time <= 45 && time > 0)
+        if (time <= 40 && time > 0)
         {
             bustFaster.gameObject.SetActive(true);
 
@@ -48,31 +61,24 @@ public class Timer : MonoBehaviour
 
         else
         {
-
             bustFaster.gameObject.SetActive(false);
 
         }
 
-        if (time <= 0)
-        {
-            bustFaster.gameObject.SetActive(false);
-            timer.gameObject.SetActive(false);
-            Invoke(nameof(TimesUp), 0.2f);
-            
-
-        }
     }
+
+
 
     private void TimesUp()
     {
         TimesUpScreen.SetActive(true);
-        
+
         if (player != null)
         {
             stopPlayer.enabled = false;
-           
-
+            health.enabled = false;
         }
+        
     }
 
 

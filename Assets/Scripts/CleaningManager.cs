@@ -10,6 +10,7 @@ public class CleaningManager : MonoBehaviour
     public TMP_Text progressText;
     public GameObject winMenu;
     public GameObject minimapContainer;
+    public TMP_Text winRewardText;
 
     private int cleanedObjects = 0;
     private int totalCleanables = 0;
@@ -20,8 +21,6 @@ public class CleaningManager : MonoBehaviour
     {
         Instance = this;
     }
-
-   
 
     void Start()
     {
@@ -37,7 +36,6 @@ public class CleaningManager : MonoBehaviour
             totalCleanables = 1;
         }
 
-        Debug.Log("Total cleanables: " + totalCleanables);
         progressBar.minValue = 0;
         progressBar.maxValue = 100;
         progressBar.value = 0;
@@ -52,14 +50,12 @@ public class CleaningManager : MonoBehaviour
     public void RegisterSpawnedEnemy()
     {
         totalCleanables++;
-
         Debug.Log("Enemy spawned. Total cleanables: " + totalCleanables);
     }
 
     public void AddCleanedObject()
     {
         cleanedObjects++;
-        Debug.Log("Cleaned: " + cleanedObjects + " / " + totalCleanables);
 
         float progressPercent = ((float)cleanedObjects / totalCleanables) * 100f;
         progressPercent = Mathf.Clamp(progressPercent, 0f, 100f);
@@ -70,13 +66,42 @@ public class CleaningManager : MonoBehaviour
         if (progressText != null)
             progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
 
+        // VINST-LOGIK
         if (totalCleanables > 0 && cleanedObjects >= totalCleanables)
         {
-            ContractManager.CompleteContract(); // räkna upp klarade banor
+            // 1. Räkna ut belöningen för JUST denna match
+            int rewardPerObject = 10;
+            int totalRewardThisMatch = totalCleanables * rewardPerObject;
+
+            // --- VALFRITT: Bonus för svårighetsgrad ---
+            string difficulty = ContractData.SelectedDifficulty;
+            if (difficulty == "Nightmare")
+            {
+                totalRewardThisMatch += 500; // Extra bonus för att det är svårt!
+            }
+            
+
+            // 2. Lägg till i MoneyManager (Totala summan på banken)
+            if (MoneyManager.Instance != null)
+            {
+                MoneyManager.Instance.AddMoney(totalRewardThisMatch);
+            }
+
+            // 3. Visa bara matchens vinst på UI:t
+            if (winRewardText != null)
+            {
+                winRewardText.text = "+ " + totalRewardThisMatch + " $!";
+            }
+
+            // 4. Avsluta banan
+            ContractManager.CompleteContract();
+
             if (winMenu != null)
                 winMenu.SetActive(true);
+
             if (minimapContainer != null)
                 minimapContainer.SetActive(false);
+
             Time.timeScale = 0f;
         }
     }

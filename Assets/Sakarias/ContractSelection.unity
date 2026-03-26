@@ -155,7 +155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 613, y: -119}
+  m_AnchoredPosition: {x: 613, y: -118.999985}
   m_SizeDelta: {x: -1495.75, y: -894.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &45808497
@@ -555,7 +555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -339.99988, y: -250}
+  m_AnchoredPosition: {x: -339.99994, y: -249.99998}
   m_SizeDelta: {x: -818.99, y: -743.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356433257
@@ -776,6 +776,7 @@ MonoBehaviour:
   - Basic House
   - Big Mansion
   - Massive School
+  - Hotel
   possibleDiff:
   - Easy
   - Medium
@@ -786,7 +787,8 @@ MonoBehaviour:
   - House 1
   - Mourout Large house
   - Ridgeton School
-  baseMoneyPerMap: 01000000020000000300000004000000
+  - Hotel
+  baseMoneyPerMap: 0100000002000000030000000400000005000000
   difficultyMultipliers:
   - 1
   - 1.5
@@ -1052,7 +1054,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1594848339, guid: f547c354dc0297d4e9d17c86c1fd7d08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ba73117775b01be4b8c58310bb6a425c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1264,7 +1266,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Settings
+  m_text: 'SETTINGS
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
@@ -1291,8 +1295,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 83.4
-  m_fontSizeBase: 83.4
+  m_fontSize: 69.32
+  m_fontSizeBase: 69.32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1518,7 +1522,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -218}
+  m_AnchoredPosition: {x: 0, y: -217.99998}
   m_SizeDelta: {x: -1370.03, y: -530.03}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &729254715
@@ -2292,7 +2296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -829.9999, y: 405}
+  m_AnchoredPosition: {x: -830, y: 405}
   m_SizeDelta: {x: -1739.3799, y: -908.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014588794
@@ -3401,7 +3405,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -829.9999, y: 405}
+  m_AnchoredPosition: {x: -830, y: 405}
   m_SizeDelta: {x: -1739.38, y: -908.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328432948
@@ -3534,7 +3538,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -637.9999, y: -350}
+  m_AnchoredPosition: {x: -637.99994, y: -350}
   m_SizeDelta: {x: -1495.75, y: -894.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361537596
@@ -4336,14 +4340,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 68.2
-  m_fontSizeBase: 68.2
+  m_fontSize: 79.25
+  m_fontSizeBase: 79.25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
+  m_HorizontalAlignment: 1
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -4732,7 +4736,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -638.1, y: -118}
+  m_AnchoredPosition: {x: -638.10004, y: -117.999985}
   m_SizeDelta: {x: -1495.75, y: -894.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1710305989
@@ -4938,7 +4942,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 549.04, y: -128.93}
+  m_AnchoredPosition: {x: 549.04, y: -128.92998}
   m_SizeDelta: {x: -1098.06, y: -258.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1820599523
