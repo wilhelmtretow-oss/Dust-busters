@@ -58,7 +58,6 @@ public class ShopManager : MonoBehaviour
 
             used[randomIndex] = true;
             ShopData.currentItemIndexes[i] = randomIndex;
-
             ShopData.currentStock[i] = itemStocks[randomIndex];
         }
     }
@@ -69,7 +68,7 @@ public class ShopManager : MonoBehaviour
         {
             int index = ShopData.currentItemIndexes[i];
             itemNameTexts[i].text = itemNames[index];
-            priceTexts[i].text = itemPrices[index] + "$";
+            priceTexts[i].text = itemPrices[index] + " kr"; // Ändrat till kr för att matcha din UI
             stockTexts[i].text = ShopData.currentStock[i].ToString();
         }
     }
@@ -93,22 +92,24 @@ public class ShopManager : MonoBehaviour
     {
         int index = ShopData.currentItemIndexes[slotIndex];
 
+        // 1. Kolla lager först
         if (ShopData.currentStock[slotIndex] <= 0)
         {
-            Debug.Log("Item out of stock!");
+            Debug.Log("Slut i lager!");
             return;
         }
 
         int price = itemPrices[index];
 
-        if (MoneyManager.Instance.TotalMoney >= price)
+        // 2. Använd TryPurchase för att dra pengar, uppdatera UI och SPARA automatiskt
+        if (MoneyManager.Instance.TryPurchase(price))
         {
-            MoneyManager.Instance.TotalMoney -= price;
-            
-            if (index<=6)
+            // --- OM KÖPET GICK IGENOM ---
+
+            if (index <= 6)
             {
                 UpgradeManager.Instance.AddUpgrade(index);
-                Debug.Log("Bought upgrade index: " + index);
+                Debug.Log("Köpte uppgradering: " + index);
             }
             else
             {
@@ -116,37 +117,41 @@ public class ShopManager : MonoBehaviour
 
                 if (!ModuleInventoryManager.Instance.CanBuyModule())
                 {
-                    Debug.Log("Cannot buy more modules!");
+                    // Om vi inte kan köpa modulen, ge tillbaka pengarna!
+                    MoneyManager.Instance.AddMoney(price);
+                    Debug.Log("För många moduler! Pengar återbetalda.");
                     return;
                 }
 
                 ModuleInventoryManager.Instance.AddModule(moduleIndex);
             }
 
+            // Minska lagret
             ShopData.currentStock[slotIndex]--;
             stockTexts[slotIndex].text = ShopData.currentStock[slotIndex].ToString();
 
             purchaseCounts[index]++;
             ShowPurchaseText(index);
-            
+
             if (ShopData.currentStock[slotIndex] <= 0)
             {
                 buyButtons[slotIndex].interactable = false;
             }
-            Debug.Log("Bought: " + itemNames[index]);
+            Debug.Log("Köpt: " + itemNames[index]);
         }
         else
         {
-            Debug.Log("Not enough money!");
+            // Detta körs om TryPurchase returnerar false (för lite pengar)
+            Debug.Log("Du har inte råd!");
         }
     }
+
     void ShowPurchaseText(int index)
     {
         string itemName = itemNames[index];
         int count = purchaseCounts[index];
 
-        PurchaseText.text = "Bought " + itemName + " " + count + "X";
-
+        PurchaseText.text = "Köpte " + itemName + " " + count + "X";
         purchaseCanvasGroup.alpha = 1f;
 
         if (fadeCoroutine != null)
@@ -160,21 +165,19 @@ public class ShopManager : MonoBehaviour
     IEnumerator FixButtonStates()
     {
         yield return null;
-
         for (int i = 0; i < shopSize; i++)
         {
-            buyButtons[i].interactable = ShopData.currentStock[i] > 0;
+            int index = ShopData.currentItemIndexes[i];
+            bool canAfford = MoneyManager.Instance.TotalMoney >= itemPrices[index];
+            buyButtons[i].interactable = ShopData.currentStock[i] > 0 && canAfford;
         }
     }
+
     IEnumerator FadePurchaseText()
     {
         yield return new WaitForSeconds(2f);
-
         float duration = 1.5f;
         float time = 0f;
-
-        float startAlpha = purchaseCanvasGroup.alpha;
-
         while (time < duration)
         {
             time += Time.deltaTime;
