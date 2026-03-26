@@ -555,7 +555,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -339.99988, y: -250}
+  m_AnchoredPosition: {x: -339.99994, y: -250}
   m_SizeDelta: {x: -818.99, y: -743.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &356433257
@@ -776,6 +776,7 @@ MonoBehaviour:
   - Basic House
   - Big Mansion
   - Massive School
+  - Hotel
   possibleDiff:
   - Easy
   - Medium
@@ -786,6 +787,8 @@ MonoBehaviour:
   - House 1
   - Mourout Large house
   - Ridgeton School
+  - Hotel
+  - Hotel
   baseMoneyPerMap: 01000000020000000300000004000000
   difficultyMultipliers:
   - 1
@@ -2292,7 +2295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -829.9999, y: 405}
+  m_AnchoredPosition: {x: -829.99994, y: 405}
   m_SizeDelta: {x: -1739.3799, y: -908.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014588794
@@ -3401,7 +3404,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -829.9999, y: 405}
+  m_AnchoredPosition: {x: -829.99994, y: 405}
   m_SizeDelta: {x: -1739.38, y: -908.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328432948
@@ -3534,7 +3537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -637.9999, y: -350}
+  m_AnchoredPosition: {x: -637.99994, y: -350}
   m_SizeDelta: {x: -1495.75, y: -894.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1361537596
@@ -4732,7 +4735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -638.1, y: -118}
+  m_AnchoredPosition: {x: -638.10004, y: -118}
   m_SizeDelta: {x: -1495.75, y: -894.25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1710305989
