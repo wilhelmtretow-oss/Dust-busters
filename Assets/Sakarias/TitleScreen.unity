@@ -1760,10 +1760,42 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ModuleDatabase
   modules:
-  - moduleName: Overclock Module
-    damageBonus: 0
-    defenseBonus: 0
-    speedBonus: 0
+  - moduleID: 0
+    moduleName: XXL Battery
+    moduleIcon: {fileID: 1052367024, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
+    damageBonus: 3
+    defenseBonus: -5
+    speedBonus: 5
+  - moduleID: 1
+    moduleName: Fun Box
+    moduleIcon: {fileID: -536661096, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
+    damageBonus: 5
+    defenseBonus: 3
+    speedBonus: -5
+  - moduleID: 2
+    moduleName: No Platinum
+    moduleIcon: {fileID: -1101938328, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
+    damageBonus: 5
+    defenseBonus: -5
+    speedBonus: 3
+  - moduleID: 3
+    moduleName: Heavy Duty Shield
+    moduleIcon: {fileID: -937688589, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
+    damageBonus: 3
+    defenseBonus: 5
+    speedBonus: -5
+  - moduleID: 4
+    moduleName: Robotic Heart
+    moduleIcon: {fileID: -1794065685, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
+    damageBonus: -3
+    defenseBonus: 10
+    speedBonus: -5
+  - moduleID: 5
+    moduleName: Bath Bomb
+    moduleIcon: {fileID: 627996922, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
+    damageBonus: 10
+    defenseBonus: -3
+    speedBonus: -5
 --- !u!4 &1184139583
 Transform:
   m_ObjectHideFlags: 0

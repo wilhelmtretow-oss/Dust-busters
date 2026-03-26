@@ -1124,6 +1124,7 @@ MonoBehaviour:
   - {fileID: 1969824541}
   - {fileID: 585376675}
   modulePrefab: {fileID: 462191243414735422, guid: 48bb600c486b68c4cba5e43eba3734b8, type: 3}
+  mainCanvas: {fileID: 501959201}
 --- !u!4 &831479838
 Transform:
   m_ObjectHideFlags: 0

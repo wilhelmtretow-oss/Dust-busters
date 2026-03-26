@@ -5,27 +5,26 @@ public class InventorySlot : MonoBehaviour, IDropHandler
 {
     private DraggableModule currentModule;
 
-    public bool HasModule()
-    {
-        return currentModule != null;
-    }
+    public bool HasModule() => currentModule != null;
 
     public void SetModule(DraggableModule module)
     {
         currentModule = module;
-
         module.wasDropped = true;
         module.currentSlot = null;
 
         RectTransform rect = module.GetComponent<RectTransform>();
-        rect.SetParent(transform);
+
+        // VIKTIGT: 'false' ser till att den inte ärver konstiga world-positions
+        rect.SetParent(transform, false);
+
+        // Nollställ allt för att tvinga fram synlighet
         rect.anchoredPosition = Vector2.zero;
+        rect.localScale = Vector3.one;
+        rect.localPosition = new Vector3(0, 0, 0);
     }
 
-    public void ClearSlot()
-    {
-        currentModule = null;
-    }
+    public void ClearSlot() => currentModule = null;
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -34,12 +33,8 @@ public class InventorySlot : MonoBehaviour, IDropHandler
 
         if (dragged == null || currentModule != null) return;
 
-        // The data for the equipment slot was already cleared in OnBeginDrag,
-        // so we just need to "Accept" the drop here.
         dragged.wasDropped = true;
-
-        // We don't even need to call SetModule(dragged) here because 
-        // LoadInventory() is going to wipe the UI and rebuild it anyway!
-        Debug.Log("Inventory accepted drop, rebuilding UI...");
+        Debug.Log("Inventory accepted drop.");
+        // Tips: Du kan anropa SetModule(dragged) här om du vill se den landa direkt
     }
 }

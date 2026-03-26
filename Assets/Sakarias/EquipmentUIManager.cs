@@ -34,7 +34,7 @@ public class EquipmentUIManager : MonoBehaviour
             if (savedModuleID != -1)
             {
                 // Use the method we added to ModuleSlot earlier
-                equipSlots[i].CreateModuleInSlot(savedModuleID, modulePrefab);
+                equipSlots[i].LoadModuleToSlot(savedModuleID, modulePrefab);
             }
         }
     }
