@@ -3,7 +3,6 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public PlayerController stopPlayer;
-    public Health health;
     public AudioSource panic;
 
     public TextMeshProUGUI timer;
@@ -71,7 +70,6 @@ public class Timer : MonoBehaviour
         if (player != null)
         {
             stopPlayer.enabled = false;
-           health.enabled = false;
            
 
         }
