@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InventoryUIManager : MonoBehaviour
 {
@@ -16,55 +17,53 @@ public class InventoryUIManager : MonoBehaviour
     public void LoadInventory()
     {
         var data = ModuleInventoryManager.Instance;
+        if (data == null || data.ownedModules == null) return;
 
-        if (data == null||data.ownedModules == null)
-        {
-            Debug.LogError("Manager or List not ready!");
-            return;
-        }
-
-        Debug.Log("Modules owned: " + data.ownedModules.Count);
-
-        // Clear slots first (important if re-entering scene)
+        // Rensa gamla objekt
         foreach (InventorySlot slot in inventorySlots)
         {
-            foreach (Transform child in slot.transform)
-            {
-                Destroy(child.gameObject);
-            }
+            foreach (Transform child in slot.transform) { Destroy(child.gameObject); }
             slot.ClearSlot();
         }
 
         int slotUIIndex = 0;
-
-        // Spawn modules into slots
         for (int i = 0; i < data.ownedModules.Count; i++)
         {
-            int moduleIndex = data.ownedModules[i];
+            int moduleID = data.ownedModules[i];
 
-            bool isEquiped = false;
-            for (int e = 0; e < data.equippedModules.Length; e++)
-            {
-                if (data.equippedModules[e] == moduleIndex)
-                {
-                    isEquiped = true;
-                    break;
-                }
-            }
-            if (isEquiped) continue;
+            // Kolla om den redan är utrustad
+            bool isEquipped = false;
+            foreach (int eqID in data.equippedModules) { if (eqID == moduleID) isEquipped = true; }
+            if (isEquipped) continue;
 
             if (slotUIIndex >= inventorySlots.Length) break;
 
+            // SPAWNA DIREKT I SLOTTEN
             GameObject obj = Instantiate(modulePrefab, inventorySlots[slotUIIndex].transform);
-            DraggableModule draggable = obj.GetComponent<DraggableModule>();
 
-            if (draggable != null)
+            // Säkerställ synlighet
+            RectTransform rt = obj.GetComponent<RectTransform>();
+            rt.localPosition = Vector3.zero;
+            rt.localScale = Vector3.one;
+
+            ModuleData info = ModuleDatabase.instance.GetModuleByID(moduleID);
+            if (info != null)
             {
-                draggable.moduleIndex = moduleIndex;
-                inventorySlots[slotUIIndex].SetModule(draggable);
+                Transform iconChild = obj.transform.Find("Icon");
+                if (iconChild != null)
+                {
+                    Image img = iconChild.GetComponent<Image>();
+                    img.sprite = info.moduleIcon;
+                    img.color = Color.white;
+                }
+                obj.name = "Module_" + info.moduleName;
             }
-            slotUIIndex++;
 
+            DraggableModule draggable = obj.GetComponent<DraggableModule>();
+            draggable.moduleIndex = moduleID;
+
+            inventorySlots[slotUIIndex].SetModule(draggable);
+            slotUIIndex++;
         }
     }
 }

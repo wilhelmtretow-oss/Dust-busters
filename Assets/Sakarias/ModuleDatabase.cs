@@ -17,8 +17,13 @@ public class ModuleDatabase : MonoBehaviour
             Destroy(gameObject);
         }
     }
-    public ModuleData GetModule(int index)
+    public ModuleData GetModuleByID(int id)
     {
-        return modules[index];
+        foreach (ModuleData data in modules)
+        {
+            if (data.moduleID == id) return data;
+        }
+        Debug.LogError($"Module ID {id} not found in database!");
+        return null;
     }
 }
