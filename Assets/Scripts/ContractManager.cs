@@ -22,6 +22,13 @@ public class ContractManager : MonoBehaviour
 
     void Start()
     {
+        if (!PlayerPrefs.HasKey("sessionStarted"))
+        {
+            PlayerPrefs.SetInt("completedContracts", 0);
+            PlayerPrefs.SetInt("sessionStarted", 1);
+            PlayerPrefs.Save();
+        }
+
         assignedContractIndexes = new int[titleTexts.Length];
         assignedDifficultyIndexes = new int[titleTexts.Length];
         RandomizeContracts();
@@ -82,7 +89,7 @@ public class ContractManager : MonoBehaviour
 
     public void LoadSecretContract()
     {
-        ContractData.SelectedDifficulty = "Nightmare";
+        ContractData.SelectedDifficulty = "Secret";
 
         // RESET så man måste klara 5 igen
         PlayerPrefs.SetInt("completedContracts", 0);
