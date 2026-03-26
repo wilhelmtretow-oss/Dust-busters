@@ -70,4 +70,28 @@ public class ModuleInventoryManager : MonoBehaviour
         equippedModules[slotIndex] = moduleIndex;
         Debug.Log($"Module {moduleIndex} moved to slot {slotIndex}");
     }
+    public float GetTotalBonus(string statType)
+    {
+        float total = 0;
+
+        if (equippedModules == null) return 0;
+
+        foreach (int id in equippedModules)
+        {
+            if (id == -1) continue;
+
+            ModuleData data = ModuleDatabase.instance.GetModuleByID(id);
+
+            if (data != null)
+            {
+                switch (statType)
+                {
+                    case "Damage": total += data.damageBonus; break;
+                    case "Defence": total += data.defenceBonus; break;
+                    case "Speed": total += data.speedBonus; break;
+                }
+            }
+        }
+        return total;
+    }
 }

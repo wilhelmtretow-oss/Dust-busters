@@ -6,7 +6,7 @@ using UnityEngine;
 public class Projectile_script : MonoBehaviour
 {
     public float bulletSpeed = 10f;
-    public int damage = 20;
+    [HideInInspector]public int damage;
     public float lifeTime = 3f;
     public float knockBack = 0f;
     private Rigidbody2D rb;

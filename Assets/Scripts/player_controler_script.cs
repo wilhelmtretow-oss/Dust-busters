@@ -9,6 +9,9 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 4f;
+    public int currentDamage;
+    public float currentDefence;
+    private float finalSpeed;
     public AudioSource footSteps;
     private Vector2 moveDir; // used for WASD movement
     private Vector2 movePos; // used for mouse click movement
@@ -24,6 +27,18 @@ public class PlayerController : MonoBehaviour
         health = GetComponent<Health>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         lastDir = Vector2.down; // Set to players starting direction
+    }
+
+    private void Start()
+    {
+        float speedBonus = ModuleInventoryManager.Instance.GetTotalBonus("Speed");
+        float atkBonus = ModuleInventoryManager.Instance.GetTotalBonus("Damage");
+
+        finalSpeed = speed + speedBonus;
+        currentDamage = 20 + Mathf.RoundToInt(atkBonus);
+        currentDefence = ModuleInventoryManager.Instance.GetTotalBonus("Defence");
+
+        Debug.Log($"Speed: {finalSpeed} | Damage: {currentDamage} | Defence: {currentDefence}");
     }
 
     void Update()
@@ -59,7 +74,7 @@ public class PlayerController : MonoBehaviour
             return;
 
         // Move with WASD
-        rb.MovePosition(rb.position + moveDir * speed * Time.fixedDeltaTime);
+        rb.MovePosition(rb.position + moveDir * finalSpeed * Time.fixedDeltaTime);
 
         // Move with mouse position
         //rb.MovePosition(Vector2.MoveTowards(rb.position, movePos, speed * Time.fixedDeltaTime));

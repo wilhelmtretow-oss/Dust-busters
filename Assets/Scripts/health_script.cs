@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 public class Health : MonoBehaviour
@@ -26,15 +27,22 @@ public class Health : MonoBehaviour
     {
         if (isDead) return;
 
-        CurrentHealth -= amount;
+        int finalDamage = amount;
+
+        PlayerController pc = GetComponent<PlayerController>();
+
+        if (pc != null)
+        {
+            finalDamage = Mathf.Max(1, amount - Mathf.RoundToInt(pc.currentDefence));
+        }
+
+        CurrentHealth -= finalDamage;
 
         if (CurrentHealth <= 0)
         {
             CurrentHealth = 0;
             Die();
         }
-
-        Debug.Log("Player health: " + CurrentHealth);
     }
 
     void Die()

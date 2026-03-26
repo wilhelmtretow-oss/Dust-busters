@@ -9,6 +9,6 @@ public class ModuleData
     public Sprite moduleIcon;
 
     public float damageBonus;
-    public float defenseBonus;
+    public float defenceBonus;
     public float speedBonus;
 }

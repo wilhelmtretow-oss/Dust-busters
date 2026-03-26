@@ -1765,37 +1765,37 @@ MonoBehaviour:
     moduleName: XXL Battery
     moduleIcon: {fileID: 1052367024, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: 3
-    defenseBonus: -5
+    defenceBonus: -5
     speedBonus: 5
   - moduleID: 1
     moduleName: Fun Box
     moduleIcon: {fileID: -536661096, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: 5
-    defenseBonus: 3
+    defenceBonus: 3
     speedBonus: -5
   - moduleID: 2
     moduleName: No Platinum
     moduleIcon: {fileID: -1101938328, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: 5
-    defenseBonus: -5
+    defenceBonus: -5
     speedBonus: 3
   - moduleID: 3
     moduleName: Heavy Duty Shield
     moduleIcon: {fileID: -937688589, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: 3
-    defenseBonus: 5
+    defenceBonus: 5
     speedBonus: -5
   - moduleID: 4
     moduleName: Robotic Heart
     moduleIcon: {fileID: -1794065685, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: -3
-    defenseBonus: 10
+    defenceBonus: 10
     speedBonus: -5
   - moduleID: 5
     moduleName: Bath Bomb
     moduleIcon: {fileID: 627996922, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: 10
-    defenseBonus: -3
+    defenceBonus: -3
     speedBonus: -5
 --- !u!4 &1184139583
 Transform:
@@ -2460,7 +2460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -339.99994, y: -249.99998}
+  m_AnchoredPosition: {x: -339.99994, y: -250}
   m_SizeDelta: {x: -818.99, y: -743.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1634917259
@@ -2591,7 +2591,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 549.04, y: -128.92998}
+  m_AnchoredPosition: {x: 549.04, y: -128.93}
   m_SizeDelta: {x: -1098.06, y: -258.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1638819304
@@ -2668,7 +2668,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -829.9999, y: 405}
+  m_AnchoredPosition: {x: -829.99994, y: 405}
   m_SizeDelta: {x: -1739.38, y: -908.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1662031926
@@ -2981,7 +2981,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -829.9999, y: 405}
+  m_AnchoredPosition: {x: -829.99994, y: 405}
   m_SizeDelta: {x: -1739.38, y: -908.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1892750834

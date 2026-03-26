@@ -55,6 +55,16 @@ public class Gun : MonoBehaviour
         //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         //GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.Euler(0, 0, angle));
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
+        Projectile_script pScript = bullet.GetComponent<Projectile_script>();
+        if(pScript != null)
+        {
+            PlayerController pc = GetComponentInParent<PlayerController>();
+            if (pc != null)
+            {
+                pScript.damage = pc.currentDamage;
+            }
+        }
+
         bullet.GetComponent<Rigidbody2D>().AddForce(direction * 10f, ForceMode2D.Impulse);
         ammo--;
         shootingTimer = shootingRate;
