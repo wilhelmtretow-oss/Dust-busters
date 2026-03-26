@@ -201,7 +201,7 @@ MonoBehaviour:
   damage: 10
   attackCooldown: 1
   rotation: 1
-  fixedRotation: 90
+  fixedRotation: -90
 --- !u!114 &3693922665713812127
 MonoBehaviour:
   m_ObjectHideFlags: 0
