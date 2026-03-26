@@ -10,6 +10,7 @@ public class CleaningManager : MonoBehaviour
     public TMP_Text progressText;
     public GameObject winMenu;
     public GameObject minimapContainer;
+    public TMP_Text winRewardText;
 
     private int cleanedObjects = 0;
     private int totalCleanables = 0;
@@ -72,9 +73,21 @@ public class CleaningManager : MonoBehaviour
 
         if (totalCleanables > 0 && cleanedObjects >= totalCleanables)
         {
+            // RÄKNA UT BELÖNING:
+            // Exempel: 10 kr per objekt/fiende (ändra 10 till vad du vill)
+            int rewardPerObject = 10;
+            int totalReward = totalCleanables * rewardPerObject;
+
+            // GE PENGAR TILL SPELAREN:
+            if (MoneyManager.Instance != null)
+            {
+                MoneyManager.Instance.AddMoney(totalReward);
+            }
             ContractManager.CompleteContract(); // räkna upp klarade banor
             if (winMenu != null)
                 winMenu.SetActive(true);
+            if (winRewardText != null)
+                winRewardText.text = "Du tjänade: " + totalReward + " kr!";
             if (minimapContainer != null)
                 minimapContainer.SetActive(false);
             Time.timeScale = 0f;
