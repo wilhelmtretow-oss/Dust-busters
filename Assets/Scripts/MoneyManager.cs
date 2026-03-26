@@ -34,14 +34,30 @@ public class MoneyManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (moneyText == null)
+        // Vi letar efter texten varje gång en ny scen laddas
+        GameObject foundObj = GameObject.Find("MoneyTextAmount");
+        if (foundObj != null)
         {
-            GameObject foundObj = GameObject.Find("MoneyTextAmount");
-            if (foundObj != null)
-            {
-                moneyText = foundObj.GetComponent<TMP_Text>();
-                UpdateMoneyUI();
-            }
+            moneyText = foundObj.GetComponent<TMP_Text>();
+            UpdateMoneyUI();
+        }
+    }
+
+    // --- NY METOD FÖR SHOPPEN ---
+    public bool TryPurchase(int cost)
+    {
+        if (TotalMoney >= cost)
+        {
+            TotalMoney -= cost; // Dra av pengarna
+            SaveMoney();        // Spara nya summan till hårddisken direkt
+            UpdateMoneyUI();    // Uppdatera texten i UI:t
+            Debug.Log("Köp genomfört! Kvarvarande pengar: " + TotalMoney);
+            return true;        // Berätta för shoppen att det gick bra
+        }
+        else
+        {
+            Debug.Log("För lite pengar för att köpa detta.");
+            return false;       // Berätta för shoppen att det misslyckades
         }
     }
 
@@ -53,7 +69,7 @@ public class MoneyManager : MonoBehaviour
         Debug.Log("Pengar sparade! Totalt: " + TotalMoney);
     }
 
-    void SaveMoney()
+    public void SaveMoney()
     {
         PlayerPrefs.SetInt("SavedMoney", TotalMoney);
         PlayerPrefs.Save();
@@ -68,7 +84,10 @@ public class MoneyManager : MonoBehaviour
     public void UpdateMoneyUI()
     {
         if (moneyText != null)
-            moneyText.text = "Pengar: " + TotalMoney + " kr";
+        {
+            // Här kan du ändra "$" till "kr" om du vill ha svenska
+            moneyText.text = "Money: " + TotalMoney + " $";
+        }
     }
 
     [ContextMenu("Reset Money")]
