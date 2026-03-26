@@ -22,21 +22,28 @@ public class ContractManager : MonoBehaviour
 
     void Start()
     {
-        if (!PlayerPrefs.HasKey("sessionStarted"))
+        // Kontrollera om detta är första gången vi laddar menyn sedan vi startade EXE-filen
+        // Vi använder en statisk bool för att veta om vi ska nollställa sessionen
+        if (!SessionTracker.IsInitialized)
         {
             PlayerPrefs.SetInt("completedContracts", 0);
-            PlayerPrefs.SetInt("sessionStarted", 1);
             PlayerPrefs.Save();
+            SessionTracker.IsInitialized = true;
+            Debug.Log("Ny spelsession startad: Räknaren nollställd.");
         }
 
         assignedContractIndexes = new int[titleTexts.Length];
         assignedDifficultyIndexes = new int[titleTexts.Length];
         RandomizeContracts();
 
-        // Visa/göm hemlig bana baserat på antal klarade banor
+        // Visa/göm hemlig bana baserat på antal klarade banor i PlayerPrefs
         int completedContracts = PlayerPrefs.GetInt("completedContracts", 0);
         if (secretContractButton != null)
+        {
             secretContractButton.SetActive(completedContracts >= 5);
+        }
+
+        Debug.Log("Klarade banor i denna session: " + completedContracts);
     }
 
     public void RandomizeContracts()
@@ -44,7 +51,7 @@ public class ContractManager : MonoBehaviour
         int totalContracts = possibleTitles.Length;
         if (titleTexts.Length > totalContracts)
         {
-            Debug.LogError("More UI slots than available contracts! Duplicates would be required");
+            Debug.LogError("More UI slots than available contracts!");
             return;
         }
 
@@ -91,14 +98,13 @@ public class ContractManager : MonoBehaviour
     {
         ContractData.SelectedDifficulty = "Secret";
 
-        // RESET så man måste klara 5 igen
+        // Nollställ räknaren så man måste klara 5 nya banor för att se knappen igen
         PlayerPrefs.SetInt("completedContracts", 0);
         PlayerPrefs.Save();
 
         SceneManager.LoadScene(secretSceneName);
     }
 
-    // Anropa denna när spelaren klarar en bana
     public static void CompleteContract()
     {
         int completed = PlayerPrefs.GetInt("completedContracts", 0);
@@ -107,6 +113,12 @@ public class ContractManager : MonoBehaviour
         PlayerPrefs.SetInt("completedContracts", completed);
         PlayerPrefs.Save();
 
-        Debug.Log("Klarade banor: " + completed);
+        Debug.Log("Klarade banor totalt i sessionen: " + completed);
     }
+}
+
+// En liten extra klass för att hålla koll på om spelet precis har startats
+public static class SessionTracker
+{
+    public static bool IsInitialized = false;
 }
