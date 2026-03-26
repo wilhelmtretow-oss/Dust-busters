@@ -1,4 +1,4 @@
-using TMPro;
+Ôªøusing TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,8 +14,8 @@ public class ContractManager : MonoBehaviour
     public float[] difficultyMultipliers = { 1f, 1.5f, 2f };
 
     [Header("Hemlig bana")]
-    public GameObject secretContractButton; // Knapp fˆr hemlig bana i Inspector
-    public string secretSceneName = "masiv_manshon_test_starecasel"; // Namnet pÂ din hemliga scen
+    public GameObject secretContractButton;
+    public string secretSceneName = "masiv_manshon_test_starecasel";
 
     private int[] assignedContractIndexes;
     private int[] assignedDifficultyIndexes;
@@ -26,7 +26,7 @@ public class ContractManager : MonoBehaviour
         assignedDifficultyIndexes = new int[titleTexts.Length];
         RandomizeContracts();
 
-        // Visa/gˆm hemlig bana baserat pÂ antal klarade banor
+        // Visa/g√∂m hemlig bana baserat p√• antal klarade banor
         int completedContracts = PlayerPrefs.GetInt("completedContracts", 0);
         if (secretContractButton != null)
             secretContractButton.SetActive(completedContracts >= 5);
@@ -58,6 +58,7 @@ public class ContractManager : MonoBehaviour
             int contractIndex = indexes[i];
             assignedContractIndexes[i] = contractIndex;
             titleTexts[i].text = possibleTitles[contractIndex];
+
             int randomDiffIndex = Random.Range(0, possibleDiff.Length);
             assignedDifficultyIndexes[i] = randomDiffIndex;
             diffTexts[i].text = possibleDiff[randomDiffIndex];
@@ -68,27 +69,37 @@ public class ContractManager : MonoBehaviour
     {
         int contractIndex = assignedContractIndexes[slotIndex];
         int diffIndex = assignedDifficultyIndexes[slotIndex];
+
         int baseMoney = baseMoneyPerMap[contractIndex];
         float multiplier = difficultyMultipliers[diffIndex];
         int finalmoney = Mathf.RoundToInt(baseMoney * multiplier);
+
         ContractData.SelectedDifficulty = possibleDiff[diffIndex];
         ContractData.SelectedMoney = finalmoney;
+
         SceneManager.LoadScene(sceneNames[contractIndex]);
     }
 
     public void LoadSecretContract()
     {
         ContractData.SelectedDifficulty = "Nightmare";
+
+        // RESET s√• man m√•ste klara 5 igen
+        PlayerPrefs.SetInt("completedContracts", 0);
+        PlayerPrefs.Save();
+
         SceneManager.LoadScene(secretSceneName);
     }
 
-    // Anropa denna n‰r spelaren klarar en bana
+    // Anropa denna n√§r spelaren klarar en bana
     public static void CompleteContract()
     {
         int completed = PlayerPrefs.GetInt("completedContracts", 0);
         completed++;
+
         PlayerPrefs.SetInt("completedContracts", completed);
         PlayerPrefs.Save();
+
         Debug.Log("Klarade banor: " + completed);
     }
 }
