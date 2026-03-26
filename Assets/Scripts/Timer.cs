@@ -4,7 +4,7 @@ public class Timer : MonoBehaviour
 {
     public PlayerController stopPlayer;
     public Health health;
-    
+    public AudioSource panic;
 
     public TextMeshProUGUI timer;
     public TextMeshProUGUI bustFaster;
