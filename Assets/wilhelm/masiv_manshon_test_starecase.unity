@@ -11884,7 +11884,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 1023
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 8400000, guid: 8c12094a247528f4ea8551e43d0c16c4, type: 2}
   m_TargetDisplay: 0
@@ -12210,31 +12210,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_SizeDelta.x
-      value: -599
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -293
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2.9279916
+      value: 0.51692575
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.6481968
+      value: 0.51692575
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.0005238231
+      value: 0.51692575
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 252
+      value: 271.7
       objectReference: {fileID: 0}
     - target: {fileID: 6367021931763026610, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -145
+      value: -147.5
       objectReference: {fileID: 0}
     - target: {fileID: 8230993110130740569, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_Pivot.x
@@ -12358,7 +12358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8878374033804756850, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -118.999985
+      value: -119
       objectReference: {fileID: 0}
     - target: {fileID: 8926806440488300790, guid: a7c2eacdb9efb594f83d19d25bf679d1, type: 3}
       propertyPath: m_Camera
@@ -14022,6 +14022,10 @@ PrefabInstance:
     - target: {fileID: 4187923595537005759, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_Color.r
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6553075914269116614, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
+      propertyPath: m_text
+      value: Victory!
       objectReference: {fileID: 0}
     - target: {fileID: 7326830766918340453, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_LocalScale.x
@@ -42524,7 +42528,7 @@ GameObject:
   - component: {fileID: 1617842090092658587}
   - component: {fileID: 2042921724824562345}
   - component: {fileID: 9193482826205147336}
-  m_Layer: 1
+  m_Layer: 10
   m_Name: Bacgraund
   m_TagString: Untagged
   m_Icon: {fileID: 0}
