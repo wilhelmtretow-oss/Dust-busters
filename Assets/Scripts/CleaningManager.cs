@@ -14,6 +14,15 @@ public class CleaningManager : MonoBehaviour
     private int cleanedObjects = 0;
     private int totalCleanables = 0;
 
+    public static CleaningManager Instance;
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
+   
+
     void Start()
     {
         cleanedObjects = 0;

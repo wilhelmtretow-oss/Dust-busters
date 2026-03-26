@@ -37,12 +37,13 @@ public class Colony_creator : MonoBehaviour
 
     void SpawnColony()
     {
-        if (colonyStopSpawn)
+        if (!colonyStopSpawn)
         {
 
            if (difficulty == "Easy")
            {
                Instantiate(Colony, transform.position, Quaternion.identity);
+                CleaningManager.Instance.RegisterSpawnedEnemy();
                 colonyStopSpawn = true;
            }
 
@@ -50,6 +51,8 @@ public class Colony_creator : MonoBehaviour
            {
                Instantiate(Colony, transform.position, Quaternion.identity);
                Instantiate(Colony, transform.position, Quaternion.identity);
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
                 colonyStopSpawn = true;
            }
 
@@ -58,7 +61,10 @@ public class Colony_creator : MonoBehaviour
                Instantiate(Colony, transform.position, Quaternion.identity);
                Instantiate(Colony, transform.position, Quaternion.identity);
                Instantiate(Colony, transform.position, Quaternion.identity);
-               colonyStopSpawn = true;
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                colonyStopSpawn = true;
            }
 
            else if (difficulty == "Nightmare")
@@ -67,8 +73,13 @@ public class Colony_creator : MonoBehaviour
                Instantiate(Colony, transform.position, Quaternion.identity);
                Instantiate(Colony, transform.position, Quaternion.identity);
                Instantiate(Colony, transform.position, Quaternion.identity);
-               colonyStopSpawn = true;
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                colonyStopSpawn = true;
            }
+          ;
         }
 
     }
