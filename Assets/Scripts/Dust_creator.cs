@@ -8,13 +8,12 @@ public class Dust_creator : MonoBehaviour
     float spawnTimer;
     float timer;
     string difficulty = ContractData.SelectedDifficulty; // Easy, Medium, Hard and Nightmare
+    float enemyAmount = 0;
 
 
     void Start()
     {
-
-
-        spawnTimer = UnityEngine.Random.Range(5, 16);
+        spawnTimer = UnityEngine.Random.Range(15, 25);
     }
 
     void Update()
@@ -26,8 +25,8 @@ public class Dust_creator : MonoBehaviour
            
             SpawnEnemy();
             timer = 0;
-            spawnTimer = UnityEngine.Random.Range(5, 16);
-
+            spawnTimer = UnityEngine.Random.Range(20, 25);
+            enemyAmount += 1;
         }
 
 
@@ -42,29 +41,25 @@ public class Dust_creator : MonoBehaviour
 
         
 
-        if (difficulty == "Easy")
+        if (difficulty == "Easy" && enemyAmount <= 2)
         {
             Instantiate(enemies[index], transform.position, Quaternion.identity);
 
         }
 
-        else if (difficulty == "Medium")
+        else if (difficulty == "Medium" && enemyAmount <= 2)
+        {
+            Instantiate(enemies[index], transform.position, Quaternion.identity);
+        }
+
+        else if (difficulty == "Hard" && enemyAmount <= 2)
         {
             Instantiate(enemies[index], transform.position, Quaternion.identity);
             Instantiate(enemies[index], transform.position, Quaternion.identity);
         }
 
-        else if (difficulty == "Hard")
+        else if (difficulty == "Nightmare" && enemyAmount <= 2)
         {
-            Instantiate(enemies[index], transform.position, Quaternion.identity);
-            Instantiate(enemies[index], transform.position, Quaternion.identity);
-            Instantiate(enemies[index], transform.position, Quaternion.identity);
-        }
-
-        else if (difficulty == "Nightmare")
-        {
-            Instantiate(enemies[index], transform.position, Quaternion.identity);
-            Instantiate(enemies[index], transform.position, Quaternion.identity);
             Instantiate(enemies[index], transform.position, Quaternion.identity);
             Instantiate(enemies[index], transform.position, Quaternion.identity);
         }

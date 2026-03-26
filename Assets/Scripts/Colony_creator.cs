@@ -8,7 +8,7 @@ public class Colony_creator : MonoBehaviour
     float spawnTimer;
     float timer;
     string difficulty = ContractData.SelectedDifficulty; // Easy, Medium, Hard and Nightmare
-
+    bool colonyStopSpawn = false;
 
     void Start()
     {
@@ -37,34 +37,39 @@ public class Colony_creator : MonoBehaviour
 
     void SpawnColony()
     {
-
-        if (difficulty == "Easy")
+        if (colonyStopSpawn)
         {
-            Instantiate(Colony, transform.position, Quaternion.identity);
 
-        }
+           if (difficulty == "Easy")
+           {
+               Instantiate(Colony, transform.position, Quaternion.identity);
+                colonyStopSpawn = true;
+           }
 
-        else if (difficulty == "Medium")
-        {
-            Instantiate(Colony, transform.position, Quaternion.identity);
-            Instantiate(Colony, transform.position, Quaternion.identity);
-        }
+           else if (difficulty == "Medium")
+           {
+               Instantiate(Colony, transform.position, Quaternion.identity);
+               Instantiate(Colony, transform.position, Quaternion.identity);
+                colonyStopSpawn = true;
+           }
 
-        else if (difficulty == "Hard")
-        {
-            Instantiate(Colony, transform.position, Quaternion.identity);
-            Instantiate(Colony, transform.position, Quaternion.identity);
-            Instantiate(Colony, transform.position, Quaternion.identity);
-        }
+           else if (difficulty == "Hard")
+           {
+               Instantiate(Colony, transform.position, Quaternion.identity);
+               Instantiate(Colony, transform.position, Quaternion.identity);
+               Instantiate(Colony, transform.position, Quaternion.identity);
+               colonyStopSpawn = true;
+           }
 
-        else if (difficulty == "Nightmare")
-        {
-            Instantiate(Colony, transform.position, Quaternion.identity);
-            Instantiate(Colony, transform.position, Quaternion.identity);
-            Instantiate(Colony, transform.position, Quaternion.identity);
-            Instantiate(Colony, transform.position, Quaternion.identity);
+           else if (difficulty == "Nightmare")
+           {
+               Instantiate(Colony, transform.position, Quaternion.identity);
+               Instantiate(Colony, transform.position, Quaternion.identity);
+               Instantiate(Colony, transform.position, Quaternion.identity);
+               Instantiate(Colony, transform.position, Quaternion.identity);
+               colonyStopSpawn = true;
+           }
         }
-        
 
     }
 
