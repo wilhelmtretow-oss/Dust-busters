@@ -587,6 +587,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &372512126
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 372512127}
+  - component: {fileID: 372512128}
+  m_Layer: 0
+  m_Name: ShopReset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &372512127
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372512126}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2243.2559, y: -160.9948, z: -7775.059}
+  m_LocalScale: {x: 94.09895, y: 94.09895, z: 94.09895}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1953226573858045096}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &372512128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372512126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ab8c03298d604343b374df341e5b6ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ShopReset
 --- !u!1 &548112249
 GameObject:
   m_ObjectHideFlags: 0
@@ -27478,6 +27522,7 @@ RectTransform:
   - {fileID: 1157831643}
   - {fileID: 726696644836309364}
   - {fileID: 6302959872948710645}
+  - {fileID: 372512127}
   m_Father: {fileID: 2050338851463571501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -30075,6 +30120,18 @@ MonoBehaviour:
           m_StringArgument: ContractSelection
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 372512128}
+        m_TargetAssemblyTypeName: ShopReset, Assembly-CSharp
+        m_MethodName: TriggerShopReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &7677831836904126824
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30466,7 +30523,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 752, y: -236.99998}
+  m_AnchoredPosition: {x: 752, y: -237}
   m_SizeDelta: {x: -1688, y: -1124}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8881185092903080259
