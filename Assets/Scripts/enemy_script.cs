@@ -1,13 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UIElements;
 
 public class Enemy : MonoBehaviour
 {
     private NavMeshAgent nav;
     private GameObject player;
     private Health playerHealth;
-
     public LayerMask obstacleLayerMasks;
     public float viewDistance = 5f;
     public float attackRange = 2f;
@@ -15,25 +13,21 @@ public class Enemy : MonoBehaviour
     public float attackCooldown = 1f;
     public bool rotation = false;
     public float fixedRotation = 0f;
-
     private float lastAttackTime;
 
     private void Awake()
     {
         nav = GetComponent<NavMeshAgent>();
         if (!nav) Debug.LogWarning("No NavMeshAgent found on this GameObject.");
-
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        if (rb) rb.isKinematic = true; // säkerställ 2D-fysik inte stör agent
+        if (rb) rb.bodyType = RigidbodyType2D.Kinematic; // fixad - ersätter isKinematic
     }
 
     void Start()
     {
         nav.updateRotation = false;
         nav.updateUpAxis = false;
-
         player = GameObject.FindGameObjectWithTag("Player");
-
         if (player != null)
         {
             playerHealth = player.GetComponent<Health>();
@@ -49,23 +43,21 @@ public class Enemy : MonoBehaviour
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
 
-        // Line of sight check
         RaycastHit2D hit = Physics2D.Linecast(transform.position, player.transform.position, obstacleLayerMasks);
-
-        if (hit) // hinder blockerar sikt
+        if (hit)
         {
             nav.isStopped = true;
         }
-        else if (distance <= attackRange) // attackera
+        else if (distance <= attackRange)
         {
             nav.isStopped = true;
             TryAttack();
         }
-        else if (distance <= viewDistance) // jaga
+        else if (distance <= viewDistance)
         {
             nav.isStopped = false;
             nav.destination = player.transform.position;
-            if (rotation) // roterar fiender som behöver det
+            if (rotation)
             {
                 Vector2 direction = player.transform.position - transform.position;
                 float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
@@ -74,7 +66,7 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            nav.isStopped = true; // utanför viewDistance
+            nav.isStopped = true;
         }
     }
 

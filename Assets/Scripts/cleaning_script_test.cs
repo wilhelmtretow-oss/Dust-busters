@@ -14,29 +14,21 @@ public class DirtCleanable : MonoBehaviour
 
     private Texture2D dirtTexture;
     private bool isDestroyed = false;
-    private CleaningManager cleaningManager;
     private int width, height;
 
     void Start()
     {
-        cleaningManager = FindObjectOfType<CleaningManager>();
-
-     
         Texture2D source = spriteRenderer.sprite.texture;
-
         dirtTexture = new Texture2D(
             source.width,
             source.height,
             TextureFormat.RGBA32,
             false
         );
-
         dirtTexture.SetPixels(source.GetPixels());
         dirtTexture.Apply();
-
         width = dirtTexture.width;
         height = dirtTexture.height;
-
         spriteRenderer.sprite = Sprite.Create(
             dirtTexture,
             new Rect(0, 0, width, height),
@@ -54,16 +46,13 @@ public class DirtCleanable : MonoBehaviour
             {
                 Vector3 bottomLeft = box.bounds.min;
                 Vector3 bottomRight = new Vector3(box.bounds.max.x, box.bounds.min.y, box.bounds.min.z);
-
                 bool cleanedThisFrame = false;
 
                 for (int i = 0; i < samples; i++)
                 {
                     float t = (float)i / (samples - 1);
                     Vector3 worldPoint = Vector3.Lerp(bottomLeft, bottomRight, t);
-
                     worldPoint -= collision.transform.up * backOffset;
-
                     if (Clean(worldPoint))
                         cleanedThisFrame = true;
                 }
@@ -80,13 +69,10 @@ public class DirtCleanable : MonoBehaviour
     bool Clean(Vector2 worldPos)
     {
         bool changed = false;
-
         Vector2 localPos = transform.InverseTransformPoint(worldPos);
         int centerX = Mathf.RoundToInt((localPos.x + 0.5f) * width);
         int centerY = Mathf.RoundToInt((localPos.y + 0.5f) * height);
-
         int rSquared = radius * radius;
-
         int xStart = Mathf.Max(centerX - radius, 0);
         int xEnd = Mathf.Min(centerX + radius, width - 1);
         int yStart = Mathf.Max(centerY - radius, 0);
@@ -98,11 +84,9 @@ public class DirtCleanable : MonoBehaviour
             {
                 int dx = x - centerX;
                 int dy = y - centerY;
-
                 if (dx * dx + dy * dy <= rSquared)
                 {
                     Color c = dirtTexture.GetPixel(x, y);
-
                     if (c.a > 0)
                     {
                         dirtTexture.SetPixel(x, y, Color.clear);
@@ -111,14 +95,12 @@ public class DirtCleanable : MonoBehaviour
                 }
             }
         }
-
         return changed;
     }
 
     void CheckIfCleaned()
     {
         if (isDestroyed) return;
-
         Color[] pixels = dirtTexture.GetPixels();
         int dirtyPixels = 0;
 
@@ -129,14 +111,11 @@ public class DirtCleanable : MonoBehaviour
         }
 
         float dirtyPercent = (float)dirtyPixels / pixels.Length;
-
         if (dirtyPercent < cleanThreshold)
         {
             isDestroyed = true;
-
-            if (cleaningManager != null)
-                cleaningManager.AddCleanedObject();
-
+            if (CleaningManager.Instance != null)
+                CleaningManager.Instance.AddCleanedObject();
             Destroy(gameObject);
         }
     }

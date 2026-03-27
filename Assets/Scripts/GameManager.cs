@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        Time.timeScale = 1f; // återställ alltid timeScale vid start
+        Time.timeScale = 1f;
 
         if (instance != null && instance != this)
         {
@@ -21,21 +21,19 @@ public class GameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        Time.timeScale = 1f; // återställ timeScale vid varje scenbyte
+        Time.timeScale = 1f;
 
-        // Applicera volym
         AudioListener.volume = PlayerPrefs.GetFloat("volume", 1f);
 
-        // Slå på/av enemies baserat på spelarens val
         bool enemiesOn = PlayerPrefs.GetInt("enemies", 1) == 1;
+
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         foreach (GameObject enemy in enemies)
         {
             enemy.SetActive(enemiesOn);
         }
 
-        // Slå på/av Dust_creator skript
-        Dust_creator[] dustCreators = FindObjectsOfType<Dust_creator>(true);
+        Dust_creator[] dustCreators = FindObjectsByType<Dust_creator>(FindObjectsSortMode.None);
         foreach (Dust_creator dustCreator in dustCreators)
         {
             dustCreator.enabled = enemiesOn;
