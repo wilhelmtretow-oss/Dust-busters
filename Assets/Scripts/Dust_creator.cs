@@ -39,7 +39,7 @@ public class Dust_creator : MonoBehaviour
         if (enemies == null || enemies.Length == 0) return;
         int index = UnityEngine.Random.Range(0, enemies.Length);
 
-        
+
 
         if (difficulty == "Easy" && enemyAmount <= 2) // if easy difficulty and has spawned 2 or less waves play script
         {
@@ -63,13 +63,21 @@ public class Dust_creator : MonoBehaviour
             Instantiate(enemies[index], transform.position, Quaternion.identity);
             Instantiate(enemies[index], transform.position, Quaternion.identity);
         }
-        
+
+        else if (difficulty == "Secret" && enemyAmount <= 2) // if secret difficulty and has spawned 2 or less waves play script
+        {
+            Instantiate(enemies[index], transform.position, Quaternion.identity);
+            Instantiate(enemies[index], transform.position, Quaternion.identity);
+            Instantiate(enemies[index], transform.position, Quaternion.identity);
+            Instantiate(enemies[index], transform.position, Quaternion.identity);
+        }
+
 
     }
 
 
-    
-        
+
+
 
 
 
