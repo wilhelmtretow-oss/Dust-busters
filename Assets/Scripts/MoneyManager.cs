@@ -43,7 +43,7 @@ public class MoneyManager : MonoBehaviour
         }
     }
 
-    // --- NY METOD FÖR SHOPPEN ---
+    
     public bool TryPurchase(int cost)
     {
         if (TotalMoney >= cost)
