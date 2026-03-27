@@ -22270,7 +22270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1279901516506715103, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_text
-      value: Tillbaka till kontrakt
+      value: Back to contracts
       objectReference: {fileID: 0}
     - target: {fileID: 1994230922657559711, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -22290,7 +22290,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3751104845345026819, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4186245326535333695, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -31356,7 +31356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 159.99994, y: 213}
+  m_AnchoredPosition: {x: 159.99995, y: 213}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &8926806439235862333
