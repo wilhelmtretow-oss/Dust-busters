@@ -49,9 +49,11 @@ public class Gun : MonoBehaviour
         }
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        
         mousePos.z = 0f;
 
         Vector2 direction = (mousePos - bulletSpawnPoint.position).normalized;
+        Debug.Log("direction: " + direction);
         //float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         //GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.Euler(0, 0, angle));
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
