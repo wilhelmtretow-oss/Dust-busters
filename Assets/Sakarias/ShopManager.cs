@@ -68,7 +68,7 @@ public class ShopManager : MonoBehaviour
         {
             int index = ShopData.currentItemIndexes[i];
             itemNameTexts[i].text = itemNames[index];
-            priceTexts[i].text = itemPrices[index] + " kr"; // Ändrat till kr för att matcha din UI
+            priceTexts[i].text = itemPrices[index] + " $"; 
             stockTexts[i].text = ShopData.currentStock[i].ToString();
         }
     }
@@ -104,7 +104,7 @@ public class ShopManager : MonoBehaviour
         // 2. Använd TryPurchase för att dra pengar, uppdatera UI och SPARA automatiskt
         if (MoneyManager.Instance.TryPurchase(price))
         {
-            // --- OM KÖPET GICK IGENOM ---
+            
 
             if (index <= 6)
             {
@@ -151,7 +151,7 @@ public class ShopManager : MonoBehaviour
         string itemName = itemNames[index];
         int count = purchaseCounts[index];
 
-        PurchaseText.text = "Köpte " + itemName + " " + count + "X";
+        PurchaseText.text = "Bought " + itemName + " " + count + "X";
         purchaseCanvasGroup.alpha = 1f;
 
         if (fadeCoroutine != null)
