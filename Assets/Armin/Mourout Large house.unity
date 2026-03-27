@@ -1407,6 +1407,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5619902147286103938, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
   m_PrefabInstance: {fileID: 278036708}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &278036710 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 614608710229115547, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
+  m_PrefabInstance: {fileID: 278036708}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &278036711 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8032502207903577723, guid: a3e852b1f153ced44a1c15ae6931dbd8, type: 3}
+  m_PrefabInstance: {fileID: 278036708}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &285984039
 GameObject:
   m_ObjectHideFlags: 0
@@ -40896,8 +40918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5181972bc805070459486abfd4096f75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CleaningManager
-  progressBar: {fileID: 0}
-  progressText: {fileID: 0}
+  progressBar: {fileID: 278036711}
+  progressText: {fileID: 278036710}
   winMenu: {fileID: 1428023153}
   minimapContainer: {fileID: 2129097756}
   winRewardText: {fileID: 1803890737}
