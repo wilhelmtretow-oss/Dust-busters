@@ -18444,10 +18444,10 @@ PrefabInstance:
     - target: {fileID: 2449999342080407449, guid: e60ca582f57596d4790836f50c283e14, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1913848251}
+      objectReference: {fileID: 2121150406}
     - target: {fileID: 2449999342080407449, guid: e60ca582f57596d4790836f50c283e14, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: GoToContracts
+      value: ChangeScene
       objectReference: {fileID: 0}
     - target: {fileID: 2607224478605309065, guid: e60ca582f57596d4790836f50c283e14, type: 3}
       propertyPath: m_Name
@@ -19509,6 +19509,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Colony_creator
   Colony: {fileID: 1897968073324324556, guid: 625d521f1fe9558438beee509ce0729d, type: 3}
+--- !u!114 &2121150406 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1015187130111772191, guid: e60ca582f57596d4790836f50c283e14, type: 3}
+  m_PrefabInstance: {fileID: 1922919823}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 501f7f10059586a4197f894694000bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Menu
 --- !u!1 &2126622726 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7701289594229275896, guid: 7651841cf56fabf428a0e5568de1bde7, type: 3}

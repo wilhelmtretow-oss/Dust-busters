@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
+// This is the script for managing the cleaning progress, updating the UI, and handling the win condition when all cleanable objects are cleaned.
 public class CleaningManager : MonoBehaviour
 {
     [Header("UI")]
@@ -40,7 +41,7 @@ public class CleaningManager : MonoBehaviour
         progressBar.value = 0;
 
         if (progressText != null)
-            progressText.text = "0% städat";
+            progressText.text = "0% Cleaned";
 
         if (winMenu != null)
             winMenu.SetActive(false);
@@ -62,7 +63,7 @@ public class CleaningManager : MonoBehaviour
             progressBar.value = progressPercent;
 
         if (progressText != null)
-            progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
+            progressText.text = Mathf.RoundToInt(progressPercent) + "% Cleaned";
 
         if (totalCleanables > 0 && cleanedObjects >= totalCleanables)
         {

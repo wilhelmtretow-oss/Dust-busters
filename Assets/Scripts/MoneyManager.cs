@@ -2,6 +2,9 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+// this is the script that manages the player's money.
+// It keeps track of how much money the player has, updates the UI, and handles saving/loading the money amount to disk.
+// It also provides a method for trying to make a purchase, which can be called from the shop manager when the player tries to buy something.
 public class MoneyManager : MonoBehaviour
 {
     public static MoneyManager Instance;

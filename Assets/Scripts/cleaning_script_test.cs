@@ -66,6 +66,9 @@ public class DirtCleanable : MonoBehaviour
         }
     }
 
+    //this is where the cleaning happens,
+    //it checks a circular area around the given world position and makes pixels transparent if they are within the radius and not already clear.
+    //It returns true if any pixels were changed, which signals that we need to apply the texture changes and check if the object is fully cleaned.
     bool Clean(Vector2 worldPos)
     {
         bool changed = false;
