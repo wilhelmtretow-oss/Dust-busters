@@ -72,6 +72,8 @@ public class CleaningManager : MonoBehaviour
             string difficulty = ContractData.SelectedDifficulty;
             if (difficulty == "Nightmare")
                 totalRewardThisMatch += 500;
+            if (difficulty == "Secret")
+                totalRewardThisMatch += 1000;
 
             if (MoneyManager.Instance != null)
                 MoneyManager.Instance.AddMoney(totalRewardThisMatch);
