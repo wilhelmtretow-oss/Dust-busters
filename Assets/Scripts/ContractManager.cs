@@ -3,6 +3,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
+// This is the script for managing the contract selection menu, randomizing the available contracts and their difficulties,
+// and handling the loading of the selected contract scene.
 public class ContractManager : MonoBehaviour
 {
     public TextMeshProUGUI[] titleTexts;

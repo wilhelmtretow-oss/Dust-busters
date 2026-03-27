@@ -1,7 +1,10 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
+//This is the script for managing the settings scene, allowing the player to adjust volume, toggle enemies, and toggle fullscreen mode.
+//It also handles saving and loading these settings using PlayerPrefs.
 public class SettingsSceneManager : MonoBehaviour
 {
     public Slider volumeSlider;
