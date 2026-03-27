@@ -81,6 +81,26 @@ public class Colony_creator : MonoBehaviour
                 CleaningManager.Instance.RegisterSpawnedEnemy();
                 colonyStopSpawn = true;
             }
+            else if (difficulty == "Secret")
+            {
+                Instantiate(Colony, transform.position, Quaternion.identity);
+                Instantiate(Colony, transform.position, Quaternion.identity);
+                Instantiate(Colony, transform.position, Quaternion.identity);
+                Instantiate(Colony, transform.position, Quaternion.identity);
+                Instantiate(Colony, transform.position, Quaternion.identity);
+                Instantiate(Colony, transform.position, Quaternion.identity);
+                Instantiate(Colony, transform.position, Quaternion.identity);
+                Instantiate(Colony, transform.position, Quaternion.identity);
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                CleaningManager.Instance.RegisterSpawnedEnemy();
+                colonyStopSpawn = true;
+            }
         }
     }
 }
