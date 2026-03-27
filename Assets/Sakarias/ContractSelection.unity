@@ -913,7 +913,6 @@ MonoBehaviour:
   - Basic House
   - Big Mansion
   - Massive School
-  - Hotel
   possibleDiff:
   - Easy
   - Medium
@@ -2432,7 +2431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -829.99994, y: 405}
+  m_AnchoredPosition: {x: -830, y: 405}
   m_SizeDelta: {x: -1739.3799, y: -908.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014588794
@@ -3675,7 +3674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -829.99994, y: 405}
+  m_AnchoredPosition: {x: -830, y: 405}
   m_SizeDelta: {x: -1739.38, y: -908.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1328432948
