@@ -13,20 +13,20 @@ public class Dust_creator : MonoBehaviour
 
     void Start()
     {
-        spawnTimer = UnityEngine.Random.Range(15, 25);
+        spawnTimer = UnityEngine.Random.Range(15, 25); // Set time threashold between 15 to 25 seconds
     }
 
     void Update()
     {
         timer += Time.deltaTime;
 
-        if (timer >= spawnTimer)
+        if (timer >= spawnTimer) // if the timer has supassed threashold spawn play script
         {
            
             SpawnEnemy();
             timer = 0;
-            spawnTimer = UnityEngine.Random.Range(20, 25);
-            enemyAmount += 1;
+            spawnTimer = UnityEngine.Random.Range(20, 25); // Increase the threashold needed to spawn
+            enemyAmount += 1; // remembers how many spawns it did
         }
 
 
@@ -41,24 +41,24 @@ public class Dust_creator : MonoBehaviour
 
         
 
-        if (difficulty == "Easy" && enemyAmount <= 2)
+        if (difficulty == "Easy" && enemyAmount <= 2) // if easy difficulty and has spawned 2 or less waves play script
         {
-            Instantiate(enemies[index], transform.position, Quaternion.identity);
+            Instantiate(enemies[index], transform.position, Quaternion.identity); // check enemies in the index and place on top of self
 
         }
 
-        else if (difficulty == "Medium" && enemyAmount <= 2)
+        else if (difficulty == "Medium" && enemyAmount <= 2) // if medium difficulty and has spawned 2 or less waves play script
         {
             Instantiate(enemies[index], transform.position, Quaternion.identity);
         }
 
-        else if (difficulty == "Hard" && enemyAmount <= 2)
+        else if (difficulty == "Hard" && enemyAmount <= 2) // if hard difficulty and has spawned 2 or less waves play script
         {
             Instantiate(enemies[index], transform.position, Quaternion.identity);
             Instantiate(enemies[index], transform.position, Quaternion.identity);
         }
 
-        else if (difficulty == "Nightmare" && enemyAmount <= 2)
+        else if (difficulty == "Nightmare" && enemyAmount <= 2) // if nightmare difficulty and has spawned 2 or less waves play script
         {
             Instantiate(enemies[index], transform.position, Quaternion.identity);
             Instantiate(enemies[index], transform.position, Quaternion.identity);
