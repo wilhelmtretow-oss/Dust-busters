@@ -14,7 +14,6 @@ public class CleaningManager : MonoBehaviour
 
     private int cleanedObjects = 0;
     private int totalCleanables = 0;
-
     public static CleaningManager Instance;
 
     void Awake()
@@ -26,9 +25,9 @@ public class CleaningManager : MonoBehaviour
     {
         cleanedObjects = 0;
         totalCleanables =
-            FindObjectsOfType<DirtCleanable>().Length +
-            FindObjectsOfType<CleanableObject>().Length +
-            FindObjectsOfType<EnemyHealth>().Length;
+            FindObjectsByType<DirtCleanable>(FindObjectsSortMode.None).Length +
+            FindObjectsByType<CleanableObject>(FindObjectsSortMode.None).Length +
+            FindObjectsByType<EnemyHealth>(FindObjectsSortMode.None).Length;
 
         if (totalCleanables <= 0)
         {
@@ -56,7 +55,6 @@ public class CleaningManager : MonoBehaviour
     public void AddCleanedObject()
     {
         cleanedObjects++;
-
         float progressPercent = ((float)cleanedObjects / totalCleanables) * 100f;
         progressPercent = Mathf.Clamp(progressPercent, 0f, 100f);
 
@@ -66,34 +64,21 @@ public class CleaningManager : MonoBehaviour
         if (progressText != null)
             progressText.text = Mathf.RoundToInt(progressPercent) + "% städat";
 
-        // VINST-LOGIK
         if (totalCleanables > 0 && cleanedObjects >= totalCleanables)
         {
-            // 1. Räkna ut belöningen för JUST denna match
             int rewardPerObject = 10;
             int totalRewardThisMatch = totalCleanables * rewardPerObject;
 
-            // --- VALFRITT: Bonus för svårighetsgrad ---
             string difficulty = ContractData.SelectedDifficulty;
             if (difficulty == "Nightmare")
-            {
-                totalRewardThisMatch += 500; // Extra bonus för att det är svårt!
-            }
-            
+                totalRewardThisMatch += 500;
 
-            // 2. Lägg till i MoneyManager (Totala summan på banken)
             if (MoneyManager.Instance != null)
-            {
                 MoneyManager.Instance.AddMoney(totalRewardThisMatch);
-            }
 
-            // 3. Visa bara matchens vinst på UI:t
             if (winRewardText != null)
-            {
                 winRewardText.text = "+ " + totalRewardThisMatch + " $!";
-            }
 
-            // 4. Avsluta banan
             ContractManager.CompleteContract();
 
             if (winMenu != null)
