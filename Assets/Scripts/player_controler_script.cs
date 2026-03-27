@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public int currentDamage;
     public float currentDefence;
     private float finalSpeed;
-    public AudioSource footSteps;
+    public AudioClip footSteps;
     private Vector2 moveDir;
     private Vector2 movePos;
     [HideInInspector] public Vector2 lastDir;
