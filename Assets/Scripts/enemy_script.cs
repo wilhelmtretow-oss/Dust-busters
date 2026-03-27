@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
         nav = GetComponent<NavMeshAgent>();
         if (!nav) Debug.LogWarning("No NavMeshAgent found on this GameObject.");
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        if (rb) rb.bodyType = RigidbodyType2D.Kinematic; // fixad - ersätter isKinematic
+        if (rb) rb.bodyType = RigidbodyType2D.Kinematic; // fixed - replaces isKinematic
     }
 
     void Start()
