@@ -50463,7 +50463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   bulletPrefab: {fileID: 7289107324045477140, guid: 88107d840accf50478d19744054949ea, type: 3}
   bulletSpawnPoint: {fileID: 7687033610997077713}
-  ammo: 100
+  ammo: 10000
   autoFire: 1
   shootingRate: 0.2
 --- !u!483693784 &925664612894234356
@@ -50557,6 +50557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 6
+  currentDamage: 0
+  currentDefence: 0
   footSteps: {fileID: 0}
   lastDir: {x: 0, y: 0}
 --- !u!1839735485 &1617842090092658587

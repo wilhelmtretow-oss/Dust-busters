@@ -16379,7 +16379,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 718340150271195144, guid: c94850b660b5419498958460c7d3191c, type: 3}
       propertyPath: ammo
-      value: 1000
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3776656270517173856, guid: c94850b660b5419498958460c7d3191c, type: 3}
       propertyPath: m_LocalScale.x

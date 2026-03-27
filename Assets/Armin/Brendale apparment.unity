@@ -129,7 +129,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 718340150271195144, guid: c94850b660b5419498958460c7d3191c, type: 3}
       propertyPath: ammo
-      value: 1000
+      value: 10000
       objectReference: {fileID: 0}
     - target: {fileID: 3503872092189747017, guid: c94850b660b5419498958460c7d3191c, type: 3}
       propertyPath: m_GravityScale
@@ -27130,7 +27130,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -647.99994, y: 445.99994}
+  m_AnchoredPosition: {x: -648, y: 445.99994}
   m_SizeDelta: {x: -1820, y: -980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1315202930486359692
@@ -29046,6 +29046,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 4
+  currentDamage: 0
+  currentDefence: 0
   footSteps: {fileID: 0}
   lastDir: {x: 0, y: 0}
 --- !u!114 &5051180713574423508
@@ -29369,7 +29371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -669.99994, y: 447}
+  m_AnchoredPosition: {x: -670, y: 447}
   m_SizeDelta: {x: -1820, y: -980}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &5752897535084584744
