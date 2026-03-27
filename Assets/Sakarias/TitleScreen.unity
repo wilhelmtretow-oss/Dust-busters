@@ -1766,37 +1766,37 @@ MonoBehaviour:
     moduleIcon: {fileID: 1052367024, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: 3
     defenceBonus: -5
-    speedBonus: 5
+    speedBonus: 3
   - moduleID: 1
     moduleName: Fun Box
     moduleIcon: {fileID: -536661096, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
-    damageBonus: 5
+    damageBonus: 6
     defenceBonus: 3
-    speedBonus: -5
+    speedBonus: -2
   - moduleID: 2
     moduleName: No Platinum
     moduleIcon: {fileID: -1101938328, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
-    damageBonus: 5
+    damageBonus: 7
     defenceBonus: -5
     speedBonus: 3
   - moduleID: 3
     moduleName: Heavy Duty Shield
     moduleIcon: {fileID: -937688589, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
-    damageBonus: 3
-    defenceBonus: 5
-    speedBonus: -5
+    damageBonus: -2
+    defenceBonus: 10
+    speedBonus: -2
   - moduleID: 4
     moduleName: Robotic Heart
     moduleIcon: {fileID: -1794065685, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: -3
     defenceBonus: 10
-    speedBonus: -5
+    speedBonus: -2
   - moduleID: 5
     moduleName: Bath Bomb
     moduleIcon: {fileID: 627996922, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: 10
     defenceBonus: -3
-    speedBonus: -5
+    speedBonus: -2
 --- !u!4 &1184139583
 Transform:
   m_ObjectHideFlags: 0
@@ -1886,8 +1886,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8e1aecc7e3efc140a90f02a70bbad37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ModuleInventoryManager
-  maxInventorySlots: 50
-  equipSlotCount: 3
+  maxInventorySlots: 3
+  equipSlotCount: 2
   ownedModules: 
   equippedModules: 
 --- !u!4 &1244719060
