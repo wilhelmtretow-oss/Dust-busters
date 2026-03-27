@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+// This is the script for handling the lose condition when the player presses the ESC key, showing the lose canvas and pausing the game.
 public class EscToLose : MonoBehaviour
 {
     public GameObject loseCanvas;
