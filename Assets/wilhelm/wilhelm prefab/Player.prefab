@@ -164,7 +164,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 6
-  footSteps: {fileID: 0}
+  currentDamage: 0
+  currentDefence: 0
+  footSteps: {fileID: 8300000, guid: 5449b7707a934e241923f9da2b950602, type: 3}
   lastDir: {x: 0, y: 0}
 --- !u!114 &6690817134080825906
 MonoBehaviour:
