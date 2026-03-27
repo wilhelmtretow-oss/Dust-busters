@@ -44,6 +44,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Armin/Hotel.unity
     guid: 1569ab6f5416fa64e80e530c94ea5ced
+  - enabled: 1
+    path: Assets/Sakarias/Guide.unity
+    guid: 89c1d6baf88f5534d89bc0b39eacfc98
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 164bc82c4cbf8ca49aa825eac6f9a5cb, type: 3}
   m_UseUCBPForAssetBundles: 0
