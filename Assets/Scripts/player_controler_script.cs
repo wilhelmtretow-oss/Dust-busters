@@ -5,7 +5,6 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(Health))]
 [RequireComponent(typeof(Rigidbody2D))]
-
 public class PlayerController : MonoBehaviour
 {
     public float speed = 4f;
@@ -13,8 +12,8 @@ public class PlayerController : MonoBehaviour
     public float currentDefence;
     private float finalSpeed;
     public AudioSource footSteps;
-    private Vector2 moveDir; // used for WASD movement
-    private Vector2 movePos; // used for mouse click movement
+    private Vector2 moveDir;
+    private Vector2 movePos;
     [HideInInspector] public Vector2 lastDir;
     private Rigidbody2D rb;
     private Health health;
@@ -22,75 +21,61 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        // Get components
         rb = GetComponent<Rigidbody2D>();
         health = GetComponent<Health>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        lastDir = Vector2.down; // Set to players starting direction
+        lastDir = Vector2.down;
+
+        if (health == null)
+            Debug.LogError("Health component not found on " + gameObject.name);
+        if (rb == null)
+            Debug.LogError("Rigidbody2D not found on " + gameObject.name);
     }
 
     private void Start()
     {
-        float speedBonus = ModuleInventoryManager.Instance.GetTotalBonus("Speed");
-        float atkBonus = ModuleInventoryManager.Instance.GetTotalBonus("Damage");
-
-        finalSpeed = speed + speedBonus;
-        currentDamage = 20 + Mathf.RoundToInt(atkBonus);
-        currentDefence = ModuleInventoryManager.Instance.GetTotalBonus("Defence");
+        if (ModuleInventoryManager.Instance != null)
+        {
+            float speedBonus = ModuleInventoryManager.Instance.GetTotalBonus("Speed");
+            float atkBonus = ModuleInventoryManager.Instance.GetTotalBonus("Damage");
+            finalSpeed = speed + speedBonus;
+            currentDamage = 20 + Mathf.RoundToInt(atkBonus);
+            currentDefence = ModuleInventoryManager.Instance.GetTotalBonus("Defence");
+        }
+        else
+        {
+            finalSpeed = speed;
+            currentDamage = 20;
+            currentDefence = 0;
+            Debug.LogWarning("ModuleInventoryManager not found! Using default values.");
+        }
 
         Debug.Log($"Speed: {finalSpeed} | Damage: {currentDamage} | Defence: {currentDefence}");
     }
 
     void Update()
     {
-        if (health.isDead)
+        if (health == null || health.isDead)
             return;
 
-        // Get movement by WASD
         moveDir = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        // Normalize Vector
+
         if (moveDir.magnitude > 1f)
             moveDir.Normalize();
 
-        /*
-        // Read movement by right mouse click
-        if (Input.GetMouseButtonDown(1))
-            movePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        */
-
-        // Set animation params
         if (moveDir.sqrMagnitude > 0.01f)
-        {
             lastDir = moveDir;
-        }
-        else
-        { 
-        }
     }
 
     void FixedUpdate()
     {
-        if (health.isDead)
+        if (health == null || health.isDead)
             return;
 
-        // Move with WASD
         rb.MovePosition(rb.position + moveDir * finalSpeed * Time.fixedDeltaTime);
 
-        // Move with mouse position
-        //rb.MovePosition(Vector2.MoveTowards(rb.position, movePos, speed * Time.fixedDeltaTime));
-
-        
-        // Set rotation based on moving vector
         float angle = Mathf.Atan2(moveDir.y, moveDir.x) * Mathf.Rad2Deg;
-        if(moveDir.magnitude > 0f)
+        if (moveDir.magnitude > 0f)
             rb.rotation = angle;
-        
-
-        /*
-        // Set rotation based on mouse position
-        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 dir = mousePos - transform.position;
-        rb.rotation = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-        */
     }
 }

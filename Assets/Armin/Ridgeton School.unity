@@ -126770,7 +126770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1279901516506715103, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_text
-      value: Tillbaka till kontrakt
+      value: Back to contracts
       objectReference: {fileID: 0}
     - target: {fileID: 1279901516506715103, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_fontSize
@@ -126802,7 +126802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3751104845345026819, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4186245326535333695, guid: 7d8489d47b26c27488f2cde979c46861, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
