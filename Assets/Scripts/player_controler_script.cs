@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     public int currentDamage;
     public float currentDefence;
     private float finalSpeed;
-    public AudioClip footSteps;
+    public AudioClip footsteps;
     private Vector2 moveDir;
     private Vector2 movePos;
     [HideInInspector] public Vector2 lastDir;
@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        
         rb = GetComponent<Rigidbody2D>();
         health = GetComponent<Health>();
         spriteRenderer = GetComponent<SpriteRenderer>();

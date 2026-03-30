@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     public GameObject TimesUpScreen;
     public GameObject player;
     
+    
 
     public float time = 90f;
     bool hasEnded = false;
