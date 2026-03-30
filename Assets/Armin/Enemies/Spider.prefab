@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e6a8732ffecf349b55f4e6735e1aa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 250
+  maxHealth: 200
   deathDrop: 0
   stinkCloudPrefab: {fileID: 0}
 --- !u!114 &8692828229687343233
@@ -149,8 +149,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 0
   viewDistance: 25
-  attackRange: 3
-  damage: 25
+  attackRange: 1.5
+  damage: 20
   attackCooldown: 1
   rotation: 1
   fixedRotation: 90
