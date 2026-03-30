@@ -1764,39 +1764,39 @@ MonoBehaviour:
   - moduleID: 0
     moduleName: XXL Battery
     moduleIcon: {fileID: 1052367024, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
-    damageBonus: 6
-    defenceBonus: -5
+    damageBonus: 8
+    defenceBonus: -3
     speedBonus: 4
   - moduleID: 1
     moduleName: Fun Box
     moduleIcon: {fileID: -536661096, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: 10
-    defenceBonus: 3
-    speedBonus: -2
+    defenceBonus: 4
+    speedBonus: -1
   - moduleID: 2
     moduleName: No Platinum
     moduleIcon: {fileID: -1101938328, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
-    damageBonus: 12
-    defenceBonus: -5
+    damageBonus: 13
+    defenceBonus: -3
     speedBonus: 4
   - moduleID: 3
     moduleName: Heavy Duty Shield
     moduleIcon: {fileID: -937688589, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
     damageBonus: -3
     defenceBonus: 10
-    speedBonus: -3
+    speedBonus: -2
   - moduleID: 4
     moduleName: Robotic Heart
     moduleIcon: {fileID: -1794065685, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
-    damageBonus: -4
-    defenceBonus: 10
+    damageBonus: 3
+    defenceBonus: 7
     speedBonus: -2
   - moduleID: 5
     moduleName: Bath Bomb
     moduleIcon: {fileID: 627996922, guid: 940ad2a4654955e44bf7a1d04ade34fe, type: 3}
-    damageBonus: 15
+    damageBonus: 10
     defenceBonus: -3
-    speedBonus: -2
+    speedBonus: 3
 --- !u!4 &1184139583
 Transform:
   m_ObjectHideFlags: 0
