@@ -37646,6 +37646,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8159075253746524877, guid: c94850b660b5419498958460c7d3191c, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 690369905694692871, guid: c94850b660b5419498958460c7d3191c, type: 3}
       propertyPath: m_Layer
       value: 3
@@ -37801,7 +37805,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 990863292742294884, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1044034554217154541, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: time
