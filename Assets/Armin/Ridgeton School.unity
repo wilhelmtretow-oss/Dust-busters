@@ -37809,7 +37809,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1044034554217154541, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: time
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 1044034554217154541, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: health
