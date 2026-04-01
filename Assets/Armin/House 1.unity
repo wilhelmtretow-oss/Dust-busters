@@ -25017,6 +25017,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1044034554217154541, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
+      propertyPath: time
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 1044034554217154541, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1831312623}
+    - target: {fileID: 1044034554217154541, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
+      propertyPath: stopPlayer
+      value: 
+      objectReference: {fileID: 1831312620}
     - target: {fileID: 2366323829957619700, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.58089
@@ -30171,6 +30183,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5608001244192180382, guid: c94850b660b5419498958460c7d3191c, type: 3}
   m_PrefabInstance: {fileID: 1831312618}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831312620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1437911250173132930, guid: c94850b660b5419498958460c7d3191c, type: 3}
+  m_PrefabInstance: {fileID: 1831312618}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c598a5553723ce24db8efd8e77828d6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
 --- !u!114 &1831312623 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6690817134080825906, guid: c94850b660b5419498958460c7d3191c, type: 3}
