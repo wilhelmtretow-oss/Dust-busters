@@ -864,6 +864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TimeCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1044034554217154541, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
+      propertyPath: time
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 2366323829957619700, guid: a20cc3210af927d4fbbda70875bf8a9f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 23.58089
