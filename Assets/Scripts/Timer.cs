@@ -11,7 +11,7 @@ public class Timer : MonoBehaviour
     public TextMeshProUGUI bustFaster;
     public GameObject TimesUpScreen;
     public GameObject player;
-    
+    public GameObject music;
     
 
     public float time = 90f;
@@ -60,7 +60,7 @@ public class Timer : MonoBehaviour
         if (time <= 50 && time > 0)
         {
             bustFaster.gameObject.SetActive(true);
-
+            music.SetActive(false);
         }
 
         // Over 50 seconds remaining
