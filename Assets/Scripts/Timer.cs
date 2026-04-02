@@ -80,8 +80,7 @@ public class Timer : MonoBehaviour
 
         if (player != null)
         {
-            stopPlayer.enabled = false;
-            health.enabled = false;
+            health.Die();
         }
         
     }
