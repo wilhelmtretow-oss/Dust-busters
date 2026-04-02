@@ -45,7 +45,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
         if (isDead) return;
 
