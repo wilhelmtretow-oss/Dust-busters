@@ -109,8 +109,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
   maxHealth: 50
-  deathDrop: 0
-  stinkCloudPrefab: {fileID: 0}
+  deathDrop: 1
+  stinkCloudPrefab: {fileID: 5884573944105438797, guid: d955a747c81fe584e9ff183f3b5daf97, type: 3}
 --- !u!114 &3596656341310520418
 MonoBehaviour:
   m_ObjectHideFlags: 0
